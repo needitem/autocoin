@@ -1,0 +1,7 @@
+pyupbit
+python-dotenv
+ccxt
+openai
+requests
+streamlit
+selenium
