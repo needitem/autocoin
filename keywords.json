@@ -1,0 +1,582 @@
+{
+    "last_updated": "",
+    "version": "1.0",
+    "coins": {
+        "BTC": {
+            "names": [
+                "bitcoin",
+                "btc",
+                "bitcoin price",
+                "bitcoin market",
+                "bitcoin trading",
+                "bitcoin news"
+            ],
+            "tech": [
+                "bitcoin mining",
+                "bitcoin halving",
+                "bitcoin network"
+            ],
+            "related": [
+                "bitcoin etf",
+                "bitcoin investment",
+                "bitcoin adoption"
+            ],
+            "weight": 1.0
+        },
+        "ETH": {
+            "names": [
+                "ethereum",
+                "eth",
+                "ethereum price",
+                "ethereum market",
+                "ethereum trading",
+                "ethereum news"
+            ],
+            "tech": [
+                "ethereum network",
+                "ethereum upgrade",
+                "ethereum staking"
+            ],
+            "related": [
+                "ethereum defi",
+                "ethereum nft",
+                "ethereum adoption"
+            ],
+            "weight": 1.0
+        },
+        "XRP": {
+            "names": [
+                "xrp",
+                "xrp price",
+                "xrp market",
+                "xrp trading",
+                "xrp news",
+                "ripple xrp"
+            ],
+            "tech": [
+                "xrp network",
+                "xrp ledger",
+                "xrpl"
+            ],
+            "related": [
+                "ripple sec",
+                "ripple lawsuit",
+                "xrp sec"
+            ],
+            "weight": 1.0
+        },
+        "SOL": {
+            "names": [
+                "solana",
+                "sol"
+            ],
+            "tech": [
+                "proof of history",
+                "poh",
+                "gulf stream",
+                "sealevel",
+                "turbine",
+                "cloudbreak"
+            ],
+            "related": [
+                "serum",
+                "ftx",
+                "magic eden",
+                "solana ecosystem",
+                "phantom wallet",
+                "raydium"
+            ],
+            "weight": 1.0
+        },
+        "ADA": {
+            "names": [
+                "cardano",
+                "ada"
+            ],
+            "tech": [
+                "ouroboros",
+                "haskell",
+                "hard fork",
+                "vasil",
+                "alonzo",
+                "plutus",
+                "hydra"
+            ],
+            "related": [
+                "hoskinson",
+                "iohk",
+                "input output",
+                "catalyst",
+                "stake pool",
+                "daedalus"
+            ],
+            "weight": 1.0
+        },
+        "DOGE": {
+            "names": [
+                "dogecoin",
+                "doge"
+            ],
+            "tech": [
+                "scrypt",
+                "litecoin",
+                "merge mining",
+                "block reward"
+            ],
+            "related": [
+                "musk",
+                "meme coin",
+                "tesla",
+                "spacex",
+                "twitter",
+                "dogefather"
+            ],
+            "weight": 1.0
+        },
+        "DOT": {
+            "names": [
+                "polkadot",
+                "dot"
+            ],
+            "tech": [
+                "parachain",
+                "cross-chain",
+                "substrate",
+                "relay chain",
+                "xcm",
+                "nomination pools"
+            ],
+            "related": [
+                "gavin wood",
+                "kusama",
+                "web3 foundation",
+                "acala",
+                "moonbeam",
+                "astar"
+            ],
+            "weight": 1.0
+        },
+        "MATIC": {
+            "names": [
+                "polygon",
+                "matic"
+            ],
+            "tech": [
+                "layer2",
+                "plasma",
+                "pos chain",
+                "ethereum scaling",
+                "zk rollup"
+            ],
+            "related": [
+                "polygon pos",
+                "polygon zkEVM",
+                "nightfall",
+                "hermez",
+                "zero knowledge",
+                "web3"
+            ],
+            "weight": 1.0
+        },
+        "LINK": {
+            "names": [
+                "chainlink",
+                "link"
+            ],
+            "tech": [
+                "oracle",
+                "node operator",
+                "keepers",
+                "vrf",
+                "automation",
+                "ccip"
+            ],
+            "related": [
+                "smart contract",
+                "defi",
+                "sergey nazarov",
+                "link marines",
+                "data feeds",
+                "hybrid smart contracts"
+            ],
+            "weight": 1.0
+        },
+        "UNI": {
+            "names": [
+                "uniswap",
+                "uni"
+            ],
+            "tech": [
+                "dex",
+                "amm",
+                "automated market maker",
+                "liquidity pool",
+                "concentrated liquidity"
+            ],
+            "related": [
+                "hayden adams",
+                "v2",
+                "v3",
+                "lp token",
+                "swap",
+                "defi",
+                "governance"
+            ],
+            "weight": 1.0
+        }
+    },
+    "market_impact": {
+        "monetary": {
+            "keywords": [
+                "fed",
+                "federal reserve",
+                "fomc",
+                "powell",
+                "central bank",
+                "interest rate",
+                "rate hike",
+                "rate cut",
+                "monetary policy",
+                "quantitative easing",
+                "quantitative tightening",
+                "hawkish",
+                "dovish",
+                "money supply"
+            ],
+            "weight": 2.0
+        },
+        "economic": {
+            "keywords": [
+                "cpi",
+                "inflation",
+                "gdp",
+                "unemployment",
+                "nfp",
+                "non-farm payroll",
+                "ppi",
+                "consumer price",
+                "retail sales",
+                "manufacturing",
+                "recession",
+                "economic growth",
+                "market crash",
+                "bull market",
+                "bear market",
+                "economic outlook",
+                "financial crisis",
+                "market volatility",
+                "economic data",
+                "treasury yields"
+            ],
+            "weight": 1.8
+        },
+        "regulatory": {
+            "keywords": [
+                "sec",
+                "cftc",
+                "regulation",
+                "bill",
+                "compliance",
+                "enforcement",
+                "regulatory",
+                "oversight",
+                "government",
+                "policy",
+                "framework",
+                "guidelines",
+                "restrictions",
+                "approval",
+                "rejection",
+                "investigation",
+                "audit",
+                "regulatory approval",
+                "regulatory framework",
+                "compliance requirements"
+            ],
+            "weight": 1.5
+        },
+        "political": {
+            "keywords": [
+                "biden",
+                "trump",
+                "president",
+                "congress",
+                "senate",
+                "house",
+                "election",
+                "administration",
+                "government",
+                "policy",
+                "executive order",
+                "legislation",
+                "political",
+                "geopolitical",
+                "sanctions",
+                "trade war",
+                "international relations",
+                "diplomatic",
+                "policy maker",
+                "white house"
+            ],
+            "weight": 1.3
+        },
+        "institutional": {
+            "keywords": [
+                "blackrock",
+                "fidelity",
+                "vanguard",
+                "jpmorgan",
+                "goldman sachs",
+                "morgan stanley",
+                "institutional investor",
+                "wall street",
+                "hedge fund",
+                "investment bank",
+                "asset manager",
+                "mutual fund",
+                "pension fund",
+                "sovereign wealth",
+                "institutional adoption",
+                "corporate treasury"
+            ],
+            "weight": 1.7
+        }
+    },
+    "critical_news": {
+        "global": {
+            "ban": {
+                "weight": 3.0,
+                "description": "Complete ban"
+            },
+            "nationwide ban": {
+                "weight": 3.0,
+                "description": "Country-wide ban"
+            },
+            "major hack": {
+                "weight": 3.0,
+                "description": "Significant security breach"
+            },
+            "exchange hack": {
+                "weight": 3.0,
+                "description": "Exchange security breach"
+            },
+            "system breach": {
+                "weight": 3.0,
+                "description": "System compromise"
+            },
+            "collapse": {
+                "weight": 3.0,
+                "description": "Market/System collapse"
+            },
+            "market crash": {
+                "weight": 3.0,
+                "description": "Severe market downturn"
+            },
+            "major delisting": {
+                "weight": 3.0,
+                "description": "Significant delisting event"
+            },
+            "criminal investigation": {
+                "weight": 2.8,
+                "description": "Legal investigation"
+            },
+            "fraud": {
+                "weight": 2.8,
+                "description": "Fraudulent activity"
+            },
+            "major scandal": {
+                "weight": 2.8,
+                "description": "Significant scandal"
+            },
+            "bankruptcy": {
+                "weight": 2.8,
+                "description": "Company bankruptcy"
+            },
+            "emergency halt": {
+                "weight": 2.8,
+                "description": "Trading/Operation halt"
+            },
+            "critical vulnerability": {
+                "weight": 2.8,
+                "description": "Security vulnerability"
+            },
+            "major exploit": {
+                "weight": 2.8,
+                "description": "System exploit"
+            },
+            "regulatory crackdown": {
+                "weight": 2.7,
+                "description": "Regulatory action"
+            },
+            "mass liquidation": {
+                "weight": 2.7,
+                "description": "Large-scale liquidation"
+            },
+            "system failure": {
+                "weight": 2.7,
+                "description": "Technical failure"
+            },
+            "major lawsuit": {
+                "weight": 2.7,
+                "description": "Significant legal action"
+            },
+            "executive arrest": {
+                "weight": 2.7,
+                "description": "Leadership arrest"
+            }
+        },
+        "coin_specific": {
+            "BTC": {
+                "etf rejection": {
+                    "weight": 2.8,
+                    "description": "ETF application rejected"
+                },
+                "major mining disruption": {
+                    "weight": 2.8,
+                    "description": "Mining operations affected"
+                },
+                "51% attack": {
+                    "weight": 3.0,
+                    "description": "Network attack"
+                },
+                "mining ban": {
+                    "weight": 2.8,
+                    "description": "Mining prohibition"
+                },
+                "hard fork conflict": {
+                    "weight": 2.7,
+                    "description": "Fork disagreement"
+                },
+                "major wallet hack": {
+                    "weight": 2.8,
+                    "description": "Wallet security breach"
+                },
+                "double spend": {
+                    "weight": 3.0,
+                    "description": "Double spending attack"
+                },
+                "network split": {
+                    "weight": 2.8,
+                    "description": "Chain split"
+                },
+                "major miner exodus": {
+                    "weight": 2.7,
+                    "description": "Miners leaving"
+                },
+                "lightning network failure": {
+                    "weight": 2.7,
+                    "description": "L2 solution issue"
+                }
+            },
+            "ETH": {
+                "merge failure": {
+                    "weight": 3.0,
+                    "description": "PoS transition issue"
+                },
+                "chain split": {
+                    "weight": 2.8,
+                    "description": "Network split"
+                },
+                "gas crisis": {
+                    "weight": 2.7,
+                    "description": "Fee crisis"
+                },
+                "smart contract exploit": {
+                    "weight": 2.8,
+                    "description": "Contract vulnerability"
+                },
+                "staking crisis": {
+                    "weight": 2.8,
+                    "description": "Staking issues"
+                },
+                "major defi hack": {
+                    "weight": 2.8,
+                    "description": "DeFi protocol breach"
+                },
+                "consensus failure": {
+                    "weight": 3.0,
+                    "description": "Consensus issue"
+                },
+                "major protocol bug": {
+                    "weight": 2.8,
+                    "description": "Critical bug"
+                },
+                "layer2 collapse": {
+                    "weight": 2.7,
+                    "description": "L2 solution failure"
+                },
+                "major bridge hack": {
+                    "weight": 2.8,
+                    "description": "Bridge security breach"
+                }
+            },
+            "XRP": {
+                "sec victory": {
+                    "weight": 3.0,
+                    "description": "SEC wins case"
+                },
+                "court ruling": {
+                    "weight": 2.8,
+                    "description": "Major court decision"
+                },
+                "regulatory action": {
+                    "weight": 2.8,
+                    "description": "New regulatory issue"
+                },
+                "major partnership loss": {
+                    "weight": 2.7,
+                    "description": "Partnership ends"
+                },
+                "banking rejection": {
+                    "weight": 2.7,
+                    "description": "Bank adoption issue"
+                },
+                "ripple labs crisis": {
+                    "weight": 2.8,
+                    "description": "Company crisis"
+                },
+                "odl failure": {
+                    "weight": 2.7,
+                    "description": "Liquidity solution issue"
+                },
+                "major compliance issue": {
+                    "weight": 2.7,
+                    "description": "Compliance problem"
+                },
+                "executive departure": {
+                    "weight": 2.7,
+                    "description": "Leadership change"
+                },
+                "iso20022 exclusion": {
+                    "weight": 2.7,
+                    "description": "Standard exclusion"
+                }
+            }
+        }
+    },
+    "settings": {
+        "keyword_learning": {
+            "enabled": true,
+            "min_occurrence": 3,
+            "min_confidence": 0.7,
+            "update_interval": 24,
+            "max_keywords_per_category": 50
+        },
+        "weight_adjustment": {
+            "enabled": true,
+            "learning_rate": 0.1,
+            "min_weight": 0.5,
+            "max_weight": 3.0,
+            "adjustment_interval": 24
+        },
+        "validation": {
+            "check_duplicates": true,
+            "min_keyword_length": 3,
+            "max_keyword_length": 50,
+            "required_fields": [
+                "weight",
+                "description"
+            ]
+        }
+    }
+}
