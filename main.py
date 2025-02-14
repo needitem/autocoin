@@ -8,60 +8,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# 코인별 키워드 정의
-COIN_KEYWORDS = {
-    "BTC": {
-        "names": ["비트코인", "bitcoin", "btc", "비트"],
-        "tech": ["사토시", "satoshi", "채굴", "반감기", "비트코인 코어"],
-        "related": ["마이크로스트레티지", "grayscale", "gbtc", "비트코인 etf", "채굴업체", "antpool", "f2pool"]
-    },
-    "ETH": {
-        "names": ["이더리움", "ethereum", "eth", "이더"],
-        "tech": ["비탈릭", "vitalik", "가스비", "스마트컨트랙트", "이더리움 2.0", "pos", "지분증명", "샤딩"],
-        "related": ["메타마스크", "인피니티", "폴리곤", "레이어2", "옵티미즘", "아비트럼"]
-    },
-    "XRP": {
-        "names": ["리플", "ripple", "xrp"],
-        "tech": ["송금", "remittance", "odl", "on-demand liquidity"],
-        "related": ["리플랩스", "ripple labs", "브래드 갈링하우스", "sec 소송", "swift"]
-    },
-    "SOL": {
-        "names": ["솔라나", "solana", "sol"],
-        "tech": ["proof of history", "poh", "걸프스트림", "sealevel"],
-        "related": ["serum", "세럼", "ftx", "매직에덴", "솔라나 생태계"]
-    },
-    "ADA": {
-        "names": ["카르다노", "cardano", "ada"],
-        "tech": ["우로보로스", "하스켈", "하드포크", "바실", "알론조"],
-        "related": ["호스킨슨", "hoskinson", "iohk", "에이다", "하이드라"]
-    },
-    "DOGE": {
-        "names": ["도지", "dogecoin", "doge"],
-        "tech": ["스크립트", "라이트코인", "머지마이닝"],
-        "related": ["머스크", "musk", "밈코인", "meme", "일론", "테슬라"]
-    },
-    "DOT": {
-        "names": ["폴카닷", "polkadot", "dot"],
-        "tech": ["파라체인", "크로스체인", "기판", "substrate"],
-        "related": ["가빈우드", "gavin wood", "kusama", "쿠사마", "웹3재단"]
-    },
-    "MATIC": {
-        "names": ["폴리곤", "polygon", "matic"],
-        "tech": ["레이어2", "layer2", "사이드체인", "플라즈마"],
-        "related": ["폴리곤 pos", "zk롤업", "나이트폴", "hermez"]
-    },
-    "LINK": {
-        "names": ["체인링크", "chainlink", "link"],
-        "tech": ["오라클", "oracle", "노드운영", "keepers"],
-        "related": ["스마트컨트랙트", "디파이", "sergey nazarov", "link marines"]
-    },
-    "UNI": {
-        "names": ["유니스왑", "uniswap", "uni"],
-        "tech": ["덱스", "dex", "amm", "자동마켓메이커"],
-        "related": ["hayden adams", "v2", "v3", "유동성풀", "lp토큰"]
-    }
-}
-
 def get_coin_symbol(market: str) -> str:
     """
     마켓 코드에서 코인 심볼을 추출합니다.
@@ -73,22 +19,8 @@ def is_relevant_to_coin(text: str, coin_symbol: str) -> bool:
     """
     텍스트가 해당 코인과 관련이 있는지 판단합니다.
     """
-    text = text.lower()
-    coin_info = COIN_KEYWORDS.get(coin_symbol)
-    if not coin_info:
-        return False
-        
-    # 코인 이름 관련 키워드 매칭
-    name_match = any(keyword in text for keyword in coin_info['names'])
-    if not name_match:
-        return False
-        
-    # 기술/생태계 관련 키워드 매칭
-    tech_match = any(keyword in text for keyword in coin_info['tech'])
-    related_match = any(keyword in text for keyword in coin_info['related'])
-    
-    # 코인 이름이 있고, 기술이나 생태계 관련 내용이 있으면 관련성 높음
-    return name_match and (tech_match or related_match)
+    keyword_manager = KeywordManager()
+    return keyword_manager.is_relevant_to_coin(text, coin_symbol)
 
 def print_market_suggestion(symbol: str):
     """
