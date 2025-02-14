@@ -40,54 +40,12 @@ git clone https://github.com/yourusername/autocoin.git
 cd autocoin
 ```
 
-2. Install TA-Lib (Required for technical analysis):
-
-### Windows:
-```bash
-# 1. Download ta-lib-0.4.0-msvc.zip from
-# http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-msvc.zip
-
-# 2. Unzip to C:\ta-lib
-
-# 3. Add system environment variable
-# Variable name: TA_LIBRARY_PATH
-# Variable value: C:\ta-lib\c\lib
-
-# 4. Add C:\ta-lib\c\include to system PATH
-
-# Now you can install the Python wrapper
-pip install TA-Lib
-```
-
-### Linux:
-```bash
-# Install TA-Lib
-wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
-tar -xzf ta-lib-0.4.0-src.tar.gz
-cd ta-lib/
-./configure --prefix=/usr
-make
-sudo make install
-
-# Now you can install the Python wrapper
-pip install TA-Lib
-```
-
-### macOS:
-```bash
-# Using Homebrew
-brew install ta-lib
-
-# Now you can install the Python wrapper
-pip install TA-Lib
-```
-
-3. Install other required packages:
+2. Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Set up environment variables in `.env` file:
+3. Set up environment variables in `.env` file:
 ```env
 UPBIT_ACCESS_KEY=your_upbit_access_key
 UPBIT_SECRET_KEY=your_upbit_secret_key
