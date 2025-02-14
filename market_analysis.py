@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 from typing import Dict, List, Optional, Tuple
 from database import Database
 import logging
-import talib
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import IsolationForest
 
@@ -74,35 +73,68 @@ class MarketAnalyzer:
             
             # 이동평균선
             for period in [5, 10, 20, 60, 120]:
-                df[f'MA{period}'] = talib.MA(df['close'], timeperiod=period)
+                df[f'MA{period}'] = df['close'].rolling(window=period).mean()
                 
             # MACD
-            df['MACD'], df['MACD_signal'], df['MACD_hist'] = talib.MACD(
-                df['close'], fastperiod=12, slowperiod=26, signalperiod=9
-            )
+            exp1 = df['close'].ewm(span=12, adjust=False).mean()
+            exp2 = df['close'].ewm(span=26, adjust=False).mean()
+            df['MACD'] = exp1 - exp2
+            df['MACD_signal'] = df['MACD'].ewm(span=9, adjust=False).mean()
+            df['MACD_hist'] = df['MACD'] - df['MACD_signal']
             
             # RSI
-            df['RSI'] = talib.RSI(df['close'], timeperiod=14)
+            delta = df['close'].diff()
+            gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
+            loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
+            rs = gain / loss
+            df['RSI'] = 100 - (100 / (1 + rs))
             
             # 볼린저 밴드
-            df['BB_upper'], df['BB_middle'], df['BB_lower'] = talib.BBANDS(
-                df['close'], timeperiod=20, nbdevup=2, nbdevdn=2
-            )
+            period = 20
+            df['BB_middle'] = df['close'].rolling(window=period).mean()
+            df['BB_std'] = df['close'].rolling(window=period).std()
+            df['BB_upper'] = df['BB_middle'] + (df['BB_std'] * 2)
+            df['BB_lower'] = df['BB_middle'] - (df['BB_std'] * 2)
             
             # 스토캐스틱
-            df['STOCH_K'], df['STOCH_D'] = talib.STOCH(
-                df['high'], df['low'], df['close'],
-                fastk_period=14, slowk_period=3, slowd_period=3
-            )
+            low_min = df['low'].rolling(window=14).min()
+            high_max = df['high'].rolling(window=14).max()
+            df['STOCH_K'] = ((df['close'] - low_min) / (high_max - low_min)) * 100
+            df['STOCH_D'] = df['STOCH_K'].rolling(window=3).mean()
             
             # ATR (Average True Range)
-            df['ATR'] = talib.ATR(df['high'], df['low'], df['close'], timeperiod=14)
+            tr1 = df['high'] - df['low']
+            tr2 = abs(df['high'] - df['close'].shift())
+            tr3 = abs(df['low'] - df['close'].shift())
+            tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+            df['ATR'] = tr.rolling(window=14).mean()
             
             # OBV (On Balance Volume)
-            df['OBV'] = talib.OBV(df['close'], df['volume'])
+            df['OBV'] = (np.sign(df['close'].diff()) * df['volume']).fillna(0).cumsum()
             
             # ADX (Average Directional Index)
-            df['ADX'] = talib.ADX(df['high'], df['low'], df['close'], timeperiod=14)
+            # +DM
+            up_move = df['high'].diff()
+            down_move = df['low'].diff()
+            pos_dm = np.where((up_move > down_move) & (up_move > 0), up_move, 0)
+            neg_dm = np.where((down_move > up_move) & (down_move > 0), down_move, 0)
+            
+            tr = pd.DataFrame({
+                'tr1': tr1,
+                'tr2': tr2,
+                'tr3': tr3
+            }).max(axis=1)
+            
+            period = 14
+            smoothed_tr = tr.rolling(window=period).mean()
+            smoothed_pos_dm = pd.Series(pos_dm).rolling(window=period).mean()
+            smoothed_neg_dm = pd.Series(neg_dm).rolling(window=period).mean()
+            
+            pos_di = 100 * (smoothed_pos_dm / smoothed_tr)
+            neg_di = 100 * (smoothed_neg_dm / smoothed_tr)
+            
+            dx = 100 * abs(pos_di - neg_di) / (pos_di + neg_di)
+            df['ADX'] = dx.rolling(window=period).mean()
             
             # 이격도
             for period in [5, 20, 60]:

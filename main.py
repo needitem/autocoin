@@ -1,124 +1,109 @@
 import time
 from datetime import datetime
-from fear_greed import calculate_fear_greed_for_symbol, get_available_markets, get_candles, calculate_returns_and_volatility, FearGreedIndex
-from latest_news import get_latest_news, print_analysis, NewsDatabase, print_comprehensive_analysis, KeywordManager
-from market_analysis import print_market_analysis, analyze_chart, analyze_orderbook, get_orderbook
+from fear_greed import calculate_returns_and_volatility, FearGreedIndex, get_candles
+from market_analysis import analyze_chart, analyze_orderbook, get_orderbook
 import os
 from dotenv import load_dotenv
+import pandas as pd
+from investment_strategy import InvestmentStrategy
 
 load_dotenv()
 
-def get_coin_symbol(market: str) -> str:
+def analyze_and_recommend(symbol: str):
     """
-    마켓 코드에서 코인 심볼을 추출합니다.
-    예: KRW-BTC -> BTC
+    코인의 기술적 분석과 공포탐욕지수를 기반으로 매수/매도 가격을 추천합니다.
     """
-    return market.split('-')[1]
-
-def is_relevant_to_coin(text: str, coin_symbol: str) -> bool:
-    """
-    텍스트가 해당 코인과 관련이 있는지 판단합니다.
-    """
-    keyword_manager = KeywordManager()
-    return keyword_manager.is_relevant_to_coin(text, coin_symbol)
-
-def print_market_suggestion(symbol: str):
-    """
-    종합적인 시장 분석을 출력합니다.
-    """
-    print(f"\n=== {symbol} 시장 분석 ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')}) ===")
+    print(f"\n=== {symbol} 종합 분석 및 추천 ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')}) ===")
     
-    # 캔들 데이터 가져오기
-    candles = get_candles(symbol)
-    if not candles:
+    # 캔들 데이터 분석
+    candles_data = get_candles(f"KRW-{symbol}")
+    if not candles_data:
         print("데이터를 가져올 수 없습니다.")
         return
         
-    # 호가 데이터 가져오기
-    coin_symbol = get_coin_symbol(symbol)
-    orderbook = get_orderbook(coin_symbol)
+    # 캔들 데이터를 DataFrame으로 변환
+    df = pd.DataFrame(candles_data)
+    df['trade_date'] = pd.to_datetime(df['candle_date_time_kst'])
+    df = df.sort_values('trade_date')
+    
+    # 호가 데이터 분석
+    orderbook = get_orderbook(symbol)
     if not orderbook:
         print("호가 데이터를 가져올 수 없습니다.")
         return
-        
-    current_price = float(orderbook['orderbook_units'][0]['ask_price'])
+    
+    # 차트 분석
+    chart_analysis = analyze_chart(df)
+    
+    # MA 데이터 준비
+    ma_data = {
+        'MA5': chart_analysis['moving_averages']['ma5'],
+        'MA20': chart_analysis['moving_averages']['ma20'],
+        'MA60': chart_analysis['moving_averages']['ma60']
+    }
     
     # 공포탐욕지수 계산
-    prices, volumes = calculate_returns_and_volatility(candles)
+    prices, volumes = calculate_returns_and_volatility(candles_data)
     fg_index = FearGreedIndex()
     fg_result = fg_index.calculate(prices, volumes)
     
-    # 뉴스 분석 (latest_news.py의 기능 활용)
-    news = get_latest_news(coin_symbol)
-    if news:
-        print_analysis(news, coin_symbol)
+    # 호가 분석
+    order_analysis = analyze_orderbook(orderbook)
     
-    # 공포탐욕지수 기반 시장 심리 분석
-    print(f"\n[시장 심리 분석]")
-    index = fg_result['fear_greed_index'] * 100
-    if index <= 20:
-        print("💡 극단적 공포 상태: 시장 바닥 형성 가능성")
-    elif index <= 35:
-        print("💡 공포 상태: 저점 매수 기회 모색 구간")
-    elif index >= 80:
-        print("💡 극단적 탐욕 상태: 시장 과열 구간")
-    elif index >= 65:
-        print("💡 탐욕 상태: 고점 형성 가능성")
-    else:
-        print("💡 중립 상태: 기술적 분석 중요")
+    current_price = float(orderbook['orderbook_units'][0]['ask_price'])
     
-    print("\n⚠️ 주의: 이 분석은 참고용이며, 실제 투자는 더 다양한 지표와 함께 종합적으로 판단하시기 바랍니다.")
-
-def main():
-    try:
-        # 뉴스 데이터베이스 초기화
-        news_db = NewsDatabase()
-        keyword_manager = KeywordManager()
-        
-        # 코인 목록 설정
-        coins = ["BTC", "ETH", "XRP", "SOL", "ADA"]  # 예시 코인 목록
-        
-        while True:
-            for coin in coins:
-                try:
-                    print(f"\n{'='*30} {coin} 뉴스 분석 {'='*30}")
-                    
-                    # 뉴스 수집
-                    news_items = news_db.get_latest_news(coin)
-                    if not news_items:
-                        print(f"{coin}에 대한 뉴스를 찾을 수 없습니다.")
-                        continue
-                    
-                    # AI 기반 종합 분석 실행
-                    print_comprehensive_analysis(news_items, coin)
-                    
-                    # 각 뉴스 텍스트에 대한 키워드 분석
-                    for item in news_items[:5]:  # 상위 5개 뉴스만 분석
-                        text = f"{item['title']} {item.get('content', '')}"
-                        keywords = keyword_manager.analyze_keywords_with_ai(text, coin)
-                        
-                        if keywords:
-                            print(f"\n📝 뉴스 키워드 분석 결과 ({item['title'][:50]}...):")
-                            for category, words in keywords.items():
-                                if words:
-                                    print(f"\n{category.upper()} 키워드:")
-                                    for word_info in words:
-                                        print(f"- {word_info['keyword']}")
-                                        print(f"  중요도: {word_info['importance']}")
-                                        print(f"  관련성: {word_info['relevance']}")
-                                        print(f"  모니터링: {word_info['monitoring']}")
-                    
-                except Exception as e:
-                    print(f"{coin} 분석 중 오류 발생: {str(e)}")
-                    continue
-                
-                # 분석 간격 (5분)
-                time.sleep(300)
-            
-    except KeyboardInterrupt:
-        print("\n프로그램을 종료합니다.")
-    except Exception as e:
-        print(f"프로그램 실행 중 오류 발생: {str(e)}")
+    # 공포탐욕지수 기반 조정
+    fg_index_value = fg_result['fear_greed_index'] * 100
+    
+    # RSI 기반 조정
+    rsi = chart_analysis['rsi']['value']
+    
+    # 볼린저 밴드 기반 조정
+    bb_position = chart_analysis['bollinger']['position']
+    bb_upper = chart_analysis['bollinger']['upper']
+    bb_lower = chart_analysis['bollinger']['lower']
+    
+    # 투자 전략 계산
+    strategy = InvestmentStrategy()
+    volatility = bb_upper / bb_lower - 1
+    trend_strength = "강함" if chart_analysis['moving_averages']['trend'] == "상승" else "약함"
+    
+    recommendation = strategy.get_strategy_recommendation(
+        current_price=current_price,
+        fg_index=fg_index_value,
+        rsi=rsi,
+        volatility=volatility * 100,
+        trend_strength=trend_strength,
+        ma_data=ma_data,
+        total_assets=10000000  # 1천만원 기준
+    )
+    
+    # 결과 출력
+    print(f"\n현재가: {current_price:,.2f}원")
+    print(f"공포탐욕지수: {fg_index_value:.1f}")
+    print(f"RSI: {rsi:.1f}")
+    
+    print("\n[매수 전략]")
+    for level in recommendation.entry_levels:
+        print(f"- {level.description}")
+        print(f"  가격: {level.price:,.0f}원 (투자금액: {level.ratio * recommendation.investment_amount:,.0f}원)")
+    
+    print("\n[매도 전략]")
+    for level in recommendation.exit_levels:
+        print(f"- {level.description}")
+        print(f"  가격: {level.price:,.0f}원")
+    
+    print(f"\n손절가: {recommendation.stop_loss:,.0f}원")
+    
+    print(f"\n[투자 전략 요약]")
+    print(f"전략 유형: {recommendation.strategy_type} (신뢰도: {recommendation.confidence_score*100:.1f}%)")
+    print(f"리스크 비율: {recommendation.risk_ratio*100:.1f}%")
+    print(f"추천 투자 금액: {recommendation.investment_amount:,.0f}원")
+    print(f"추천 보유 기간: {recommendation.holding_period}")
+    
+    print("\n⚠️ 주의: 이 분석은 참고용이며, 실제 투자는 본인의 판단하에 진행하시기 바랍니다.")
 
 if __name__ == "__main__":
-    main()
+    symbol = input("코인 심볼을 입력하세요 (예: BTC, XRP, ETH): ").strip().upper()
+    analyze_and_recommend(symbol)
+    
