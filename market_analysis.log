@@ -1,0 +1,1680 @@
+2025-02-14 21:43:10,425 - data_fetcher - ERROR - 데이터 가져오기 실패: cannot assemble with duplicate keys
+2025-02-14 21:43:26,920 - data_fetcher - ERROR - 데이터 가져오기 실패: cannot assemble with duplicate keys
+2025-02-14 21:43:47,056 - data_fetcher - ERROR - 데이터 가져오기 실패: cannot assemble with duplicate keys
+2025-02-14 21:44:07,246 - data_fetcher - ERROR - 데이터 가져오기 실패: cannot assemble with duplicate keys
+2025-02-14 21:44:27,398 - data_fetcher - ERROR - 데이터 가져오기 실패: cannot assemble with duplicate keys
+2025-02-14 21:44:32,457 - pattern_analyzer - ERROR - 패턴 분석 중 오류 발생: 'PatternAnalyzer' object has no attribute '_check_descending_triangle'
+2025-02-14 21:44:32,514 - market_analyzer - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-14 21:44:32,514 - market_analyzer - ERROR - 포지션 크기 계산 중 오류 발생: 'InvestmentStrategy' object has no attribute 'get_base_position_size'
+2025-02-14 21:44:52,763 - pattern_analyzer - ERROR - 패턴 분석 중 오류 발생: 'PatternAnalyzer' object has no attribute '_check_descending_triangle'
+2025-02-14 21:44:52,815 - market_analyzer - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-14 21:44:52,816 - market_analyzer - ERROR - 포지션 크기 계산 중 오류 발생: 'InvestmentStrategy' object has no attribute 'get_base_position_size'
+2025-02-14 21:44:58,759 - pattern_analyzer - ERROR - 패턴 분석 중 오류 발생: 'PatternAnalyzer' object has no attribute '_check_descending_triangle'
+2025-02-14 21:44:58,809 - market_analyzer - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-14 21:44:58,809 - market_analyzer - ERROR - 포지션 크기 계산 중 오류 발생: 'InvestmentStrategy' object has no attribute 'get_base_position_size'
+2025-02-14 21:45:19,063 - pattern_analyzer - ERROR - 패턴 분석 중 오류 발생: 'PatternAnalyzer' object has no attribute '_check_descending_triangle'
+2025-02-14 21:45:19,119 - market_analyzer - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-14 21:45:19,120 - market_analyzer - ERROR - 포지션 크기 계산 중 오류 발생: 'InvestmentStrategy' object has no attribute 'get_base_position_size'
+2025-02-14 21:45:39,343 - pattern_analyzer - ERROR - 패턴 분석 중 오류 발생: 'PatternAnalyzer' object has no attribute '_check_descending_triangle'
+2025-02-14 21:45:39,401 - market_analyzer - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-14 21:45:39,402 - market_analyzer - ERROR - 포지션 크기 계산 중 오류 발생: 'InvestmentStrategy' object has no attribute 'get_base_position_size'
+2025-02-14 21:45:59,635 - pattern_analyzer - ERROR - 패턴 분석 중 오류 발생: 'PatternAnalyzer' object has no attribute '_check_head_and_shoulders'
+2025-02-14 21:46:19,884 - pattern_analyzer - ERROR - 패턴 분석 중 오류 발생: 'PatternAnalyzer' object has no attribute '_check_head_and_shoulders'
+2025-02-14 21:46:40,180 - pattern_analyzer - ERROR - 패턴 분석 중 오류 발생: 'PatternAnalyzer' object has no attribute '_check_head_and_shoulders'
+2025-02-14 21:48:08,516 - pattern_analyzer - ERROR - 컵앤핸들 패턴 확인 중 오류: single positional indexer is out-of-bounds
+2025-02-14 21:48:15,395 - pattern_analyzer - ERROR - 컵앤핸들 패턴 확인 중 오류: single positional indexer is out-of-bounds
+2025-02-14 21:48:35,673 - pattern_analyzer - ERROR - 컵앤핸들 패턴 확인 중 오류: single positional indexer is out-of-bounds
+2025-02-14 21:48:55,967 - pattern_analyzer - ERROR - 컵앤핸들 패턴 확인 중 오류: single positional indexer is out-of-bounds
+2025-02-14 21:49:00,688 - data_fetcher - ERROR - 캔들 데이터를 가져오는데 실패했습니다.
+2025-02-14 21:49:20,871 - data_fetcher - ERROR - 캔들 데이터를 가져오는데 실패했습니다.
+2025-02-14 21:49:41,020 - data_fetcher - ERROR - 캔들 데이터를 가져오는데 실패했습니다.
+2025-02-14 21:49:43,905 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'close'
+2025-02-14 21:49:46,773 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'close'
+2025-02-14 21:49:56,237 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'close'
+2025-02-14 21:50:16,383 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'close'
+2025-02-14 22:57:45,938 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 22:58:06,148 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 22:58:26,366 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 22:58:46,568 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 22:59:06,767 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 22:59:26,979 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 22:59:47,163 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:00:07,354 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:00:27,559 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:00:47,780 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:01:08,002 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:01:28,222 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:01:48,404 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:02:08,616 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:02:28,816 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:02:49,008 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:03:09,211 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:03:29,397 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:03:49,603 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:04:09,799 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:04:30,006 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:04:50,208 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:05:10,397 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:05:30,623 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:05:50,815 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:06:11,029 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:06:31,235 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:06:51,414 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:07:11,614 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:07:31,823 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:07:52,023 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:08:12,215 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:08:32,422 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:08:52,630 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:09:12,869 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:09:33,059 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:09:53,333 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:10:13,524 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:10:33,714 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:10:53,907 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:11:14,108 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:11:34,307 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:11:54,516 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:12:14,724 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:12:34,949 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:12:55,153 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-14 23:13:15,351 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'predictions'
+2025-02-15 00:03:04,810 - market_analysis - ERROR - 차트 분석 실패: 'MarketAnalysis' object has no attribute '_analyze_support_resistance'
+2025-02-15 00:03:04,900 - chart_visualizer - ERROR - 기술적 지표 차트 생성 중 오류: 'int' object has no attribute 'index'
+2025-02-15 00:03:14,005 - market_analysis - ERROR - 차트 분석 실패: 'MarketAnalysis' object has no attribute '_analyze_support_resistance'
+2025-02-15 00:03:14,105 - chart_visualizer - ERROR - 기술적 지표 차트 생성 중 오류: 'int' object has no attribute 'index'
+2025-02-15 00:04:10,028 - market_analysis - ERROR - 차트 분석 실패: 'MarketAnalysis' object has no attribute '_analyze_support_resistance'
+2025-02-15 00:04:10,149 - chart_visualizer - ERROR - 기술적 지표 차트 생성 중 오류: 
+    Invalid value of type 'builtins.int' received for the 'y' property of scatter
+        Received value: 0
+
+    The 'y' property is an array that may be specified as a tuple,
+    list, numpy array, or pandas Series
+2025-02-15 00:04:30,297 - market_analysis - ERROR - 차트 분석 실패: 'MarketAnalysis' object has no attribute '_analyze_support_resistance'
+2025-02-15 00:04:30,387 - chart_visualizer - ERROR - 기술적 지표 차트 생성 중 오류: 
+    Invalid value of type 'builtins.int' received for the 'y' property of scatter
+        Received value: 0
+
+    The 'y' property is an array that may be specified as a tuple,
+    list, numpy array, or pandas Series
+2025-02-15 00:04:50,540 - market_analysis - ERROR - 차트 분석 실패: 'MarketAnalysis' object has no attribute '_analyze_support_resistance'
+2025-02-15 00:04:50,653 - chart_visualizer - ERROR - 기술적 지표 차트 생성 중 오류: 
+    Invalid value of type 'builtins.int' received for the 'y' property of scatter
+        Received value: 0
+
+    The 'y' property is an array that may be specified as a tuple,
+    list, numpy array, or pandas Series
+2025-02-15 00:04:56,223 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:05:16,558 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:05:36,865 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:05:57,159 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:06:17,447 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:06:37,734 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:06:58,054 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:07:18,366 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:07:38,681 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:07:58,994 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:08:19,291 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:08:39,586 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:08:59,881 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:09:20,194 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:09:40,518 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:10:00,806 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:10:21,077 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:10:41,351 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:11:01,684 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:11:21,978 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:11:42,259 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:12:02,544 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:12:22,844 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:12:43,155 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:13:03,448 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:13:23,790 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:13:44,086 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:14:04,439 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:14:24,741 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:14:45,038 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:15:05,334 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:15:25,608 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:15:45,904 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:16:06,212 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:16:26,503 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:16:46,790 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:17:07,097 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:17:27,444 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:17:47,727 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:18:08,001 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:18:28,300 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:18:48,574 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:19:08,885 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:19:29,168 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:19:49,458 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:20:09,756 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:20:30,035 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:20:50,334 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:21:10,645 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:21:31,020 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:21:51,340 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:22:11,624 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:22:31,945 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:22:52,244 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:23:12,503 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:23:32,808 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:23:53,120 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:24:13,415 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:24:33,679 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:24:53,984 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:25:14,284 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:25:34,605 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:25:54,897 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:26:15,205 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:26:35,497 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:26:55,780 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:27:16,059 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:27:36,335 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:27:56,647 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:28:16,947 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:28:37,232 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:28:57,520 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:29:17,823 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:29:38,132 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:29:58,427 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:30:18,779 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:30:39,064 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:30:59,337 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:31:19,623 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:31:39,925 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:32:00,250 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:32:20,575 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:32:40,940 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:33:01,239 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:33:21,603 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:33:45,510 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:34:06,682 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:34:27,023 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 00:34:47,338 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: 'list' object has no attribute 'get'
+2025-02-15 10:29:55,877 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:30:17,334 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:30:37,630 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:30:40,874 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:31:01,181 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:31:21,484 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:31:41,811 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:32:02,187 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:32:22,553 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:32:42,813 - market_analysis - ERROR - 호가 분석 중 오류 발생: 'size'
+2025-02-15 10:48:07,475 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:07,479 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:07,482 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:07,486 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:07,490 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:07,495 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:27,803 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:27,807 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:27,812 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:27,822 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:27,826 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:48:27,830 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'float' and 'dict'
+2025-02-15 10:50:30,875 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: cannot access local variable 'min' where it is not associated with a value
+2025-02-15 10:50:30,876 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:50:30,877 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'NoneType' object is not subscriptable
+2025-02-15 10:50:51,093 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: cannot access local variable 'min' where it is not associated with a value
+2025-02-15 10:50:51,093 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:50:51,093 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'NoneType' object is not subscriptable
+2025-02-15 10:51:11,310 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: cannot access local variable 'min' where it is not associated with a value
+2025-02-15 10:51:11,310 - market_analyzer - ERROR - 전략 추천 생성 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:11,311 - market_analyzer - ERROR - 시장 분석 중 오류 발생: 'NoneType' object is not subscriptable
+2025-02-15 10:51:20,081 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,082 - market_analyzer - ERROR - 10분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,085 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,085 - market_analyzer - ERROR - 20분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,089 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,089 - market_analyzer - ERROR - 30분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,093 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,094 - market_analyzer - ERROR - 40분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,097 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,097 - market_analyzer - ERROR - 50분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,100 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:20,101 - market_analyzer - ERROR - 60분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,435 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,436 - market_analyzer - ERROR - 10분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,441 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,443 - market_analyzer - ERROR - 20분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,447 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,448 - market_analyzer - ERROR - 30분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,452 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,453 - market_analyzer - ERROR - 40분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,463 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,464 - market_analyzer - ERROR - 50분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,468 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:51:40,469 - market_analyzer - ERROR - 60분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,858 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,859 - market_analyzer - ERROR - 10분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,862 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,863 - market_analyzer - ERROR - 20분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,867 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,867 - market_analyzer - ERROR - 30분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,870 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,870 - market_analyzer - ERROR - 40분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,876 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,877 - market_analyzer - ERROR - 50분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,881 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:00,881 - market_analyzer - ERROR - 60분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,169 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,169 - market_analyzer - ERROR - 10분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,177 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,177 - market_analyzer - ERROR - 20분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,181 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,181 - market_analyzer - ERROR - 30분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,184 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,185 - market_analyzer - ERROR - 40분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,189 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,190 - market_analyzer - ERROR - 50분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,194 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:21,194 - market_analyzer - ERROR - 60분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,538 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,539 - market_analyzer - ERROR - 10분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,549 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,550 - market_analyzer - ERROR - 20분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,554 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,555 - market_analyzer - ERROR - 30분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,559 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,560 - market_analyzer - ERROR - 40분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,563 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,564 - market_analyzer - ERROR - 50분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,568 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:52:41,568 - market_analyzer - ERROR - 60분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,915 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,915 - market_analyzer - ERROR - 10분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,920 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,921 - market_analyzer - ERROR - 20분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,924 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,925 - market_analyzer - ERROR - 30분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,929 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,930 - market_analyzer - ERROR - 40분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,933 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,934 - market_analyzer - ERROR - 50분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,937 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:53:01,937 - market_analyzer - ERROR - 60분 예측 계산 중 오류: unsupported operand type(s) for +: 'numpy.int64' and 'Timedelta'
+2025-02-15 10:54:58,929 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,929 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,930 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,930 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,930 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,931 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,931 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,931 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,931 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,931 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:54:58,932 - market_analyzer - ERROR - 10분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,936 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,937 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,937 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,937 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,938 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,938 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,938 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,939 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,939 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,939 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,939 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,940 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,940 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,940 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,940 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,941 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,941 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,941 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,941 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,941 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:54:58,942 - market_analyzer - ERROR - 20분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,946 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,947 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,947 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,947 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,948 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,948 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,948 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,948 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,949 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,949 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,949 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,949 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,950 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,950 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,950 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,950 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,951 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,951 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,951 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,951 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,952 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,952 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,952 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,953 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,953 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,953 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,954 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,954 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,954 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,954 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:54:58,955 - market_analyzer - ERROR - 30분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,959 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,960 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,960 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,960 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,960 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,961 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,961 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,961 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,961 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,962 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,962 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,962 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,963 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,963 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,963 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,963 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,964 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,964 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,964 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,965 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,965 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,965 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,965 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,966 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,966 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,966 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,966 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,966 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,967 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,967 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,967 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,968 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,968 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,968 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,968 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,969 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,969 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,969 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,970 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,970 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:54:58,971 - market_analyzer - ERROR - 40분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,978 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,978 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,978 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,979 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,979 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,979 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,980 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,980 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,980 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,980 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,981 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,981 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,981 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,981 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,982 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,982 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,982 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,983 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,983 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,983 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,983 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,984 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,984 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,984 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,985 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,989 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,991 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,992 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,992 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,992 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,992 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,993 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,993 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,993 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,993 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,994 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,994 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,994 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,995 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,995 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,995 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,995 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,995 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,995 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,996 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,996 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,996 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,996 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,997 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:58,997 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:54:58,997 - market_analyzer - ERROR - 50분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,002 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,003 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,003 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,003 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,004 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,004 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,004 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,004 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,005 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,005 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,005 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,006 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,006 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,007 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,007 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,007 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,007 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,008 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,008 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,008 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,008 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,009 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,009 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,009 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,010 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,010 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,010 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,010 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,011 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,011 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,011 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,011 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,012 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,012 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,012 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,012 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,013 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,013 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,013 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,013 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,013 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,014 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,014 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,014 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,016 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,016 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,016 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,016 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,017 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,017 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,017 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:54:59,018 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:54:59,018 - market_analyzer - ERROR - 60분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,143 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,144 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,144 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,144 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,144 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,146 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,146 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,146 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,146 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,147 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:15,147 - market_analyzer - ERROR - 10분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,154 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,155 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,155 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,155 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,156 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,156 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,156 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,156 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,156 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,157 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,157 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,157 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,157 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,158 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,158 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,158 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,159 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,159 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,159 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,159 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:15,160 - market_analyzer - ERROR - 20분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,164 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,166 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,166 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,167 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,167 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,167 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,167 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,168 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,168 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,168 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,169 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,169 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,169 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,169 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,170 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,170 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,170 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,170 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,171 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,171 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,171 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,172 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,172 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,172 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,172 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,172 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,173 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,173 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,173 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,173 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:15,173 - market_analyzer - ERROR - 30분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,177 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,177 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,177 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,177 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,178 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,178 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,178 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,179 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,179 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,179 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,180 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,180 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,180 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,180 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,181 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,181 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,181 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,182 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,182 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,182 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,182 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,182 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,183 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,183 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,183 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,183 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,184 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,184 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,184 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,184 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,184 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,184 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,184 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,186 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,186 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,186 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,186 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,186 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,187 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,187 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:15,187 - market_analyzer - ERROR - 40분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,191 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,192 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,192 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,192 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,192 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,193 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,193 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,193 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,194 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,194 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,194 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,194 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,195 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,195 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,195 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,195 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,195 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,196 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,196 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,196 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,196 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,196 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,196 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,197 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,197 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,198 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,198 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,198 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,199 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,199 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,199 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,200 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,200 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,200 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,201 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,201 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,201 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,201 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,202 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,202 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,202 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,202 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,202 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,203 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,203 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,203 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,203 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,203 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,204 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,204 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:15,204 - market_analyzer - ERROR - 50분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,209 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,209 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,210 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,210 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,210 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,210 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,211 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,211 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,211 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,211 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,212 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,212 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,212 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,212 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,213 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,213 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,213 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,214 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,214 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,215 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,216 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,216 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,216 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,216 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,216 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,217 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,217 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,217 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,217 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,218 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,218 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,218 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,219 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,219 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,219 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,219 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,220 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,220 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,220 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,220 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,221 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,221 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,221 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,221 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,222 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,222 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,222 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,222 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,223 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,223 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,223 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,223 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,224 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,224 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,224 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,224 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,224 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,224 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,224 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:15,226 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:15,226 - market_analyzer - ERROR - 60분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,317 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,320 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,321 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,322 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,323 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,323 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,324 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,324 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,325 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,325 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:19,325 - market_analyzer - ERROR - 10분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,330 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,331 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,331 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,331 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,331 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,332 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,332 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,332 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,333 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,333 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,334 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,334 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,335 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,335 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,336 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,336 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,336 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,337 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,337 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,337 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:19,338 - market_analyzer - ERROR - 20분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,344 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,344 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,344 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,346 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,346 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,347 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,347 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,348 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,348 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,349 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,349 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,349 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,350 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,350 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,351 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,351 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,351 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,352 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,352 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,353 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,353 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,353 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,354 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,354 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,355 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,355 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,355 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,356 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,356 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,356 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:19,356 - market_analyzer - ERROR - 30분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,361 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,362 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,362 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,363 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,363 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,363 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,363 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,363 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,364 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,364 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,364 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,364 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,364 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,364 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,366 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,366 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,367 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,367 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,372 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,372 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,372 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,373 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,373 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,373 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,374 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,374 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,374 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,375 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,375 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,375 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,376 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,376 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,376 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,377 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,377 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,377 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,378 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,378 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,378 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,378 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:19,379 - market_analyzer - ERROR - 40분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,383 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,383 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,384 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,385 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,385 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,386 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,386 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,386 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,387 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,387 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,388 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,388 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,389 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,389 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,389 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,390 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,390 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,390 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,391 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,391 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,391 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,391 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,393 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,393 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,393 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,393 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,394 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,394 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,394 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,394 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,394 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,395 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,395 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,395 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,395 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,395 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,395 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,395 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,396 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,396 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,396 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,396 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,396 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,397 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,397 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,397 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,397 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,398 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,398 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,398 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:19,398 - market_analyzer - ERROR - 50분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,404 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,405 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,405 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,405 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,406 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,406 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,406 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,407 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,407 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,407 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,407 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,407 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,408 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,408 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,408 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,408 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,409 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,409 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,409 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,409 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,409 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,410 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,410 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,410 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,410 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,410 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,411 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,411 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,411 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,411 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,412 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,412 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,412 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,412 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,412 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,413 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,413 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,413 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,413 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,414 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,414 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,414 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,414 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,414 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,414 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,416 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,416 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,416 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,416 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,417 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,417 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,418 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,420 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,420 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,420 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,421 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,421 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,421 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,421 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:19,421 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:19,422 - market_analyzer - ERROR - 60분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,564 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,568 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,569 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,570 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,570 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,570 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,571 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,571 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,572 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,572 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:35,572 - market_analyzer - ERROR - 10분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,576 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,577 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,577 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,577 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,578 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,578 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,578 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,578 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,579 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,579 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,579 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,579 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,579 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,580 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,580 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,580 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,581 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,581 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,581 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,581 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:35,582 - market_analyzer - ERROR - 20분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,586 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,587 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,587 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,587 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,587 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,588 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,588 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,588 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,589 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,589 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,589 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,589 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,590 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,590 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,590 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,590 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,590 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,591 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,591 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,591 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,591 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,591 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,592 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,592 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,592 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,592 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,593 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,593 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,593 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,593 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:35,594 - market_analyzer - ERROR - 30분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,600 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,601 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,602 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,602 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,602 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,602 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,603 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,603 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,603 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,604 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,604 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,604 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,604 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,604 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,604 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,604 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,606 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,606 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,606 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,606 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,607 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,607 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,607 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,607 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,607 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,607 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,608 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,608 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,608 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,608 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,608 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,608 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,609 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,609 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,609 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,609 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,609 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,609 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,609 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,610 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:35,610 - market_analyzer - ERROR - 40분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,615 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,616 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,617 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,617 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,617 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,617 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,619 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,619 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,619 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,620 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,620 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,620 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,620 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,620 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,621 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,621 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,621 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,622 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,622 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,622 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,622 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,623 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,623 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,623 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,623 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,623 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,624 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,624 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,624 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,624 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,624 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,625 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,625 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,625 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,625 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,625 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,626 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,626 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,626 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,626 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,626 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,626 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,627 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,627 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,627 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,627 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,627 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,628 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,628 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,628 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:35,628 - market_analyzer - ERROR - 50분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,637 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,638 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,638 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,638 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,639 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,639 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,639 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,639 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,640 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,640 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,640 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,640 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,640 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,641 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,641 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,641 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,641 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,642 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,642 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,642 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,642 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,642 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,642 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,643 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,643 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,643 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,643 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,643 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,644 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,644 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,644 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,644 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,644 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,644 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,644 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,644 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,644 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,646 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,646 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,646 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,646 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,646 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,647 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,647 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,647 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,648 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,648 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,648 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,648 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,648 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,649 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,649 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,649 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,649 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,650 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,650 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,650 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,650 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,650 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:35,651 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:35,651 - market_analyzer - ERROR - 60분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,708 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,708 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,709 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,709 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,709 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,709 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,709 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,710 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,710 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,710 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:39,710 - market_analyzer - ERROR - 10분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,715 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,715 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,715 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,715 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,716 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,716 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,716 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,716 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,716 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,716 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,717 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,717 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,717 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,717 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,718 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,718 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,718 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,718 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,718 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,719 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:39,719 - market_analyzer - ERROR - 20분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,724 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,725 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,725 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,726 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,726 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,726 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,726 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,726 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,727 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,727 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,727 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,727 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,728 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,728 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,728 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,728 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,728 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,728 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,729 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,729 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,729 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,729 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,729 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,730 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,730 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,730 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,730 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,730 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,731 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,731 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:39,731 - market_analyzer - ERROR - 30분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,735 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,736 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,736 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,736 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,736 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,737 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,737 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,737 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,737 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,738 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,738 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,738 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,738 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,739 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,739 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,739 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,739 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,739 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,740 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,740 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,740 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,740 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,741 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,741 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,741 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,741 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,741 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,742 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,742 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,742 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,742 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,743 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,743 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,743 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,743 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,744 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,744 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,744 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,744 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,744 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:39,745 - market_analyzer - ERROR - 40분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,752 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,752 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,752 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,753 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,753 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,753 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,753 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,754 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,754 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,754 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,754 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,755 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,755 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,756 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,756 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,756 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,756 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,756 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,757 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,757 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,757 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,758 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,758 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,758 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,758 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,759 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,759 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,759 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,759 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,759 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,760 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,760 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,760 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,760 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,761 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,761 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,761 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,761 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,762 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,762 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,762 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,762 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,763 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,763 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,763 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,763 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,763 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,764 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,764 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,764 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:39,764 - market_analyzer - ERROR - 50분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,768 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,768 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,769 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,769 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,769 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,769 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,769 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,770 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,770 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,770 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,770 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,771 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,771 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,771 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,771 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,771 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,772 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,772 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,772 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,772 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,772 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,773 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,773 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,773 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,773 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,773 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,774 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,774 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,774 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,774 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,774 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,774 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,774 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,776 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,776 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,776 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,776 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,777 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,777 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,777 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,777 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,777 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,778 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,778 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,778 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,778 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,778 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,779 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,779 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,779 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,779 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,779 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,779 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,780 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,780 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,780 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,780 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,780 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,780 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:39,781 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:39,781 - market_analyzer - ERROR - 60분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,950 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,951 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,951 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,951 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,952 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,952 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,952 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,953 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,953 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,953 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:55,953 - market_analyzer - ERROR - 10분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,957 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,958 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,958 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,958 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,958 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,959 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,959 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,959 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,960 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,960 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,960 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,960 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,961 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,961 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,961 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,961 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,962 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,962 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,962 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,962 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:55,962 - market_analyzer - ERROR - 20분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,968 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,968 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,968 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,969 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,969 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,969 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,969 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,970 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,970 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,970 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,971 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,971 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,971 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,971 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,971 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,973 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,973 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,973 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,973 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,974 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,974 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,974 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,974 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,975 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,975 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,975 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,976 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,976 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,976 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,976 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:55,977 - market_analyzer - ERROR - 30분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,981 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,982 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,982 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,983 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,983 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,983 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,983 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,983 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,984 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,984 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,984 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,985 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,985 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,985 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,985 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,985 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,986 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,986 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,986 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,986 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,986 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,987 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,987 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,987 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,987 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,988 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,988 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,988 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,988 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,988 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,988 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,989 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,989 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,989 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,989 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,989 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,990 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,990 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,990 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,990 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:55,991 - market_analyzer - ERROR - 40분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,995 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,996 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,996 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,996 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,996 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,997 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,997 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,997 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,997 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,998 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,998 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,998 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,999 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,999 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,999 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:55,999 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,000 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,000 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,000 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,001 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,001 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,001 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,001 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,002 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,002 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,002 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,002 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,003 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,003 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,003 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,003 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,003 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,003 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,004 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,004 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,004 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,005 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,005 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,005 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,005 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,005 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,006 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,006 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,006 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,007 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,007 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,007 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,008 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,008 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,008 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:56,008 - market_analyzer - ERROR - 50분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,011 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,013 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,013 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,013 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,014 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,014 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,014 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,014 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,015 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,016 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,016 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,016 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,017 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,017 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,017 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,017 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,018 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,018 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,018 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,019 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,019 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,019 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,019 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,019 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,020 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,020 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,020 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,020 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,020 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,021 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,021 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,021 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,021 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,021 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,021 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,022 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,022 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,022 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,022 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,022 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,022 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,023 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,023 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,023 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,023 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,023 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,023 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,023 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,023 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,024 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,024 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,024 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,024 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,024 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,024 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,024 - market_analyzer - ERROR - 중간값 계산 중 오류: name 'current_time' is not defined
+2025-02-15 10:55:56,025 - market_analyzer - ERROR - 가격 예측 계산 중 오류 발생: name 'prediction_time' is not defined
+2025-02-15 10:55:56,025 - market_analyzer - ERROR - 60분 예측 계산 중 오류: name 'current_time' is not defined
+2025-02-15 11:07:20,940 - market_analyzer - ERROR - 1일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,941 - market_analyzer - ERROR - 2일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,942 - market_analyzer - ERROR - 3일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,942 - market_analyzer - ERROR - 4일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,942 - market_analyzer - ERROR - 5일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,943 - market_analyzer - ERROR - 6일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,943 - market_analyzer - ERROR - 7일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,943 - market_analyzer - ERROR - 8일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,944 - market_analyzer - ERROR - 9일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,944 - market_analyzer - ERROR - 10일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,945 - market_analyzer - ERROR - 11일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,945 - market_analyzer - ERROR - 12일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,945 - market_analyzer - ERROR - 13일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:20,946 - market_analyzer - ERROR - 14일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,016 - chart_visualizer - ERROR - 예측 차트 생성 중 오류: 'predicted_range'
+2025-02-15 11:07:21,895 - market_analyzer - ERROR - 1일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,896 - market_analyzer - ERROR - 2일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,896 - market_analyzer - ERROR - 3일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,896 - market_analyzer - ERROR - 4일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,896 - market_analyzer - ERROR - 5일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,897 - market_analyzer - ERROR - 6일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,897 - market_analyzer - ERROR - 7일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,897 - market_analyzer - ERROR - 8일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,897 - market_analyzer - ERROR - 9일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,897 - market_analyzer - ERROR - 10일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,899 - market_analyzer - ERROR - 11일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,899 - market_analyzer - ERROR - 12일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,899 - market_analyzer - ERROR - 13일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:21,899 - market_analyzer - ERROR - 14일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,562 - market_analyzer - ERROR - 1일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,562 - market_analyzer - ERROR - 2일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,563 - market_analyzer - ERROR - 3일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,563 - market_analyzer - ERROR - 4일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,563 - market_analyzer - ERROR - 5일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,564 - market_analyzer - ERROR - 6일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,564 - market_analyzer - ERROR - 7일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,564 - market_analyzer - ERROR - 8일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,564 - market_analyzer - ERROR - 9일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,565 - market_analyzer - ERROR - 10일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,565 - market_analyzer - ERROR - 11일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,565 - market_analyzer - ERROR - 12일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,565 - market_analyzer - ERROR - 13일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:32,566 - market_analyzer - ERROR - 14일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,210 - market_analyzer - ERROR - 1일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,211 - market_analyzer - ERROR - 2일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,211 - market_analyzer - ERROR - 3일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,212 - market_analyzer - ERROR - 4일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,212 - market_analyzer - ERROR - 5일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,213 - market_analyzer - ERROR - 6일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,213 - market_analyzer - ERROR - 7일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,213 - market_analyzer - ERROR - 8일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,214 - market_analyzer - ERROR - 9일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,214 - market_analyzer - ERROR - 10일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,214 - market_analyzer - ERROR - 11일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,214 - market_analyzer - ERROR - 12일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,215 - market_analyzer - ERROR - 13일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:42,215 - market_analyzer - ERROR - 14일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,861 - market_analyzer - ERROR - 1일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,862 - market_analyzer - ERROR - 2일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,862 - market_analyzer - ERROR - 3일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,862 - market_analyzer - ERROR - 4일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,863 - market_analyzer - ERROR - 5일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,863 - market_analyzer - ERROR - 6일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,863 - market_analyzer - ERROR - 7일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,863 - market_analyzer - ERROR - 8일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,863 - market_analyzer - ERROR - 9일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,864 - market_analyzer - ERROR - 10일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,864 - market_analyzer - ERROR - 11일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,864 - market_analyzer - ERROR - 12일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,864 - market_analyzer - ERROR - 13일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:07:52,865 - market_analyzer - ERROR - 14일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,529 - market_analyzer - ERROR - 1일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,530 - market_analyzer - ERROR - 2일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,530 - market_analyzer - ERROR - 3일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,530 - market_analyzer - ERROR - 4일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,531 - market_analyzer - ERROR - 5일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,531 - market_analyzer - ERROR - 6일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,531 - market_analyzer - ERROR - 7일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,532 - market_analyzer - ERROR - 8일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,532 - market_analyzer - ERROR - 9일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,532 - market_analyzer - ERROR - 10일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,532 - market_analyzer - ERROR - 11일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,532 - market_analyzer - ERROR - 12일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,533 - market_analyzer - ERROR - 13일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:02,533 - market_analyzer - ERROR - 14일 예측 계산 중 오류: name 'current_price' is not defined
+2025-02-15 11:08:16,521 - chart_visualizer - ERROR - 예측 차트 생성 중 오류: 'predicted_range'

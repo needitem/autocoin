@@ -1,156 +1,115 @@
-# AutoCoin - AI-Powered Cryptocurrency Analysis Tool 🚀
+# AutoCoin - AI-Powered Cryptocurrency Trading Assistant 🚀
 
 ## Overview
 
-AutoCoin is a sophisticated cryptocurrency analysis tool that combines real-time news monitoring, market analysis, and AI-powered insights to help traders make informed decisions. The system integrates multiple data sources and uses advanced AI models for sentiment analysis and market prediction.
+AutoCoin은 실시간 시장 분석과 AI 기반 투자 전략을 제공하는 암호화폐 트레이딩 어시스턴트입니다. 기술적 분석, 호가 분석, 시장 심리 분석을 통합하여 투자자의 의사결정을 돕습니다.
 
-## Features 🌟
+## 주요 기능 🌟
 
-### 1. News Analysis System
-- Real-time cryptocurrency news monitoring
-- AI-powered sentiment analysis using Google's Gemini Pro
-- Automatic categorization of bullish/bearish news
-- Importance scoring based on multiple factors
-- Support for major cryptocurrencies (BTC, ETH, XRP, etc.)
+### 1. 실시간 시장 분석
+- 실시간 가격 및 거래량 모니터링
+- 기술적 지표 분석 (RSI, 이동평균선, 볼린저 밴드)
+- 호가창 분석 및 매수/매도 세력 측정
+- 지지/저항 레버 자동 탐지
 
-### 2. Market Analysis
-- Technical indicator calculations
-- Market manipulation detection
-- Support and resistance level analysis
-- Trend analysis and prediction
-- Real-time price monitoring
+### 2. 투자 전략 추천
+- 4가지 트레이딩 전략 제공:
+  - 스캘핑 (초단타)
+  - 데이트레이딩 (단타)
+  - 스윙 트레이딩 (중기)
+  - 포지션 트레이딩 (장기)
+- 시장 상황별 맞춤 전략 추천
+- 분할 매수/매도 전략
+- 손절가 설정 가이드
 
-### 3. Performance Optimization
-- Efficient caching system
-- Rate limiting for API calls
-- Performance monitoring and metrics
-- Asynchronous operations support
+### 3. 시장 심리 분석
+- 공포탐욕지수 실시간 계산
+- RSI 기반 과매수/과매도 분석
+- 매수/매도 세력 균형 분석
+- 변동성 모니터링
 
-### 4. Database System
-- Structured data storage for news and market data
-- Historical data management
-- Efficient data retrieval and backup
-- Automated data cleanup
+### 4. 차트 분석
+- 캔들스틱 차트
+- 이동평균선 (5일, 20일, 60일)
+- 거래량 분석
+- 추세 강도 측정
 
-## Installation 🔧
+## 설치 방법 🔧
 
-1. Clone the repository:
+1. 저장소 클론:
 ```bash
 git clone https://github.com/yourusername/autocoin.git
 cd autocoin
 ```
 
-2. Install required packages:
+2. 필요한 패키지 설치:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Set up environment variables in `.env` file:
+3. 환경 변수 설정 (.env 파일):
 ```env
 UPBIT_ACCESS_KEY=your_upbit_access_key
 UPBIT_SECRET_KEY=your_upbit_secret_key
-NEWS_API_KEY=your_newsapi_key
-GEMINI_API_KEY=your_gemini_api_key
 ```
 
-## Troubleshooting 🔍
+## 사용 방법 📚
 
-### TA-Lib Installation Issues
-
-1. Windows - "ta_libc.h not found" error:
-   - Make sure you've downloaded and extracted ta-lib to C:\ta-lib
-   - Verify system environment variables are set correctly
-   - Try restarting your IDE/terminal after setting environment variables
-
-2. Linux - Missing dependencies:
-   ```bash
-   sudo apt-get update
-   sudo apt-get install build-essential
-   sudo apt-get install python3-dev
-   ```
-
-3. General TA-Lib issues:
-   - Make sure you have a C++ compiler installed
-   - For Windows: Install Visual Studio Build Tools
-   - For Linux: Install build-essential package
-
-## Usage 📚
-
-### News Analysis
-```python
-from latest_news import print_news_analysis
-
-# Analyze news for a single coin
-print_news_analysis("BTC")  # For Bitcoin
-print_news_analysis("ETH")  # For Ethereum
-
-# Example output includes:
-# - Bullish/Bearish news categorization
-# - News importance scores
-# - Market impact analysis
-# - Overall sentiment analysis
+1. 프로그램 실행:
+```bash
+streamlit run app.py
 ```
 
-### Market Analysis
-```python
-from market_analysis import MarketAnalyzer
+2. 웹 인터페이스에서:
+   - 코인 선택 (BTC, ETH, XRP 등)
+   - 트레이딩 전략 선택
+   - 업데이트 주기 설정
+   - 분석 시작/중지
 
-analyzer = MarketAnalyzer()
-# Get market analysis for Bitcoin
-analysis = analyzer.analyze_market("BTC")
-```
+## 주요 화면 📊
 
-## Output Examples 📊
+### 시장 분석 화면
+- 실시간 가격 정보
+- 기술적 지표 현황
+- 호가 분석 결과
+- 차트 분석
 
-### News Analysis Output
-```
-=== BTC 뉴스 분석 결과 ===
-분석 시간: 2024-03-20 15:30:00
-분석된 뉴스 수: 10
+### 투자 전략 화면
+- 전략 추천 및 근거
+- 매수/매도 가격 제안
+- 투자 비중 추천
+- 손절가 정보
 
-[호재 뉴스]
-📈 Bitcoin Surges Past $65,000
-출처: CoinDesk
-시간: 2024-03-20 15:25
-중요도: 0.85
-시장 영향도: 0.90
-
-[악재 뉴스]
-📉 Regulatory Concerns Emerge
-출처: Reuters
-시간: 2024-03-20 15:20
-중요도: 0.75
-시장 영향도: 0.80
-```
-
-## Project Structure 📁
+## 프로젝트 구조 📁
 
 ```
 autocoin/
-├── latest_news.py      # News analysis system
-├── market_analysis.py  # Market analysis tools
-├── database.py        # Database management
-├── performance.py     # Performance optimization
-├── requirements.txt   # Project dependencies
-└── .env              # Environment variables
+├── app.py              # 메인 애플리케이션
+├── market_analysis.py  # 시장 분석 모듈
+├── fear_greed.py      # 공포탐욕지수 계산
+├── investment_strategy.py  # 투자 전략 모듈
+└── requirements.txt    # 프로젝트 의존성
 ```
 
-## Dependencies 📦
+## 의존성 📦
 
 - Python 3.8+
-- Required packages (see requirements.txt):
+- 주요 패키지:
+  - streamlit
   - pandas
   - numpy
-  - requests
+  - plotly
   - python-dotenv
-  - google-generativeai
-  - textblob
-  - scikit-learn
-  - SQLAlchemy
-  - aiosqlite
-  - ta-lib
+  - requests
 
-## Contributing 🤝
+## 주의사항 ⚠️
+
+- 이 프로그램은 투자 참고용으로만 사용하세요
+- 모든 투자는 본인 책임하에 진행하세요
+- 과도한 레버리지나 투기성 거래는 피하세요
+- 항상 손절가를 준수하세요
+
+## 기여하기 🤝
 
 1. Fork the repository
 2. Create your feature branch
@@ -158,17 +117,13 @@ autocoin/
 4. Push to the branch
 5. Create a new Pull Request
 
-## License 📄
+## 라이선스 📄
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Disclaimer ⚠️
+## 지원 💬
 
-This tool is for informational purposes only. Cryptocurrency trading involves significant risk, and you should never trade with money you cannot afford to lose. Always do your own research and consult with financial advisors before making investment decisions.
-
-## Support 💬
-
-For support, please open an issue in the GitHub repository or contact the maintainers directly.
+문제가 있으시면 GitHub 이슈를 생성해주세요.
 
 ---
 Made with ❤️ by Needitem
