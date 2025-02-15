@@ -150,172 +150,156 @@ class MarketAnalyzer:
     def _generate_strategy_recommendation(self, df, current_price, ma_data, rsi, patterns, orderbook_analysis, strategy):
         """투자 전략 추천 생성"""
         try:
-            # 진입 레벨 설정 (현재가 기준 고정 비율)
-            entry_levels = [
-                {
-                    'price': round(current_price * 0.99, 0),  # 1% 하락 시
-                    'ratio': 0.4,
-                    'description': '1차 진입 (현재가 대비 -1%)',
-                    'reasons': [  # 해당 가격대가 좋은 매수 지점인 이유
-                        f'RSI {rsi:.1f}로 중립대역 진입',
-                        f'매수세/매도세 비율: {orderbook_analysis["bid_ask_ratio"]:.2f}',
-                        f'이동평균선 (MA20) 대비 -0.5% 구간',
-                        f'거래량 20일 평균 대비 {df["volume"].iloc[-1]/df["volume"].rolling(20).mean().iloc[-1]*100:.1f}% 수준',
-                        f'공포탐욕지수: {orderbook_analysis.get("fear_greed_index", 50)}'
-                    ]
-                },
-                {
-                    'price': round(current_price * 0.97, 0),  # 3% 하락 시
-                    'ratio': 0.3,
-                    'description': '2차 진입 (현재가 대비 -3%)',
-                    'reasons': [
-                        f'RSI {rsi:.1f} 과매도권 접근',
-                        f'매수벽 강도: {orderbook_analysis.get("support_strength", 1.0):.2f}',
-                        f'볼린저 밴드 하단 근접 (하단: {current_price * 0.965:.0f})',
-                        f'거래량 급증 구간 (평균 대비 {df["volume"].iloc[-1]/df["volume"].rolling(20).mean().iloc[-1]*100:.1f}%)',
-                        f'스토캐스틱 과매도 진입 예상 구간'
-                    ]
-                },
-                {
-                    'price': round(current_price * 0.95, 0),  # 5% 하락 시
-                    'ratio': 0.3,
-                    'description': '3차 진입 (현재가 대비 -5%)',
-                    'reasons': [
-                        f'RSI {rsi:.1f} 과매도 구간',
-                        f'주요 지지선 {current_price * 0.945:.0f} 접근',
-                        f'매수 누적량: {orderbook_analysis.get("cumulative_bid_volume", 0):.0f}',
-                        f'피보나치 0.382 지지선 근접',
-                        f'공포탐욕지수 30 이하 예상 구간'
-                    ]
-                }
-            ]
-
-            # 청산 레벨 설정
-            exit_levels = [
-                {
-                    'price': current_price * 1.02,  # 2% 상승 시
-                    'ratio': 0.3,
-                    'description': '1차 청산 (현재가 대비 +2%)',
-                    'reasons': [
-                        f'RSI {rsi:.1f} 상승 추세 확인',
-                        f'이동평균선 (MA20) 돌파 구간',
-                        f'거래량 증가율: {df["volume"].pct_change().iloc[-1]*100:.1f}%',
-                        f'매도벽 두께: {orderbook_analysis.get("resistance_depth", 1.0):.2f}',
-                        f'수익률 +2% 달성 시점'
-                    ]
-                },
-                {
-                    'price': current_price * 1.05,  # 5% 상승 시
-                    'ratio': 0.4,
-                    'description': '2차 청산 (현재가 대비 +5%)',
-                    'reasons': [
-                        f'RSI {rsi:.1f} 과매수 접근',
-                        f'볼린저 밴드 상단 접근 (상단: {current_price * 1.055:.0f})',
-                        f'매도 누적량: {orderbook_analysis.get("cumulative_ask_volume", 0):.0f}',
-                        f'피보나치 0.618 저항선 도달',
-                        f'평균 거래량 대비 {df["volume"].iloc[-1]/df["volume"].rolling(20).mean().iloc[-1]*100:.1f}% 수준'
-                    ]
-                },
-                {
-                    'price': current_price * 1.08,  # 8% 상승 시
-                    'ratio': 0.3,
-                    'description': '3차 청산 (현재가 대비 +8%)',
-                    'reasons': [
-                        f'RSI {rsi:.1f} 과매수 구간 진입',
-                        f'주요 저항선 {current_price * 1.085:.0f} 접근',
-                        f'매도/매수 비율: {orderbook_analysis.get("ask_bid_ratio", 1.0):.2f}',
-                        f'모멘텀 지표 고점 접근',
-                        f'공포탐욕지수 70 이상 예상 구간'
-                    ]
-                }
-            ]
-
-            # RSI 기반 전략 조정
-            if rsi > 70:
-                exit_levels = exit_levels[:2]  # 단기 청산 레벨만 유지
-
-            # 패턴 분석 기반 조정
-            if patterns and len(patterns) > 0:  # patterns가 리스트이므로 수정
-                pattern = patterns[0]  # 첫 번째 패턴 사용
-                if pattern['pattern_type'] == 'bullish':
-                    entry_levels = [level for level in entry_levels if level['price'] < current_price]
-                else:
-                    entry_levels = [level for level in entry_levels if level['price'] > current_price]
-
-            # 호가 분석 기반 조정
-            if orderbook_analysis:
-                if orderbook_analysis['bid_ask_ratio'] > 1.2:
-                    entry_levels = [level for level in entry_levels if level['price'] < current_price]
-                elif orderbook_analysis['bid_ask_ratio'] < 0.8:
-                    entry_levels = [level for level in entry_levels if level['price'] > current_price]
-
-            # 가격 예측 데이터 생성 (10분 단위)
-            price_predictions = []
-            for minutes in range(10, 61, 10):  # 10분부터 60분까지 10분 단위
-                try:
-                    predicted_data = self._calculate_predicted_price(
-                        df, 
-                        current_price, 
-                        minutes, 
-                        orderbook_analysis, 
-                        rsi
-                    )
-                    
-                    # 예측 데이터 구성
-                    prediction = {
-                        'time': f'+{minutes}분',
-                        'timestamp': predicted_data['timestamp'],
-                        'price': predicted_data['price'],
-                        'change_rate': (predicted_data['price'] - current_price) / current_price * 100,
-                        'confidence': self._calculate_prediction_confidence(minutes, orderbook_analysis),
-                        'signals': self._get_price_signals(predicted_data['price'], current_price, orderbook_analysis),
-                        'intermediate_points': predicted_data['intermediate_points']
-                    }
-                    price_predictions.append(prediction)
-                except Exception as e:
-                    logger.error(f"{minutes}분 예측 계산 중 오류: {str(e)}")
-                    continue
-
-            strategy_recommendation = {
-                'strategy_type': strategy.strategy_type.value,
-                'confidence_score': 0.7,  # 기본 신뢰도
-                'holding_period': '1-3일',  # 기본 보유기간
-                'risk_ratio': 0.02,  # 기본 리스크 비율 (2%)
-                'investment_amount': 1000000,  # 기본 투자금액 (100만원)
+            # 시장 상황 분석
+            market_condition = self._analyze_market_condition(df, rsi, orderbook_analysis)
+            
+            # 전략별 진입/청산 가격 조정
+            strategy_type = strategy.strategy_type.value
+            if strategy_type == 'SCALPING':
+                entry_ratio = 0.3  # 현재가 대비 하락폭
+                exit_ratio = 0.5   # 현재가 대비 상승폭
+            elif strategy_type == 'SWING':
+                entry_ratio = 0.5
+                exit_ratio = 1.0
+            elif strategy_type == 'POSITION':
+                entry_ratio = 1.0
+                exit_ratio = 2.0
+            else:
+                entry_ratio = 0.5
+                exit_ratio = 1.0
+            
+            # 시장 상황에 따른 조정
+            if market_condition['trend'] == 'BULLISH':
+                entry_ratio *= 0.8  # 상승장에서는 진입 가격을 높게
+                exit_ratio *= 1.2   # 목표가도 높게
+            elif market_condition['trend'] == 'BEARISH':
+                entry_ratio *= 1.2  # 하락장에서는 진입 가격을 낮게
+                exit_ratio *= 0.8   # 목표가도 낮게
+            
+            # 최적 진입 가격 계산
+            entry_levels = self._calculate_optimal_entry_levels(
+                df, current_price, rsi, orderbook_analysis, entry_ratio
+            )
+            
+            # 최적 청산 가격 계산
+            exit_levels = self._calculate_exit_levels(
+                df, current_price, rsi, orderbook_analysis, exit_ratio
+            )
+            
+            return {
+                'strategy_type': strategy_type,
+                'market_condition': market_condition,
                 'entry_levels': entry_levels,
                 'exit_levels': exit_levels,
-                'stop_loss': current_price * 0.95,  # 기본 손절가 (5% 손실)
-                'price_predictions': price_predictions
+                'stop_loss': round(current_price * 0.95, 0)  # 기본 손절가
             }
-
-            # RSI 기반 전략 조정
-            if rsi > 70:
-                strategy_recommendation['holding_period'] = '단기'
-                strategy_recommendation['confidence_score'] *= 0.8
-            elif rsi < 30:
-                strategy_recommendation['holding_period'] = '중기'
-                strategy_recommendation['confidence_score'] *= 1.2
-
-            # 패턴 분석 기반 조정
-            if patterns and len(patterns) > 0:  # patterns가 리스트이므로 수정
-                pattern = patterns[0]  # 첫 번째 패턴 사용
-                if pattern['pattern_type'] == 'bullish':
-                    strategy_recommendation['confidence_score'] *= 1.1
-                else:
-                    strategy_recommendation['confidence_score'] *= 0.9
-
-            # 호가 분석 기반 조정
-            if orderbook_analysis:
-                if orderbook_analysis['bid_ask_ratio'] > 1.2:
-                    strategy_recommendation['confidence_score'] *= 1.1
-                elif orderbook_analysis['bid_ask_ratio'] < 0.8:
-                    strategy_recommendation['confidence_score'] *= 0.9
-
-            return strategy_recommendation
-
+            
         except Exception as e:
-            logger.error(f"전략 추천 생성 중 오류 발생: {str(e)}")
+            logger.error(f"전략 추천 생성 중 오류: {str(e)}")
             return None
+
+    def _calculate_exit_levels(self, df, current_price, rsi, orderbook_analysis, exit_ratio):
+        """최적 청산 가격 계산"""
+        try:
+            # 볼린저 밴드 계산
+            df['BB_middle'] = df['close'].rolling(window=20).mean()
+            df['BB_upper'] = df['BB_middle'] + 2 * df['close'].rolling(window=20).std()
+            
+            # 피보나치 레벨 계산
+            recent_high = df['high'].rolling(20).max().iloc[-1]
+            recent_low = df['low'].rolling(20).min().iloc[-1]
+            fib_levels = {
+                '0.236': recent_high - (recent_high - recent_low) * 0.236,
+                '0.382': recent_high - (recent_high - recent_low) * 0.382,
+                '0.618': recent_high - (recent_high - recent_low) * 0.618
+            }
+            
+            # 주요 저항선 계산
+            resistance_levels = [
+                df['BB_upper'].iloc[-1],  # 볼린저 상단
+                fib_levels['0.618'],      # 피보나치 0.618
+                fib_levels['0.382'],      # 피보나치 0.382
+                recent_high               # 최근 고점
+            ]
+            
+            # 호가 데이터에서 강한 매도벽 위치 확인
+            ask_walls = orderbook_analysis.get('strong_resistance_levels', [])
+            resistance_levels.extend(ask_walls)
+            
+            # 현재가보다 높은 저항선들만 필터링
+            valid_resistances = [price for price in resistance_levels if price > current_price]
+            valid_resistances.sort()  # 낮은 가격순 정렬
+            
+            # 청산 강도 계산
+            def calculate_exit_strength(price):
+                strength = 0
+                
+                # RSI 기반 강도
+                if rsi > 70:  # 과매수 구간
+                    strength += 0.3
+                elif rsi < 30:  # 과매도 구간
+                    strength -= 0.2
+                
+                # 볼린저 밴드 기반 강도
+                bb_position = (price - df['BB_middle'].iloc[-1]) / (df['BB_upper'].iloc[-1] - df['BB_middle'].iloc[-1])
+                if bb_position > 0.8:  # 상단 근처
+                    strength += 0.2
+                
+                # 피보나치 레벨 기반 강도
+                if abs(price - fib_levels['0.618']) / current_price < 0.01:
+                    strength += 0.15
+                elif abs(price - fib_levels['0.382']) / current_price < 0.01:
+                    strength += 0.1
+                
+                # 호가 데이터 기반 강도
+                if price in ask_walls:
+                    strength += 0.2
+                
+                return strength
+            
+            # 최적 청산 가격 3개 선정
+            exit_levels = []
+            for i, price in enumerate(valid_resistances[:5]):
+                strength = calculate_exit_strength(price)
+                exit_price = round(price, 0)
+                
+                if i == 0:  # 첫 번째 저항선
+                    ratio = 0.3
+                    description = "1차 청산"
+                elif i == 1:  # 두 번째 저항선
+                    ratio = 0.4
+                    description = "2차 청산"
+                else:  # 세 번째 저항선
+                    ratio = 0.3
+                    description = "3차 청산"
+                
+                change_rate = (exit_price - current_price) / current_price * 100
+                
+                exit_levels.append({
+                    'price': exit_price,
+                    'ratio': ratio,
+                    'description': f"{description} (현재가 대비 +{change_rate:.1f}%)",
+                    'strength': strength,
+                    'reasons': [
+                        f'RSI {rsi:.1f} - {"과매수 구간" if rsi > 70 else "과매도 구간" if rsi < 30 else "중립 구간"}',
+                        f'매도세/매수세 비율: {1/orderbook_analysis["bid_ask_ratio"]:.2f}',
+                        f'볼린저 밴드 상단 대비: {((price - df["BB_upper"].iloc[-1]) / df["BB_upper"].iloc[-1] * 100):.1f}%',
+                        f'거래량 프로필: {self._analyze_volume_profile(df, price)}',
+                        f'피보나치 레벨 근접도: {min(abs(price - fib_levels["0.618"]), abs(price - fib_levels["0.382"])) / current_price * 100:.1f}%'
+                    ]
+                })
+                
+                if len(exit_levels) >= 3:
+                    break
+            
+            # 강도에 따라 정렬
+            exit_levels.sort(key=lambda x: x['strength'], reverse=True)
+            
+            return exit_levels
+            
+        except Exception as e:
+            logger.error(f"최적 청산 가격 계산 중 오류: {str(e)}")
+            return []
 
     def _calculate_predicted_price(self, df, current_price, minutes, orderbook_analysis, rsi):
         """시간대별 예측 가격 계산"""
@@ -783,7 +767,7 @@ class MarketAnalyzer:
                 'intermediate_points': []
             }
 
-    def _calculate_optimal_entry_levels(self, df, current_price, rsi, orderbook_analysis):
+    def _calculate_optimal_entry_levels(self, df, current_price, rsi, orderbook_analysis, entry_ratio):
         """최적 진입 가격 계산"""
         try:
             # 볼린저 밴드 계산
@@ -1004,4 +988,79 @@ class MarketAnalyzer:
             
         except Exception as e:
             logger.error(f"세력 개입 분석 중 오류: {str(e)}")
-            return None 
+            return None
+
+    def _analyze_market_condition(self, df, rsi, orderbook_analysis):
+        """시장 상황 분석"""
+        try:
+            # 추세 분석
+            df['MA5'] = df['close'].rolling(5).mean()
+            df['MA20'] = df['close'].rolling(20).mean()
+            short_ma = df['MA5'].iloc[-1]
+            long_ma = df['MA20'].iloc[-1]
+            trend = 'BULLISH' if short_ma > long_ma else 'BEARISH'
+            
+            # 변동성 분석
+            volatility = df['close'].pct_change().std() * 100
+            
+            # 거래량 분석
+            volume_trend = df['volume'].rolling(5).mean() / df['volume'].rolling(20).mean()
+            
+            # 호가 분석
+            bid_ask_ratio = orderbook_analysis.get('bid_ask_ratio', 1.0)
+            
+            # 시장 상황 설명 생성
+            description = (
+                f"{'상승' if trend == 'BULLISH' else '하락'}추세, "
+                f"변동성 {volatility:.1f}%, "
+                f"거래량 {'증가' if volume_trend.iloc[-1] > 1 else '감소'} 중, "
+                f"{'매수우위' if bid_ask_ratio > 1.1 else '매도우위' if bid_ask_ratio < 0.9 else '균형'} 시장"
+            )
+            
+            return {
+                'trend': trend,
+                'volatility': volatility,
+                'volume_trend': volume_trend.iloc[-1],
+                'bid_ask_ratio': bid_ask_ratio,
+                'description': description,
+                'details': {
+                    'ma_trend': {
+                        'short_ma': short_ma,
+                        'long_ma': long_ma,
+                        'direction': 'UP' if short_ma > long_ma else 'DOWN',
+                        'strength': abs(short_ma - long_ma) / long_ma * 100
+                    },
+                    'volume_analysis': {
+                        'current_volume': df['volume'].iloc[-1],
+                        'avg_volume': df['volume'].rolling(20).mean().iloc[-1],
+                        'volume_ratio': df['volume'].iloc[-1] / df['volume'].rolling(20).mean().iloc[-1]
+                    },
+                    'rsi_condition': {
+                        'value': rsi,
+                        'status': (
+                            '과매수' if rsi > 70 
+                            else '과매도' if rsi < 30 
+                            else '중립'
+                        )
+                    },
+                    'orderbook_condition': {
+                        'bid_ask_ratio': bid_ask_ratio,
+                        'status': (
+                            '매수우위' if bid_ask_ratio > 1.1 
+                            else '매도우위' if bid_ask_ratio < 0.9 
+                            else '균형'
+                        )
+                    }
+                }
+            }
+            
+        except Exception as e:
+            logger.error(f"시장 상황 분석 중 오류: {str(e)}")
+            return {
+                'trend': 'NEUTRAL',
+                'volatility': 0,
+                'volume_trend': 1.0,
+                'bid_ask_ratio': 1.0,
+                'description': '분석 실패',
+                'details': {}
+            } 

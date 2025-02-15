@@ -1678,3 +1678,9 @@
 2025-02-15 11:08:02,533 - market_analyzer - ERROR - 13일 예측 계산 중 오류: name 'current_price' is not defined
 2025-02-15 11:08:02,533 - market_analyzer - ERROR - 14일 예측 계산 중 오류: name 'current_price' is not defined
 2025-02-15 11:08:16,521 - chart_visualizer - ERROR - 예측 차트 생성 중 오류: 'predicted_range'
+2025-02-15 11:16:51,385 - market_analyzer - ERROR - 전략 추천 생성 중 오류: 'MarketAnalyzer' object has no attribute '_analyze_market_condition'
+2025-02-15 11:17:11,664 - market_analyzer - ERROR - 전략 추천 생성 중 오류: 'MarketAnalyzer' object has no attribute '_analyze_market_condition'
+2025-02-15 11:17:28,728 - market_analyzer - ERROR - 전략 추천 생성 중 오류: 'MarketAnalyzer' object has no attribute '_analyze_market_condition'
+2025-02-15 11:17:35,248 - market_analyzer - ERROR - 전략 추천 생성 중 오류: 'MarketAnalyzer' object has no attribute '_analyze_market_condition'
+2025-02-15 11:17:55,527 - market_analyzer - ERROR - 전략 추천 생성 중 오류: 'MarketAnalyzer' object has no attribute '_analyze_market_condition'
+2025-02-15 11:18:15,812 - market_analyzer - ERROR - 전략 추천 생성 중 오류: 'MarketAnalyzer' object has no attribute '_analyze_market_condition'
