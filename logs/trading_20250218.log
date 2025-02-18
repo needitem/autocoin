@@ -1,0 +1,191 @@
+2025-02-18 13:51:54,196 - crypto_trading - ERROR - Error #1: Error in market analysis
+2025-02-18 13:51:54,196 - crypto_trading - DEBUG - Error details: 'DataFetcher' object has no attribute 'fetch_data'
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 101, in run
+    market_data = self.data_fetcher.fetch_data(symbol, timeframe)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFetcher' object has no attribute 'fetch_data'
+
+2025-02-18 13:51:54,197 - crypto_trading - ERROR - Error #2: Error in signal generation
+2025-02-18 13:51:54,198 - crypto_trading - DEBUG - Error details: cannot access local variable 'market_data' where it is not associated with a value
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 118, in run
+    signals = self.investment_strategy.generate_signals(market_data)
+                                                        ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'market_data' where it is not associated with a value
+
+2025-02-18 13:51:54,799 - crypto_trading - ERROR - Error #3: Error fetching news
+2025-02-18 13:51:54,800 - crypto_trading - DEBUG - Error details: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 54, in get_latest_news
+    response.raise_for_status()
+  File "C:\Users\p22418\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 137, in run
+    news_data = self.news_analyzer.get_latest_news(symbol.split('/')[0])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 87, in get_latest_news
+    raise Exception(f"Failed to fetch news: {str(e)}")
+Exception: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+2025-02-18 13:52:06,519 - crypto_trading - ERROR - Error #1: Error in market analysis
+2025-02-18 13:52:06,519 - crypto_trading - DEBUG - Error details: 'DataFetcher' object has no attribute 'fetch_data'
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 101, in run
+    market_data = self.data_fetcher.fetch_data(symbol, timeframe)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFetcher' object has no attribute 'fetch_data'
+
+2025-02-18 13:52:06,521 - crypto_trading - ERROR - Error #2: Error in signal generation
+2025-02-18 13:52:06,521 - crypto_trading - DEBUG - Error details: cannot access local variable 'market_data' where it is not associated with a value
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 118, in run
+    signals = self.investment_strategy.generate_signals(market_data)
+                                                        ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'market_data' where it is not associated with a value
+
+2025-02-18 13:52:07,100 - crypto_trading - ERROR - Error #3: Error fetching news
+2025-02-18 13:52:07,102 - crypto_trading - DEBUG - Error details: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 54, in get_latest_news
+    response.raise_for_status()
+  File "C:\Users\p22418\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 137, in run
+    news_data = self.news_analyzer.get_latest_news(symbol.split('/')[0])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 87, in get_latest_news
+    raise Exception(f"Failed to fetch news: {str(e)}")
+Exception: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+2025-02-18 14:04:10,907 - crypto_trading - ERROR - Error #1: Error in market analysis
+2025-02-18 14:04:10,909 - crypto_trading - DEBUG - Error details: 'DataFetcher' object has no attribute 'fetch_data'
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\core\app.py", line 101, in run
+    market_data = self.data_fetcher.fetch_data(symbol, timeframe)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFetcher' object has no attribute 'fetch_data'
+
+2025-02-18 14:04:10,910 - crypto_trading - ERROR - Error #2: Error in signal generation
+2025-02-18 14:04:10,911 - crypto_trading - DEBUG - Error details: cannot access local variable 'market_data' where it is not associated with a value
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\core\app.py", line 118, in run
+    signals = self.investment_strategy.generate_signals(market_data)
+                                                        ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'market_data' where it is not associated with a value
+
+2025-02-18 14:04:11,523 - crypto_trading - ERROR - Error #3: Error fetching news
+2025-02-18 14:04:11,524 - crypto_trading - DEBUG - Error details: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 54, in get_latest_news
+    response.raise_for_status()
+  File "C:\Users\p22418\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\core\app.py", line 137, in run
+    news_data = self.news_analyzer.get_latest_news(symbol.split('/')[0])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 87, in get_latest_news
+    raise Exception(f"Failed to fetch news: {str(e)}")
+Exception: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+2025-02-18 14:06:18,131 - crypto_trading - ERROR - Error #1: Error fetching news
+2025-02-18 14:06:18,131 - crypto_trading - DEBUG - Error details: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 54, in get_latest_news
+    response.raise_for_status()
+  File "C:\Users\p22418\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\core\app.py", line 143, in run
+    news_data = self.news_analyzer.get_latest_news(base_symbol)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 87, in get_latest_news
+    raise Exception(f"Failed to fetch news: {str(e)}")
+Exception: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+2025-02-18 14:07:47,035 - crypto_trading - ERROR - Error #1: Error fetching news
+2025-02-18 14:07:47,036 - crypto_trading - DEBUG - Error details: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 54, in get_latest_news
+    response.raise_for_status()
+  File "C:\Users\p22418\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\弊成\autocoin\src\core\app.py", line 143, in run
+    news_data = self.news_analyzer.get_latest_news(base_symbol)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\弊成\autocoin\src\news\latest_news.py", line 87, in get_latest_news
+    raise Exception(f"Failed to fetch news: {str(e)}")
+Exception: Failed to fetch news: 400 Client Error: Bad Request for url: https://cryptopanic.com/api/v1/posts/?currencies=BTC&kind=news&limit=50
+
+2025-02-18 14:26:53,896 - crypto_trading - ERROR - Error #1: Error in market analysis
+2025-02-18 14:26:53,897 - crypto_trading - DEBUG - Error details: 'DataFetcher' object has no attribute 'fetch_data'
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 101, in run
+    market_data = self.data_fetcher.fetch_data(symbol, timeframe)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFetcher' object has no attribute 'fetch_data'
+
+2025-02-18 14:26:53,899 - crypto_trading - ERROR - Error #2: Error in signal generation
+2025-02-18 14:26:53,899 - crypto_trading - DEBUG - Error details: cannot access local variable 'market_data' where it is not associated with a value
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 118, in run
+    signals = self.investment_strategy.generate_signals(market_data)
+                                                        ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'market_data' where it is not associated with a value
+
+2025-02-18 14:26:53,901 - crypto_trading - ERROR - Error #3: Error fetching news
+2025-02-18 14:26:53,901 - crypto_trading - DEBUG - Error details: unhashable type: 'slice'
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 139, in run
+    for article in news_data[:5]:  # Display top 5 news
+                   ~~~~~~~~~^^^^
+TypeError: unhashable type: 'slice'
+
+2025-02-18 15:02:33,007 - crypto_trading - ERROR - Error #1: Error in market analysis
+2025-02-18 15:02:33,007 - crypto_trading - DEBUG - Error details: 'DataFetcher' object has no attribute 'fetch_data'
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 101, in run
+    market_data = self.data_fetcher.fetch_data(symbol, timeframe)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFetcher' object has no attribute 'fetch_data'
+
+2025-02-18 15:02:33,010 - crypto_trading - ERROR - Error #2: Error in signal generation
+2025-02-18 15:02:33,011 - crypto_trading - DEBUG - Error details: cannot access local variable 'market_data' where it is not associated with a value
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 118, in run
+    signals = self.investment_strategy.generate_signals(market_data)
+                                                        ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'market_data' where it is not associated with a value
+
+2025-02-18 15:02:33,012 - crypto_trading - ERROR - Error #3: Error fetching news
+2025-02-18 15:02:33,013 - crypto_trading - DEBUG - Error details: unhashable type: 'slice'
+Traceback: Traceback (most recent call last):
+  File "D:\弊成\autocoin\app.py", line 139, in run
+    for article in news_data[:5]:  # Display top 5 news
+                   ~~~~~~~~~^^^^
+TypeError: unhashable type: 'slice'
+

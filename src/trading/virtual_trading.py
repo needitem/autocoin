@@ -4,7 +4,7 @@ Virtual Trading Module
 This module handles virtual trading functionality based on AI trading signals.
 """
 
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 import pandas as pd
 from datetime import datetime
 import logging
@@ -31,7 +31,8 @@ class VirtualTrading:
                      current_price: float,
                      confidence: float,
                      max_position_size: float = 50.0,
-                     min_trade_amount: float = 5000.0) -> Dict[str, Any]:
+                     min_trade_amount: float = 5000.0,
+                     orderbook: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
         """
         Execute a virtual trade based on AI signal.
         
@@ -42,6 +43,7 @@ class VirtualTrading:
             confidence (float): AI confidence level
             max_position_size (float): Maximum position size as percentage of total balance
             min_trade_amount (float): Minimum trade amount in KRW
+            orderbook (Optional[List[Dict[str, Any]]]): Market orderbook data
             
         Returns:
             Dict[str, Any]: Trade result
@@ -52,9 +54,9 @@ class VirtualTrading:
             
             # Calculate trade amount based on confidence and max position size
             if action == 'BUY':
-                return self._execute_buy(market, current_price, confidence, max_position_size, min_trade_amount)
+                return self._execute_buy(market, current_price, confidence, max_position_size, min_trade_amount, orderbook)
             elif action == 'SELL':
-                return self._execute_sell(market, current_price, confidence)
+                return self._execute_sell(market, current_price, confidence, orderbook)
             
             return self._get_trading_status(market, "잘못된 거래 신호입니다")
             
@@ -68,7 +70,7 @@ class VirtualTrading:
                     confidence: float,
                     max_position_size: float,
                     min_trade_amount: float,
-                    orderbook: List[Dict[str, Any]] = None) -> Dict[str, Any]:
+                    orderbook: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
         """Execute buy order with orderbook simulation."""
         try:
             # Calculate maximum amount based on position size limit
@@ -164,7 +166,7 @@ class VirtualTrading:
                      market: str, 
                      current_price: float, 
                      confidence: float,
-                     orderbook: List[Dict[str, Any]] = None) -> Dict[str, Any]:
+                     orderbook: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
         """Execute sell order with orderbook simulation."""
         try:
             if market not in self.holdings or self.holdings[market]['amount'] <= 0:
@@ -226,7 +228,7 @@ class VirtualTrading:
             
             # Calculate profit/loss
             avg_buy_price = self.holdings.get(market, {}).get('avg_price', current_price)
-            profit_loss = ((avg_price - avg_buy_price) / avg_buy_price) * 100
+            profit = total_amount - (total_quantity * avg_buy_price)
             
             # Record trade
             self.trade_history.append({
@@ -236,7 +238,7 @@ class VirtualTrading:
                 'price': avg_price,
                 'amount': total_quantity,
                 'revenue': total_amount,
-                'profit_loss': profit_loss,
+                'profit': profit,
                 'confidence': confidence,
                 'balance': self.balance,
                 'executed_orders': executed_orders
@@ -246,7 +248,7 @@ class VirtualTrading:
             return self._get_trading_status(
                 market, 
                 f"매도 체결 완료:\n" + "\n".join(executed_details) + 
-                f"\n평균단가: ₩{avg_price:,.0f} (수익률: {profit_loss:.2f}%)"
+                f"\n평균단가: ₩{avg_price:,.0f} (수익률: {(profit / (total_quantity * avg_buy_price) * 100):.2f}%)"
             )
             
         except Exception as e:
@@ -287,4 +289,43 @@ class VirtualTrading:
             'total_value': portfolio['total_value'],
             'total_return': portfolio['total_return'],
             'holdings': portfolio['holdings']
-        } 
+        }
+
+    def get_trade_history(self) -> List[Dict[str, Any]]:
+        """Get the trading history."""
+        return self.trade_history
+
+    def get_max_drawdown(self) -> float:
+        """Calculate maximum drawdown percentage."""
+        if not self.trade_history:
+            return 0.0
+        
+        balance_history = []
+        current_balance = self.initial_balance
+        
+        for trade in self.trade_history:
+            if trade['action'] == 'BUY':
+                current_balance -= trade['cost']
+            else:  # SELL
+                current_balance += trade.get('revenue', 0)
+            balance_history.append(current_balance)
+        
+        if not balance_history:
+            return 0.0
+        
+        # Calculate running maximum
+        running_max = pd.Series(balance_history).expanding().max()
+        # Calculate drawdowns
+        drawdowns = (running_max - balance_history) / running_max * 100
+        
+        return float(drawdowns.max())
+
+    def get_profit_factor(self) -> float:
+        """Calculate profit factor."""
+        if not self.trade_history:
+            return 1.0
+        
+        total_profit = sum(trade.get('profit', 0) for trade in self.trade_history if trade.get('profit', 0) > 0)
+        total_loss = abs(sum(trade.get('profit', 0) for trade in self.trade_history if trade.get('profit', 0) < 0))
+        
+        return float(total_profit / total_loss) if total_loss > 0 else float('inf') 

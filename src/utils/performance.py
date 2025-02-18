@@ -59,7 +59,7 @@ class PerformanceMonitor:
             # Calculate trade duration metrics
             durations = self._calculate_trade_durations(trades)
             
-            return {
+        return {
                 'total_trades': total_trades,
                 'winning_trades': winning_trades,
                 'losing_trades': losing_trades,
@@ -111,7 +111,7 @@ class PerformanceMonitor:
                 'max_drawdown': float(np.max(drawdowns)) if len(drawdowns) > 0 else 0.0,
                 'current_drawdown': float(drawdowns[-1]) if len(drawdowns) > 0 else 0.0
             }
-        except Exception as e:
+            except Exception as e:
             self.logger.error(f"Error calculating drawdown: {str(e)}")
             return {'max_drawdown': 0.0, 'current_drawdown': 0.0}
 

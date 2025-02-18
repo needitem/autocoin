@@ -134,7 +134,7 @@ class InvestmentStrategy:
                 signals = self._generate_moderate_signals(market_conditions)
             elif self.strategy_type == TradingStrategyType.AGGRESSIVE:
                 signals = self._generate_aggressive_signals(market_conditions)
-            else:
+        else:
                 signals = self._generate_general_signals(market_conditions)
             
             return {

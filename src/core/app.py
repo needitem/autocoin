@@ -11,6 +11,7 @@ import plotly.graph_objects as go
 from datetime import datetime, timedelta
 import logging
 from typing import List, Dict, Any
+import time
 
 # Add parent directory to Python path
 parent_dir = str(Path(__file__).parent.parent.parent)
@@ -104,6 +105,18 @@ def get_market_summary(conditions: Dict[str, Any]) -> str:
     return base_summary
 
 def main():
+    # Auto-refresh every second
+    st.set_page_config(page_title='Upbit 암호화폐 트레이딩 도우미', layout='wide')
+    
+    if 'last_refresh' not in st.session_state:
+        st.session_state.last_refresh = time.time()
+    
+    current_time = time.time()
+    if current_time - st.session_state.last_refresh >= 1:
+        st.session_state.last_refresh = current_time
+        time.sleep(1)
+        st.rerun()
+
     st.title('Upbit 암호화폐 트레이딩 도우미 🤖')
     
     # Sidebar configuration
@@ -254,95 +267,149 @@ def main():
         st.subheader("가상 매매 💰")
         
         # Virtual trading controls
-        trading_col1, trading_col2 = st.columns([1, 2])
+        trading_col1, trading_col2 = st.columns([1, 3])
         
         with trading_col1:
-            if not st.session_state.trading_enabled:
-                if st.button("가상 매매 시작", type="primary"):
-                    st.session_state.trading_enabled = True
-                    st.session_state.virtual_trading.reset()
-                    st.rerun()
-            else:
-                if st.button("가상 매매 종료", type="secondary"):
-                    st.session_state.trading_enabled = False
-                    st.rerun()
-        
-        # Execute virtual trade if enabled
-        if st.session_state.trading_enabled:
-            # Check trading hours if enabled
-            current_time = datetime.now().time()
-            can_trade = True
+            trading_enabled = st.checkbox("가상 매매 활성화", value=st.session_state.trading_enabled)
+            st.session_state.trading_enabled = trading_enabled
             
-            if trading_hours_enabled:
-                if start_time <= end_time:
+            if trading_enabled:
+                # Check trading hours if enabled
+                can_trade = True
+                if st.session_state.trading_settings['trading_hours_enabled']:
+                    current_time = datetime.now().time()
+                    start_time = st.session_state.trading_settings['start_time']
+                    end_time = st.session_state.trading_settings['end_time']
                     can_trade = start_time <= current_time <= end_time
-                else:  # Handle overnight trading (e.g., 23:00 ~ 09:00)
-                    can_trade = current_time >= start_time or current_time <= end_time
-            
-            if can_trade and confidence >= st.session_state.trading_settings['min_confidence']:
-                trade_result = st.session_state.virtual_trading.execute_trade(
-                    selected_market,
-                    action,
-                    current_price,
-                    confidence,
-                    max_position_size=st.session_state.trading_settings['max_position_size'],
-                    min_trade_amount=st.session_state.trading_settings['min_trade_amount'],
-                    orderbook=orderbook
-                )
-            else:
-                if not can_trade:
-                    st.info("현재 거래 시간이 아닙니다.")
-                elif confidence < st.session_state.trading_settings['min_confidence']:
-                    st.info(f"신뢰도({confidence:.2f})가 최소 신뢰도({st.session_state.trading_settings['min_confidence']:.2f})보다 낮습니다.")
-            
+                
+                # Check confidence threshold
+                confidence_sufficient = confidence >= st.session_state.trading_settings['min_confidence']
+                
+                if can_trade and confidence_sufficient and action != 'HOLD':
+                    trade_result = st.session_state.virtual_trading.execute_trade(
+                        market=selected_market,
+                        action=action,
+                        current_price=current_price,
+                        confidence=confidence,
+                        max_position_size=st.session_state.trading_settings['max_position_size'],
+                        min_trade_amount=st.session_state.trading_settings['min_trade_amount'],
+                        orderbook=orderbook
+                    )
+                    st.success(trade_result['message'])
+                elif not can_trade:
+                    st.warning("현재 거래 시간이 아닙니다.")
+                elif not confidence_sufficient:
+                    st.warning(f"신뢰도({confidence:.1f})가 최소 기준({st.session_state.trading_settings['min_confidence']:.1f})보다 낮습니다.")
+                elif action == 'HOLD':
+                    st.info("현재 관망 신호입니다.")
+        
+        with trading_col2:
             # Display portfolio status
             portfolio = st.session_state.virtual_trading.get_portfolio_status()
             
             status_col1, status_col2, status_col3, status_col4 = st.columns(4)
             
             with status_col1:
-                st.metric(
-                    "보유 현금",
-                    f"₩{portfolio['current_balance']:,.0f}",
-                    f"₩{portfolio['current_balance'] - portfolio['initial_balance']:,.0f}"
-                )
-            
+                st.metric("초기 자본", f"₩{portfolio['initial_balance']:,.0f}")
             with status_col2:
-                st.metric(
-                    "포트폴리오 총액",
-                    f"₩{portfolio['total_value']:,.0f}",
-                    f"{portfolio['total_return']:.2f}%"
-                )
-            
+                st.metric("현재 현금", f"₩{portfolio['current_balance']:,.0f}")
             with status_col3:
-                st.metric("거래 횟수", portfolio['trade_count'])
-            
+                st.metric("포트폴리오 가치", f"₩{portfolio['total_value']:,.0f}")
             with status_col4:
-                running_time = portfolio['current_time'] - portfolio['start_time']
-                st.metric("운영 시간", f"{running_time.total_seconds() / 3600:.1f}시간")
+                st.metric("총 수익률", f"{portfolio['total_return']:.2f}%")
             
             # Display holdings
             if portfolio['holdings']:
                 st.markdown("### 보유 자산")
-                holdings_df = pd.DataFrame(portfolio['holdings'])
-                holdings_df['평가금액'] = holdings_df['amount'] * holdings_df['avg_price']
-                holdings_df['수익률'] = ((current_price - holdings_df['avg_price']) / holdings_df['avg_price']) * 100
+                for holding in portfolio['holdings']:
+                    st.text(f"{holding['market']}: {holding['amount']:.8f} (평균단가: ₩{holding['avg_price']:,.0f})")
+
+        # Trading Dashboard
+        st.markdown("---")
+        st.subheader("트레이딩 대시보드 📊")
+        
+        # Create three columns for the dashboard
+        dash_col1, dash_col2, dash_col3 = st.columns(3)
+        
+        with dash_col1:
+            st.markdown("### 거래 요약")
+            trades = st.session_state.virtual_trading.get_trade_history()
+            if trades:
+                total_trades = len(trades)
+                profitable_trades = sum(1 for trade in trades if trade.get('profit', 0) > 0)
+                win_rate = (profitable_trades / total_trades * 100) if total_trades > 0 else 0
                 
-                st.dataframe(
-                    holdings_df.rename(columns={
-                        'market': '마켓',
-                        'amount': '보유수량',
-                        'avg_price': '평균단가'
-                    }).style.format({
-                        '보유수량': '{:.8f}',
-                        '평균단가': '₩{:,.0f}',
-                        '평가금액': '₩{:,.0f}',
-                        '수익률': '{:.2f}%'
-                    })
-                )
-            
-            # Display last trade message
-            st.info(trade_result['message'])
+                st.metric("총 거래 횟수", f"{total_trades}회")
+                st.metric("승률", f"{win_rate:.1f}%")
+                
+                # Calculate average profit/loss
+                total_profit = sum(trade.get('profit', 0) for trade in trades)
+                avg_profit = total_profit / total_trades if total_trades > 0 else 0
+                st.metric("평균 수익", f"₩{avg_profit:,.0f}")
+            else:
+                st.info("아직 거래 내역이 없습니다.")
+        
+        with dash_col2:
+            st.markdown("### 최근 거래")
+            if trades:
+                recent_trades = trades[-5:]  # Get last 5 trades
+                for trade in reversed(recent_trades):
+                    action = trade.get('action', '')
+                    market = trade.get('market', '')
+                    price = trade.get('price', 0)
+                    amount = trade.get('amount', 0)
+                    
+                    # Calculate profit/loss
+                    if action == 'SELL':
+                        profit = trade.get('revenue', 0) - trade.get('cost', 0)
+                    else:
+                        profit = 0
+                    
+                    color = 'green' if profit > 0 else 'red' if profit < 0 else 'gray'
+                    emoji = '📈' if profit > 0 else '📉' if profit < 0 else '➡️'
+                    
+                    st.markdown(
+                        f"""
+                        <div style='
+                            padding: 10px;
+                            border-left: 4px solid {color};
+                            background-color: rgba(0, 0, 0, 0.05);
+                            border-radius: 4px;
+                            margin-bottom: 10px;
+                        '>
+                            <div style='color: {color}; font-weight: bold;'>
+                                {emoji} {action} {market}
+                            </div>
+                            <div style='font-size: 0.9em; margin-top: 5px;'>
+                                💰 가격: ₩{price:,.0f}<br>
+                                📊 수량: {amount:.8f}
+                            </div>
+                            {f'<div style="color: {color}; margin-top: 5px;">손익: ₩{profit:,.0f}</div>' if action == 'SELL' else ''}
+                        </div>
+                        """,
+                        unsafe_allow_html=True
+                    )
+            else:
+                st.info("아직 거래 내역이 없습니다.")
+        
+        with dash_col3:
+            st.markdown("### 성과 지표")
+            if trades:
+                # Calculate performance metrics
+                total_profit = sum(trade.get('profit', 0) for trade in trades)
+                max_drawdown = st.session_state.virtual_trading.get_max_drawdown()
+                profit_factor = st.session_state.virtual_trading.get_profit_factor()
+                
+                st.metric("총 손익", f"₩{total_profit:,.0f}")
+                st.metric("최대 낙폭", f"{max_drawdown:.1f}%")
+                st.metric("수익 팩터", f"{profit_factor:.2f}")
+                
+                # Risk-adjusted return
+                if max_drawdown != 0:
+                    risk_adjusted_return = (total_profit / portfolio['initial_balance']) / (max_drawdown / 100)
+                    st.metric("위험조정수익률", f"{risk_adjusted_return:.2f}")
+            else:
+                st.info("아직 성과 지표를 계산할 수 없습니다.")
         
         # Display detailed analysis and price chart (existing code)
         st.markdown("---")
