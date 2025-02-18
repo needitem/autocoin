@@ -1,7 +1,7 @@
 """
-Virtual Trading Module
+Virtual Trading Module for Strategy Testing
 
-This module handles virtual trading functionality based on AI trading signals.
+This module simulates trading with virtual money to test trading strategies.
 """
 
 from typing import Dict, List, Any, Optional
@@ -10,322 +10,138 @@ from datetime import datetime
 import logging
 
 class VirtualTrading:
-    """Class for managing virtual trading."""
+    """가상 거래를 통한 전략 테스트를 위한 클래스입니다."""
     
     def __init__(self, initial_balance: float = 10_000_000):
-        """Initialize virtual trading with initial balance."""
+        """초기 잔고로 가상 거래를 초기화합니다."""
         self.logger = logging.getLogger(__name__)
         self.initial_balance = initial_balance
         self.reset()
     
     def reset(self) -> None:
-        """Reset trading state."""
+        """거래 상태를 초기화합니다."""
         self.balance = self.initial_balance
-        self.holdings = {}  # {market: {'amount': float, 'avg_price': float}}
+        self.holdings = {}  # market -> {quantity, avg_price}
         self.trade_history = []
+        self.total_profit = 0.0
+        self.win_count = 0
+        self.loss_count = 0
         self.start_time = datetime.now()
     
-    def execute_trade(self, 
-                     market: str, 
-                     action: str, 
-                     current_price: float,
-                     confidence: float,
-                     max_position_size: float = 50.0,
-                     min_trade_amount: float = 5000.0,
-                     orderbook: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
-        """
-        Execute a virtual trade based on AI signal.
+    def buy(self, market: str, price: float, amount: float) -> bool:
+        if amount <= 0 or price <= 0 or amount > self.balance:
+            return False
+            
+        quantity = amount / price
+        if quantity <= 0:
+            return False
+            
+        holding = self.holdings.get(market, {'quantity': 0, 'avg_price': 0})
+        total_quantity = holding['quantity'] + quantity
+        total_cost = (holding['quantity'] * holding['avg_price']) + amount
         
-        Args:
-            market (str): Market symbol
-            action (str): Trading action (BUY/SELL/HOLD)
-            current_price (float): Current market price
-            confidence (float): AI confidence level
-            max_position_size (float): Maximum position size as percentage of total balance
-            min_trade_amount (float): Minimum trade amount in KRW
-            orderbook (Optional[List[Dict[str, Any]]]): Market orderbook data
-            
-        Returns:
-            Dict[str, Any]: Trade result
-        """
-        try:
-            if action == 'HOLD':
-                return self._get_trading_status(market, "관망 중입니다")
-            
-            # Calculate trade amount based on confidence and max position size
-            if action == 'BUY':
-                return self._execute_buy(market, current_price, confidence, max_position_size, min_trade_amount, orderbook)
-            elif action == 'SELL':
-                return self._execute_sell(market, current_price, confidence, orderbook)
-            
-            return self._get_trading_status(market, "잘못된 거래 신호입니다")
-            
-        except Exception as e:
-            self.logger.error(f"Error executing trade: {str(e)}")
-            return self._get_trading_status(market, f"거래 실행 오류: {str(e)}")
+        self.holdings[market] = {
+            'quantity': total_quantity,
+            'avg_price': total_cost / total_quantity if total_quantity > 0 else 0
+        }
+        
+        self.balance -= amount
+        self._add_trade_history('BUY', market, price, quantity, amount)
+        
+        return True
     
-    def _execute_buy(self, 
-                    market: str, 
-                    current_price: float, 
-                    confidence: float,
-                    max_position_size: float,
-                    min_trade_amount: float,
-                    orderbook: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
-        """Execute buy order with orderbook simulation."""
-        try:
-            # Calculate maximum amount based on position size limit
-            max_position_amount = self.balance * (max_position_size / 100.0)
-            max_amount = min(max_position_amount, self.balance * confidence)
+    def sell(self, market: str, price: float, amount: float) -> bool:
+        if amount <= 0 or price <= 0:
+            return False
             
-            if max_amount < min_trade_amount:
-                return self._get_trading_status(market, f"거래금액({max_amount:,.0f}원)이 최소 거래금액({min_trade_amount:,.0f}원)보다 작습니다")
+        holding = self.holdings.get(market)
+        if not holding:
+            return False
             
-            # Simulate order execution with orderbook
-            executed_orders = []
-            remaining_amount = max_amount
-            avg_price = 0
-            total_quantity = 0
+        quantity = amount / price
+        if quantity <= 0 or quantity > holding['quantity']:
+            return False
             
-            if orderbook and orderbook[0].get('orderbook_units'):
-                for order in orderbook[0]['orderbook_units']:
-                    ask_price = float(order['ask_price'])
-                    ask_size = float(order['ask_size'])
-                    
-                    # Calculate how much we can buy at this price level
-                    possible_amount = min(remaining_amount, ask_price * ask_size)
-                    if possible_amount >= min_trade_amount:
-                        quantity = possible_amount / ask_price
-                        executed_orders.append({
-                            'price': ask_price,
-                            'quantity': quantity,
-                            'amount': possible_amount
-                        })
-                        
-                        avg_price = ((avg_price * total_quantity) + (ask_price * quantity)) / (total_quantity + quantity)
-                        total_quantity += quantity
-                        remaining_amount -= possible_amount
-                        
-                        if remaining_amount < min_trade_amount:
-                            break
-            else:
-                # Fallback to current price if no orderbook
-                quantity = max_amount / current_price
-                executed_orders.append({
-                    'price': current_price,
-                    'quantity': quantity,
-                    'amount': max_amount
-                })
-                avg_price = current_price
-                total_quantity = quantity
-            
-            if not executed_orders:
-                return self._get_trading_status(market, "호가창에서 적절한 매도 물량을 찾을 수 없습니다")
-            
-            # Execute the trade
-            total_cost = sum(order['amount'] for order in executed_orders)
-            self.balance -= total_cost
-            
-            # Update holdings
-            if market in self.holdings:
-                total_amount = self.holdings[market]['amount'] + total_quantity
-                total_cost_with_existing = (self.holdings[market]['amount'] * self.holdings[market]['avg_price']) + total_cost
-                self.holdings[market] = {
-                    'amount': total_amount,
-                    'avg_price': total_cost_with_existing / total_amount
-                }
-            else:
-                self.holdings[market] = {
-                    'amount': total_quantity,
-                    'avg_price': avg_price
-                }
-            
-            # Record trade
-            self.trade_history.append({
-                'timestamp': datetime.now(),
-                'market': market,
-                'action': 'BUY',
-                'price': avg_price,
-                'amount': total_quantity,
-                'cost': total_cost,
-                'confidence': confidence,
-                'balance': self.balance,
-                'executed_orders': executed_orders
-            })
-            
-            executed_details = [f"{order['quantity']:.8f} @ ₩{order['price']:,.0f}" for order in executed_orders]
-            return self._get_trading_status(
-                market, 
-                f"매수 체결 완료:\n" + "\n".join(executed_details) + f"\n평균단가: ₩{avg_price:,.0f}"
-            )
-            
-        except Exception as e:
-            self.logger.error(f"Error executing buy order: {str(e)}")
-            return self._get_trading_status(market, f"매수 주문 실행 오류: {str(e)}")
+        profit = (price - holding['avg_price']) * quantity
+        self.total_profit += profit
+        
+        if profit > 0:
+            self.win_count += 1
+        elif profit < 0:
+            self.loss_count += 1
+        
+        remaining_quantity = holding['quantity'] - quantity
+        if remaining_quantity > 0:
+            self.holdings[market]['quantity'] = remaining_quantity
+        else:
+            del self.holdings[market]
+        
+        self.balance += amount
+        self._add_trade_history('SELL', market, price, quantity, amount, profit)
+        
+        return True
     
-    def _execute_sell(self, 
-                     market: str, 
-                     current_price: float, 
-                     confidence: float,
-                     orderbook: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
-        """Execute sell order with orderbook simulation."""
-        try:
-            if market not in self.holdings or self.holdings[market]['amount'] <= 0:
-                return self._get_trading_status(market, "보유 수량이 없습니다")
-            
-            # Calculate sell amount based on confidence
-            available_amount = self.holdings[market]['amount']
-            sell_quantity = available_amount * confidence
-            
-            # Simulate order execution with orderbook
-            executed_orders = []
-            remaining_quantity = sell_quantity
-            avg_price = 0
-            total_amount = 0
-            
-            if orderbook and orderbook[0].get('orderbook_units'):
-                for order in orderbook[0]['orderbook_units']:
-                    bid_price = float(order['bid_price'])
-                    bid_size = float(order['bid_size'])
-                    
-                    # Calculate how much we can sell at this price level
-                    quantity = min(remaining_quantity, bid_size)
-                    amount = quantity * bid_price
-                    
-                    executed_orders.append({
-                        'price': bid_price,
-                        'quantity': quantity,
-                        'amount': amount
-                    })
-                    
-                    avg_price = ((avg_price * total_amount) + (bid_price * amount)) / (total_amount + amount)
-                    total_amount += amount
-                    remaining_quantity -= quantity
-                    
-                    if remaining_quantity <= 0:
-                        break
-            else:
-                # Fallback to current price if no orderbook
-                amount = sell_quantity * current_price
-                executed_orders.append({
-                    'price': current_price,
-                    'quantity': sell_quantity,
-                    'amount': amount
-                })
-                avg_price = current_price
-                total_amount = amount
-            
-            if not executed_orders:
-                return self._get_trading_status(market, "호가창에서 적절한 매수 물량을 찾을 수 없습니다")
-            
-            # Execute the trade
-            total_quantity = sum(order['quantity'] for order in executed_orders)
-            self.balance += total_amount
-            
-            # Update holdings
-            self.holdings[market]['amount'] -= total_quantity
-            if self.holdings[market]['amount'] <= 0:
-                del self.holdings[market]
-            
-            # Calculate profit/loss
-            avg_buy_price = self.holdings.get(market, {}).get('avg_price', current_price)
-            profit = total_amount - (total_quantity * avg_buy_price)
-            
-            # Record trade
-            self.trade_history.append({
-                'timestamp': datetime.now(),
-                'market': market,
-                'action': 'SELL',
-                'price': avg_price,
-                'amount': total_quantity,
-                'revenue': total_amount,
-                'profit': profit,
-                'confidence': confidence,
-                'balance': self.balance,
-                'executed_orders': executed_orders
-            })
-            
-            executed_details = [f"{order['quantity']:.8f} @ ₩{order['price']:,.0f}" for order in executed_orders]
-            return self._get_trading_status(
-                market, 
-                f"매도 체결 완료:\n" + "\n".join(executed_details) + 
-                f"\n평균단가: ₩{avg_price:,.0f} (수익률: {(profit / (total_quantity * avg_buy_price) * 100):.2f}%)"
-            )
-            
-        except Exception as e:
-            self.logger.error(f"Error executing sell order: {str(e)}")
-            return self._get_trading_status(market, f"매도 주문 실행 오류: {str(e)}")
+    def _add_trade_history(self, action: str, market: str, price: float,
+                          quantity: float, amount: float, profit: float = 0) -> None:
+        self.trade_history.append({
+            'timestamp': datetime.now().isoformat(),
+            'action': action,
+            'market': market,
+            'price': price,
+            'quantity': quantity,
+            'amount': amount,
+            'profit': profit
+        })
+        
+        # Keep only the last 100 trades to save memory
+        if len(self.trade_history) > 100:
+            self.trade_history = self.trade_history[-100:]
     
-    def get_portfolio_status(self) -> Dict[str, Any]:
-        """Get current portfolio status."""
+    def get_holding(self, market: str) -> Dict[str, float]:
+        return self.holdings.get(market, {'quantity': 0, 'avg_price': 0})
+    
+    def get_performance_metrics(self) -> Dict[str, Any]:
+        """전략 성능 지표를 반환합니다."""
+        total_trades = len(self.trade_history)
+        win_rate = (self.win_count / total_trades * 100) if total_trades > 0 else 0
+        
+        # 최대 손실폭(MDD) 계산
+        balance_history = []
+        current_balance = self.initial_balance
+        for trade in self.trade_history:
+            if trade['action'] == 'BUY':
+                current_balance -= trade['amount']
+            else:  # SELL
+                current_balance += trade['amount']
+            balance_history.append(current_balance)
+        
+        if balance_history:
+            running_max = pd.Series(balance_history).expanding().max()
+            drawdowns = (running_max - balance_history) / running_max * 100
+            max_drawdown = float(drawdowns.max())
+        else:
+            max_drawdown = 0.0
+        
+        # 총 자산 계산
         total_value = self.balance
-        holdings_detail = []
-        
-        for market, holding in self.holdings.items():
-            holdings_detail.append({
-                'market': market,
-                'amount': holding['amount'],
-                'avg_price': holding['avg_price']
-            })
-            total_value += holding['amount'] * holding['avg_price']
+        if self.holdings:
+            last_price = self.trade_history[-1]['price'] if self.trade_history else 0
+            for market, holding in self.holdings.items():
+                total_value += holding['quantity'] * last_price
         
         return {
             'initial_balance': self.initial_balance,
             'current_balance': self.balance,
             'total_value': total_value,
             'total_return': ((total_value - self.initial_balance) / self.initial_balance) * 100,
-            'holdings': holdings_detail,
-            'trade_count': len(self.trade_history),
-            'start_time': self.start_time,
-            'current_time': datetime.now()
+            'total_profit': self.total_profit,
+            'total_trades': total_trades,
+            'win_count': self.win_count,
+            'loss_count': self.loss_count,
+            'win_rate': win_rate,
+            'max_drawdown': max_drawdown
         }
     
-    def _get_trading_status(self, market: str, message: str) -> Dict[str, Any]:
-        """Get current trading status."""
-        portfolio = self.get_portfolio_status()
-        return {
-            'message': message,
-            'market': market,
-            'balance': self.balance,
-            'total_value': portfolio['total_value'],
-            'total_return': portfolio['total_return'],
-            'holdings': portfolio['holdings']
-        }
-
     def get_trade_history(self) -> List[Dict[str, Any]]:
-        """Get the trading history."""
-        return self.trade_history
-
-    def get_max_drawdown(self) -> float:
-        """Calculate maximum drawdown percentage."""
-        if not self.trade_history:
-            return 0.0
-        
-        balance_history = []
-        current_balance = self.initial_balance
-        
-        for trade in self.trade_history:
-            if trade['action'] == 'BUY':
-                current_balance -= trade['cost']
-            else:  # SELL
-                current_balance += trade.get('revenue', 0)
-            balance_history.append(current_balance)
-        
-        if not balance_history:
-            return 0.0
-        
-        # Calculate running maximum
-        running_max = pd.Series(balance_history).expanding().max()
-        # Calculate drawdowns
-        drawdowns = (running_max - balance_history) / running_max * 100
-        
-        return float(drawdowns.max())
-
-    def get_profit_factor(self) -> float:
-        """Calculate profit factor."""
-        if not self.trade_history:
-            return 1.0
-        
-        total_profit = sum(trade.get('profit', 0) for trade in self.trade_history if trade.get('profit', 0) > 0)
-        total_loss = abs(sum(trade.get('profit', 0) for trade in self.trade_history if trade.get('profit', 0) < 0))
-        
-        return float(total_profit / total_loss) if total_loss > 0 else float('inf') 
+        """거래 기록을 반환합니다."""
+        return self.trade_history 

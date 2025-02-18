@@ -5,11 +5,13 @@ This module handles technical analysis of market data, including various indicat
 and pattern recognition.
 """
 
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 import pandas as pd
 import numpy as np
 import logging
 from datetime import datetime
+import pyupbit
+from src.config import AppConfig
 
 class TechnicalAnalyzer:
     """Class for performing technical analysis on market data."""
@@ -17,6 +19,162 @@ class TechnicalAnalyzer:
     def __init__(self) -> None:
         """Initialize the TechnicalAnalyzer."""
         self.logger = logging.getLogger(__name__)
+    
+    def analyze(self, market: str) -> Optional[Dict[str, Any]]:
+        """
+        Perform technical analysis on the specified market.
+        
+        Args:
+            market (str): Market symbol to analyze
+            
+        Returns:
+            Optional[Dict[str, Any]]: Analysis results or None if analysis fails
+        """
+        try:
+            # 일봉 데이터 조회
+            df = pyupbit.get_ohlcv(market, interval="day", count=20)
+            if df is None or df.empty:
+                self.logger.error(f"{market} 일봉 데이터 조회 실패")
+                return None
+            
+            # 기술적 지표 계산
+            indicators = self._calculate_indicators(df)
+            if not indicators:
+                self.logger.error(f"{market} 기술적 지표 계산 실패")
+                return None
+            
+            # 추세 분석
+            trend, strength = self._analyze_trend(df, indicators)
+            
+            return {
+                'trend': trend,
+                'strength': strength,
+                'indicators': indicators
+            }
+            
+        except Exception as e:
+            self.logger.error(f"{market} 기술적 분석 중 오류: {str(e)}")
+            return None
+    
+    def _calculate_indicators(self, df: pd.DataFrame) -> Optional[Dict[str, float]]:
+        """
+        Calculate technical indicators from price data.
+        
+        Args:
+            df (pd.DataFrame): Price data with OHLCV columns
+            
+        Returns:
+            Optional[Dict[str, float]]: Calculated indicators or None if calculation fails
+        """
+        try:
+            # RSI 계산
+            delta = df['close'].diff()
+            gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
+            loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
+            rs = gain / loss
+            rsi = 100 - (100 / (1 + rs))
+            
+            # 볼린저 밴드 계산
+            ma20 = df['close'].rolling(window=20).mean()
+            std20 = df['close'].rolling(window=20).std()
+            upper_band = ma20 + (std20 * 2)
+            lower_band = ma20 - (std20 * 2)
+            
+            # MACD 계산
+            exp1 = df['close'].ewm(span=12, adjust=False).mean()
+            exp2 = df['close'].ewm(span=26, adjust=False).mean()
+            macd = exp1 - exp2
+            signal = macd.ewm(span=9, adjust=False).mean()
+            
+            # 현재 값 가져오기
+            current_rsi = float(rsi.iloc[-1])
+            current_macd = float(macd.iloc[-1])
+            current_signal = float(signal.iloc[-1])
+            current_ma20 = float(ma20.iloc[-1])
+            current_upper = float(upper_band.iloc[-1])
+            current_lower = float(lower_band.iloc[-1])
+            
+            return {
+                'RSI': round(current_rsi, 2),
+                'MACD': round(current_macd, 2),
+                'MACD_Signal': round(current_signal, 2),
+                'MA20': round(current_ma20, 2),
+                'BB_Upper': round(current_upper, 2),
+                'BB_Lower': round(current_lower, 2)
+            }
+            
+        except Exception as e:
+            self.logger.error(f"지표 계산 중 오류: {str(e)}")
+            return None
+    
+    def _analyze_trend(self, df: pd.DataFrame, indicators: Dict[str, float]) -> tuple[str, float]:
+        """
+        Analyze price trend using technical indicators.
+        
+        Args:
+            df (pd.DataFrame): Price data with OHLCV columns
+            indicators (Dict[str, float]): Calculated technical indicators
+            
+        Returns:
+            tuple[str, float]: Trend direction and strength
+        """
+        try:
+            current_price = float(df['close'].iloc[-1])
+            
+            # RSI 기반 과매수/과매도 분석
+            rsi = indicators['RSI']
+            if rsi > 70:
+                rsi_signal = -1  # 과매수
+            elif rsi < 30:
+                rsi_signal = 1   # 과매도
+            else:
+                rsi_signal = 0
+            
+            # MACD 신호선 교차 분석
+            macd = indicators['MACD']
+            signal = indicators['MACD_Signal']
+            if macd > signal:
+                macd_signal = 1
+            elif macd < signal:
+                macd_signal = -1
+            else:
+                macd_signal = 0
+            
+            # 볼린저 밴드 위치 분석
+            upper = indicators['BB_Upper']
+            lower = indicators['BB_Lower']
+            if current_price > upper:
+                bb_signal = -1
+            elif current_price < lower:
+                bb_signal = 1
+            else:
+                bb_signal = 0
+            
+            # 종합 신호
+            total_signal = rsi_signal + macd_signal + bb_signal
+            
+            # 추세 방향 결정
+            if total_signal > 1:
+                trend = "STRONG_BUY"
+                strength = 0.8
+            elif total_signal > 0:
+                trend = "BUY"
+                strength = 0.6
+            elif total_signal < -1:
+                trend = "STRONG_SELL"
+                strength = 0.8
+            elif total_signal < 0:
+                trend = "SELL"
+                strength = 0.6
+            else:
+                trend = "NEUTRAL"
+                strength = 0.3
+            
+            return trend, strength
+            
+        except Exception as e:
+            self.logger.error(f"추세 분석 중 오류: {str(e)}")
+            return "NEUTRAL", 0.0
     
     def analyze_technical_indicators(self, market_data: Dict[str, Any]) -> Dict[str, Any]:
         """

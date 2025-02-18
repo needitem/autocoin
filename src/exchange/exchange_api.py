@@ -12,12 +12,17 @@ import uuid
 import hashlib
 from urllib.parse import urlencode
 import requests
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Tuple
 import logging
 from datetime import datetime, timedelta
 import os
 from dotenv import load_dotenv
 import pandas as pd
+import time
+from src.config import AppConfig
+
+# Configure logging
+logger = logging.getLogger(__name__)
 
 class ExchangeAPI:
     """Class for handling exchange API interactions."""
@@ -437,30 +442,55 @@ class ExchangeAPI:
 class UpbitAPI:
     """Class for interacting with the Upbit exchange API."""
     
-    def __init__(self) -> None:
-        """Initialize the UpbitAPI with API configuration."""
+    def __init__(self):
         self.logger = logging.getLogger(__name__)
-        self.access_key = os.getenv('UPBIT_ACCESS_KEY')
-        self.secret_key = os.getenv('UPBIT_SECRET_KEY')
-        self.server_url = 'https://api.upbit.com'
-        
-    def _get_jwt_token(self, query: Optional[Dict[str, Any]] = None) -> str:
-        """Generate JWT token for API authentication."""
-        payload = {
-            'access_key': self.access_key,
-            'nonce': str(uuid.uuid4())
-        }
-        
-        if query:
-            query_string = urlencode(query)
-            m = hashlib.sha512()
-            m.update(query_string.encode())
-            query_hash = m.hexdigest()
-            payload['query_hash'] = query_hash
-            payload['query_hash_alg'] = 'SHA512'
-        
-        return jwt.encode(payload, self.secret_key)
+        self.upbit = None
+        if AppConfig.UPBIT_ACCESS_KEY and AppConfig.UPBIT_SECRET_KEY:
+            try:
+                self.upbit = pyupbit.Upbit(AppConfig.UPBIT_ACCESS_KEY, AppConfig.UPBIT_SECRET_KEY)
+            except Exception as e:
+                self.logger.error(f"Failed to initialize Upbit API: {str(e)}")
     
+    def get_balance(self, market: str) -> Optional[float]:
+        try:
+            if not self.upbit:
+                return None
+            balance = self.upbit.get_balance(market)
+            return float(balance) if balance else 0.0
+        except Exception as e:
+            self.logger.error(f"Error getting balance for {market}: {str(e)}")
+            return None
+    
+    def get_krw_balance(self) -> Optional[float]:
+        try:
+            if not self.upbit:
+                return None
+            balance = self.upbit.get_balance("KRW")
+            return float(balance) if balance else 0.0
+        except Exception as e:
+            self.logger.error(f"Error getting KRW balance: {str(e)}")
+            return None
+    
+    def buy_market_order(self, market: str, price: float) -> bool:
+        try:
+            if not self.upbit:
+                return False
+            result = self.upbit.buy_market_order(market, price)
+            return bool(result and result.get('uuid'))
+        except Exception as e:
+            self.logger.error(f"Error placing buy order for {market}: {str(e)}")
+            return False
+    
+    def sell_market_order(self, market: str, volume: float) -> bool:
+        try:
+            if not self.upbit:
+                return False
+            result = self.upbit.sell_market_order(market, volume)
+            return bool(result and result.get('uuid'))
+        except Exception as e:
+            self.logger.error(f"Error placing sell order for {market}: {str(e)}")
+            return False
+
     def get_market_all(self) -> List[Dict[str, Any]]:
         """Get all available markets."""
         try:
@@ -626,4 +656,120 @@ class UpbitAPI:
             
         except Exception as e:
             self.logger.error(f"Error getting market index: {str(e)}")
-            return {} 
+            return {}
+
+    def _get_cache_key(self, endpoint: str, params: Dict) -> str:
+        """캐시 키를 생성합니다."""
+        param_str = "&".join(f"{k}={v}" for k, v in sorted(params.items()))
+        return f"{endpoint}?{param_str}"
+
+    def _get_cached_data(self, cache_key: str) -> Tuple[Optional[Any], bool]:
+        """캐시된 데이터를 가져옵니다."""
+        if cache_key in self._cache:
+            data, timestamp = self._cache[cache_key]
+            age = (datetime.now() - timestamp).total_seconds()
+            
+            # 캐시 유효 시간 설정
+            if "orderbook" in cache_key:
+                max_age = 1  # 호가 정보는 1초
+            elif "minute" in cache_key:
+                max_age = 60  # 분봉 데이터는 1분
+            else:
+                max_age = 5  # 기타 데이터는 5초
+                
+            if age < max_age:
+                return data, True
+                
+        return None, False
+
+    def _cache_data(self, cache_key: str, data: Any):
+        """데이터를 캐시에 저장합니다."""
+        self._cache[cache_key] = (data, datetime.now())
+        
+        # 캐시 크기 제한
+        if len(self._cache) > 1000:
+            oldest_key = min(self._cache.keys(), key=lambda k: self._cache[k][1])
+            del self._cache[oldest_key]
+
+    def _request(self, method: str, endpoint: str, params: Optional[Dict] = None) -> Optional[Any]:
+        """API 요청을 수행합니다."""
+        if params is None:
+            params = {}
+            
+        cache_key = self._get_cache_key(endpoint, params)
+        cached_data, is_valid = self._get_cached_data(cache_key)
+        
+        if is_valid:
+            return cached_data
+            
+        # API 호출 간격 제어
+        elapsed = (datetime.now() - self._last_request_time).total_seconds()
+        if elapsed < self.request_interval:
+            time.sleep(self.request_interval - elapsed)
+            
+        try:
+            response = requests.request(
+                method,
+                f"{self.base_url}{endpoint}",
+                params=params
+            )
+            response.raise_for_status()
+            data = response.json()
+            
+            self._cache_data(cache_key, data)
+            self._last_request_time = datetime.now()
+            
+            return data
+            
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Error in API request: {str(e)}")
+            return None
+
+    def get_markets(self) -> List[str]:
+        """마켓 목록을 조회합니다."""
+        try:
+            data = self._request("GET", "/market/all")
+            if data:
+                return [item["market"] for item in data if item["market"].startswith("KRW-")]
+            return []
+        except Exception as e:
+            logger.error(f"Error getting markets: {str(e)}")
+            return []
+
+    def get_ticker(self, market: str) -> Optional[Dict]:
+        """현재가 정보를 조회합니다."""
+        try:
+            data = self._request("GET", "/ticker", {"markets": market})
+            return data[0] if data else None
+        except Exception as e:
+            logger.error(f"Error getting ticker: {str(e)}")
+            return None
+
+    def get_orderbook(self, market: str) -> Optional[Dict]:
+        """호가 정보를 조회합니다."""
+        try:
+            data = self._request("GET", "/orderbook", {"markets": market})
+            return data[0] if data else None
+        except Exception as e:
+            logger.error(f"Error getting orderbook: {str(e)}")
+            return None
+
+    def get_minute_candles(self, market: str, unit: int = 1, count: int = 200) -> Optional[List[Dict]]:
+        """분봉 데이터를 조회합니다."""
+        try:
+            endpoint = f"/candles/minutes/{unit}"
+            params = {"market": market, "count": count}
+            return self._request("GET", endpoint, params)
+        except Exception as e:
+            logger.error(f"Error getting minute candles: {str(e)}")
+            return None
+
+    def get_daily_candles(self, market: str, count: int = 200) -> Optional[List[Dict]]:
+        """일봉 데이터를 조회합니다."""
+        try:
+            endpoint = "/candles/days"
+            params = {"market": market, "count": count}
+            return self._request("GET", endpoint, params)
+        except Exception as e:
+            logger.error(f"Error getting daily candles: {str(e)}")
+            return None 

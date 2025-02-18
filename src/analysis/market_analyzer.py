@@ -5,11 +5,13 @@ This module handles market analysis, including trend analysis, volatility,
 and market conditions.
 """
 
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 import pandas as pd
 import numpy as np
 import logging
 from datetime import datetime
+import pyupbit
+from src.config import AppConfig
 
 class MarketAnalyzer:
     """Class for analyzing market conditions and trends."""
@@ -192,4 +194,131 @@ class MarketAnalyzer:
             
         except Exception as e:
             self.logger.error(f"Error analyzing volume: {str(e)}")
-            return {} 
+            return {}
+    
+    def analyze(self, market: str) -> Optional[Dict[str, Any]]:
+        """
+        Analyze market conditions.
+        
+        Args:
+            market (str): Market symbol to analyze
+            
+        Returns:
+            Optional[Dict[str, Any]]: Analysis results or None if analysis fails
+        """
+        try:
+            # 일봉 데이터 조회
+            df = pyupbit.get_ohlcv(market, interval="day", count=30)
+            if df is None or df.empty:
+                self.logger.error(f"{market} 일봉 데이터 조회 실패")
+                return None
+            
+            # 변동성 계산
+            volatility = self._calculate_volatility(df)
+            
+            # 거래량 프로파일 계산
+            volume_profile = self._calculate_volume_profile(df)
+            if not volume_profile:
+                self.logger.error(f"{market} 거래량 프로파일 계산 실패")
+                return None
+            
+            # 시장 심리 분석
+            sentiment = self._analyze_sentiment(df)
+            
+            return {
+                'sentiment': sentiment,
+                'volatility': volatility,
+                'volume_profile': volume_profile
+            }
+            
+        except Exception as e:
+            self.logger.error(f"{market} 시장 분석 중 오류: {str(e)}")
+            return None
+    
+    def _calculate_volatility(self, df: pd.DataFrame) -> float:
+        """
+        Calculate market volatility.
+        
+        Args:
+            df (pd.DataFrame): Price data with OHLCV columns
+            
+        Returns:
+            float: Volatility percentage
+        """
+        try:
+            # 일일 수익률 계산
+            returns = df['close'].pct_change()
+            
+            # 변동성 (표준편차 * sqrt(거래일))
+            volatility = returns.std() * np.sqrt(252) * 100
+            
+            return round(float(volatility), 2)
+            
+        except Exception as e:
+            self.logger.error(f"변동성 계산 중 오류: {str(e)}")
+            return 0.0
+    
+    def _calculate_volume_profile(self, df: pd.DataFrame) -> Dict[str, float]:
+        """
+        Calculate volume profile.
+        
+        Args:
+            df (pd.DataFrame): Price data with OHLCV columns
+            
+        Returns:
+            Dict[str, float]: Volume profile at different price levels
+        """
+        try:
+            # 가격 구간 설정
+            price_range = df['close'].max() - df['close'].min()
+            interval = price_range / 10
+            
+            # 구간별 거래량 계산
+            profile = {}
+            for i in range(10):
+                lower = df['close'].min() + (interval * i)
+                upper = lower + interval
+                mask = (df['close'] >= lower) & (df['close'] < upper)
+                volume = df.loc[mask, 'volume'].sum()
+                price_level = f"{int(lower):,}"
+                profile[price_level] = float(volume)
+            
+            return profile
+            
+        except Exception as e:
+            self.logger.error(f"거래량 프로파일 계산 중 오류: {str(e)}")
+            return {}
+    
+    def _analyze_sentiment(self, df: pd.DataFrame) -> str:
+        """
+        Analyze market sentiment.
+        
+        Args:
+            df (pd.DataFrame): Price data with OHLCV columns
+            
+        Returns:
+            str: Market sentiment (BULLISH, BEARISH, or NEUTRAL)
+        """
+        try:
+            # 최근 5일 데이터
+            recent_df = df.tail(5)
+            
+            # 가격 상승/하락 일수
+            price_up_days = (recent_df['close'] > recent_df['open']).sum()
+            
+            # 거래량 증가/감소 일수
+            volume_up_days = (recent_df['volume'] > recent_df['volume'].shift(1)).sum()
+            
+            # 종합 점수 계산
+            score = price_up_days + volume_up_days
+            
+            if score >= 7:
+                return "BULLISH"
+            elif score <= 3:
+                return "BEARISH"
+            else:
+                return "NEUTRAL"
+                
+        except Exception as e:
+            self.logger.error(f"시장 심리 분석 중 오류: {str(e)}")
+            return "NEUTRAL" 
