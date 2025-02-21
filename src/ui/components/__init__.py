@@ -1,11 +1,13 @@
-from .market_metrics import MarketMetricsComponent
-from .virtual_trading import VirtualTradingComponent
-from .strategy_analysis import StrategyAnalysisComponent
-from .sidebar import SidebarComponent
+"""
+UI Components
+"""
+
+from .market import render_market_data, render_market_selector
+from .trading import render_trading_interface, render_balance
 
 __all__ = [
-    'MarketMetricsComponent',
-    'VirtualTradingComponent',
-    'StrategyAnalysisComponent',
-    'SidebarComponent'
+    'render_market_data',
+    'render_market_selector',
+    'render_trading_interface',
+    'render_balance'
 ] 

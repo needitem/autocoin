@@ -1,0 +1,587 @@
+2025-02-19 14:43:49,640 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:43:49,714 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:43:53,996 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:43:56,185 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:43:56,209 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:43:56,304 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:43:56,334 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:44:01,405 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:44:01,421 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:01,267 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:03,367 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:03,549 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:03,552 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:45:03,556 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 14:45:03,666 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:03,678 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:45:03,759 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:03,762 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:45:03,833 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:03,845 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:45:03,922 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:03,922 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:45:03,922 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 14:45:04,000 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:04,011 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:45:04,011 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:45:04,011 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:45:04,011 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:45:04,011 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:45:05,065 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:05,075 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:45:06,168 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:08,170 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:45:12,592 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:46:40,984 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:46:40,991 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:46:44,934 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:46:46,897 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:46:46,918 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:46:47,025 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:46:47,032 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:46:48,963 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:46:48,966 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:49,932 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:51,982 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:52,334 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:52,337 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:47:52,338 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 14:47:52,652 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:52,657 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:47:52,911 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:52,916 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:47:53,221 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:53,225 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:47:53,447 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:53,448 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:47:53,449 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 14:47:53,673 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:53,680 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:47:53,682 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:47:53,684 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:47:53,690 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:47:53,690 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:47:54,707 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:54,711 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:47:54,741 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:47:56,689 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:00,506 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:00,509 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:04,336 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:44,403 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:44,409 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:48,476 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:50,411 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:50,418 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:50,520 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:50,528 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:52,548 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:48:52,552 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:51,931 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:54,080 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:54,180 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:54,184 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:49:54,185 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 14:49:54,283 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:54,288 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:49:54,367 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:54,372 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:49:54,468 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:54,472 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:49:54,552 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:54,552 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:49:54,554 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 14:49:54,627 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:54,636 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:49:54,637 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:49:54,641 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:49:54,641 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:49:54,641 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:49:55,661 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:55,667 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:49:55,700 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:49:57,659 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:50:01,528 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:50:01,530 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:51:11,316 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:51:11,322 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:51:15,343 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:51:17,289 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:51:17,296 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:51:17,393 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:51:17,402 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:51:19,331 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:51:19,333 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:18,167 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:20,375 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:20,441 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:20,445 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:52:20,446 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 14:52:20,517 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:20,522 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:52:20,601 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:20,605 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:52:20,685 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:20,690 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:52:20,778 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:20,779 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:52:20,781 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 14:52:20,854 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:20,865 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:52:20,866 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:52:20,866 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:52:20,867 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:52:20,867 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:52:21,886 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:21,890 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:52:22,923 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:24,860 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:28,814 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:28,816 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:28,821 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:32,657 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:36,557 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:52:41,454 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:53:26,793 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:53:26,800 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:53:30,866 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:53:32,842 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:53:32,850 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:53:32,950 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:53:32,959 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:53:34,941 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:53:34,943 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:36,340 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:38,470 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:38,542 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:38,545 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:54:38,546 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 14:54:38,618 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:38,622 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:54:38,703 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:38,707 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:54:38,787 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:38,791 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:54:38,887 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:38,888 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:54:38,890 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 14:54:38,963 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:38,975 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:54:38,976 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:54:38,979 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:54:38,988 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:54:39,003 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:54:40,012 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:40,017 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:54:41,048 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:43,018 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:48,109 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:48,113 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:48,120 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:54:51,996 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:55:35,315 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:55:35,323 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:55:39,911 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:55:41,885 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:55:41,892 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:55:41,993 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:55:42,001 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:55:43,979 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:55:43,982 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:43,345 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:45,436 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:45,526 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:45,529 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:56:45,530 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 14:56:45,602 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:45,606 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:56:45,719 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:45,723 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:56:45,803 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:45,807 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:56:45,886 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:45,887 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:56:45,888 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 14:56:45,962 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:45,972 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:56:45,973 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:56:45,975 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:56:45,976 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:56:45,976 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:56:46,996 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:47,002 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:56:48,036 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:50,000 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:53,942 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:53,945 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:56:53,950 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:57:41,582 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:57:41,589 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:57:45,610 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:57:47,550 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:57:47,557 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:57:47,657 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:57:47,665 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:57:49,574 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:57:49,578 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:50,933 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:52,962 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:53,034 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:53,037 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:58:53,038 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 14:58:53,109 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:53,113 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:58:53,193 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:53,198 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:58:53,286 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:53,290 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:58:53,361 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:53,362 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 14:58:53,364 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 14:58:53,437 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:53,451 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:58:53,452 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:58:53,452 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:58:53,452 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:58:53,460 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:58:54,474 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:54,480 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 14:58:55,512 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:58:57,485 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:59:01,401 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:59:01,403 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 14:59:01,407 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:00:20,380 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:00:20,387 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:00:24,453 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:00:26,467 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:00:26,475 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:00:26,578 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:00:26,586 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:00:28,548 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:00:28,550 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:27,958 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:30,013 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:30,083 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:30,087 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:01:30,088 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 15:01:30,159 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:30,164 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:01:30,244 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:30,248 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:01:30,328 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:30,333 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:01:30,412 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:30,413 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:01:30,414 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 15:01:30,487 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:30,500 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:01:30,501 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:01:30,501 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:01:30,512 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:01:30,512 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:01:31,523 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:31,528 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:01:32,561 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:34,491 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:38,440 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:38,442 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:01:38,447 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:02:21,245 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:02:21,252 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:02:25,408 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:02:27,391 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:02:27,398 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:02:27,495 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:02:27,503 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:02:29,469 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:02:29,472 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:29,630 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:31,742 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:31,826 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:31,830 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:03:31,831 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 15:03:31,901 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:31,905 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:03:31,986 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:31,990 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:03:32,069 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:32,076 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:03:32,153 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:32,154 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:03:32,156 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 15:03:32,245 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:32,258 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:03:32,258 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:03:32,259 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:03:32,259 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:03:32,260 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:03:33,280 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:33,284 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:03:34,319 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:36,283 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:40,225 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:03:40,227 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:06:08,795 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:06:08,801 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:06:12,901 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:06:14,893 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:06:14,899 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:06:14,997 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:06:15,005 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:06:16,970 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:06:16,973 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:20,681 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:23,050 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:23,123 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:23,126 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:07:23,127 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 15:07:23,198 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:23,203 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:07:23,281 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:23,287 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:07:23,366 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:23,371 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:07:23,475 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:23,476 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:07:23,478 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 15:07:23,550 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:23,568 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:07:23,572 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:07:23,572 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:07:23,573 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:07:23,573 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:07:24,596 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:24,601 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:07:25,637 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:27,773 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:31,944 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:54,494 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:54,500 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:07:58,548 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:08:00,531 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:08:00,538 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:08:00,641 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:08:00,650 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:08:02,610 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:08:02,613 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:04,511 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:06,658 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:06,738 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:06,741 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:09:06,742 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 15:09:06,814 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:06,818 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:09:06,898 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:06,903 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:09:06,981 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:06,986 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:09:07,066 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:07,067 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:09:07,070 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 15:09:07,141 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:07,155 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:09:07,156 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:09:07,156 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:09:07,157 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:09:07,157 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:09:08,178 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:08,183 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:09:09,245 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:11,196 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:15,188 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:15,198 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:20,130 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:46,461 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:46,468 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:50,484 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:52,475 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:52,482 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:52,584 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:52,594 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:54,522 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:09:54,525 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:54,251 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:56,826 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:56,904 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:56,913 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:10:56,915 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 15:10:56,988 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:56,996 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:10:57,107 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:57,114 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:10:57,190 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:57,195 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:10:57,308 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:57,309 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:10:57,311 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 15:10:57,383 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:57,402 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:10:57,404 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:10:57,405 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:10:57,405 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:10:57,406 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:10:58,444 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:10:58,448 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:10:59,493 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:11:01,489 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:11:05,606 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:11:05,617 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:14:29,756 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:14:29,814 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:14:33,900 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:14:35,871 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:14:35,879 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:14:35,983 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:14:35,991 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:14:37,936 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:14:37,939 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:37,225 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:39,298 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:39,417 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:39,420 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:15:39,422 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 15:15:39,518 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:39,523 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:15:39,602 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:39,607 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:15:39,710 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:39,715 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:15:39,794 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:39,795 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:15:39,797 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 15:15:39,870 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:39,882 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:15:39,884 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:15:39,884 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:15:39,884 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:15:39,886 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:15:40,906 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:40,910 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:15:41,955 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:43,917 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:47,782 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:15:47,791 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:16:45,086 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:16:45,092 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:16:49,062 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:16:51,060 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:16:51,072 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:16:51,168 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:16:51,177 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:16:53,078 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:16:53,080 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:51,794 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:53,882 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:54,243 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:54,247 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:17:54,249 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 15:17:54,512 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:54,516 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:17:54,812 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:54,816 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:17:55,071 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:55,075 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:17:55,330 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:55,331 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:17:55,332 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 15:17:55,505 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:55,518 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:17:55,519 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:17:55,519 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:17:55,527 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:17:55,527 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:17:56,540 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:56,544 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:17:57,577 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:17:59,506 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:18:03,404 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:18:03,412 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:19:10,510 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:19:10,542 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:19:14,581 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:19:16,519 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:19:16,526 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:19:16,622 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:19:16,630 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:19:18,595 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:19:18,597 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:17,945 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:20,042 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:20,110 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:20,113 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:20:20,114 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 15:20:20,193 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:20,199 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:20:20,294 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:20,299 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:20:20,378 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:20,382 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:20:20,487 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:20,488 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:20:20,490 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 15:20:20,563 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:20,575 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:20:20,577 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:20:20,579 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:20:20,580 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:20:20,580 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:20:21,603 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:21,608 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:20:21,638 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:23,580 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:27,429 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:20:27,439 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:21:25,502 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:21:25,525 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:21:30,785 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:21:34,661 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:21:34,673 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:21:34,828 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:21:34,836 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:21:37,141 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:21:37,143 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:31:20,184 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:31:20,192 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:31:24,991 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:31:27,260 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:31:27,268 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:31:27,424 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:31:27,432 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:31:29,867 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:31:29,870 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:51:39,918 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:51:39,931 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:51:44,443 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:51:46,809 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:51:46,842 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:51:46,963 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:51:47,006 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:51:49,040 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:51:49,051 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:49,032 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:51,253 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:51,345 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:51,350 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:52:51,351 - database - WARNING - volume 컬럼에 음수 값이 있습니다
+2025-02-19 15:52:51,437 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:51,451 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:52:51,530 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:51,534 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:52:51,630 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:51,634 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:52:51,705 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:51,707 - database - WARNING - 필수 컬럼이 누락되었습니다
+2025-02-19 15:52:51,708 - database - WARNING - 데이터가 없습니다: INVALID-MARKET
+2025-02-19 15:52:51,781 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:51,789 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:52:51,793 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:52:51,794 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:52:51,795 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:52:51,801 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:52:52,814 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:52,819 - database - ERROR - 데이터 저장 중 오류 발생: table market_data has no column named index
+2025-02-19 15:52:53,857 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:55,766 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:59,612 - database - INFO - 데이터베이스 초기화 완료
+2025-02-19 15:52:59,621 - database - INFO - 데이터베이스 초기화 완료

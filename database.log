@@ -1,0 +1,738 @@
+2025-02-19 13:32:15,446 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:32:15,500 - database - INFO - Redis connection verified
+2025-02-19 13:32:15,656 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:32:15,657 - database - INFO - Redis connection verified
+2025-02-19 13:32:15,666 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:32:15,667 - database - INFO - Redis connection verified
+2025-02-19 13:32:17,038 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:32:17,040 - database - INFO - Redis connection verified
+2025-02-19 13:32:17,046 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:32:17,088 - database - INFO - Redis connection verified
+2025-02-19 13:32:17,196 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:32:17,197 - database - INFO - Redis connection verified
+2025-02-19 13:32:18,615 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:32:18,616 - database - INFO - Redis connection verified
+2025-02-19 13:32:18,969 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:32:18,971 - database - INFO - Redis connection verified
+2025-02-19 13:32:18,993 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:32:18,994 - database - INFO - Redis connection verified
+2025-02-19 13:34:36,968 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:34:36,973 - database - INFO - Redis connection verified
+2025-02-19 13:34:37,131 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:34:37,131 - database - INFO - Redis connection verified
+2025-02-19 13:34:37,538 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:34:37,539 - database - INFO - Redis connection verified
+2025-02-19 13:34:37,595 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:34:37,596 - database - INFO - Redis connection verified
+2025-02-19 13:34:37,602 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:34:37,602 - database - INFO - Redis connection verified
+2025-02-19 13:34:37,708 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:34:37,709 - database - INFO - Redis connection verified
+2025-02-19 13:34:39,091 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:34:39,091 - database - INFO - Redis connection verified
+2025-02-19 13:34:39,459 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:34:39,460 - database - INFO - Redis connection verified
+2025-02-19 13:34:39,482 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:34:39,482 - database - INFO - Redis connection verified
+2025-02-19 13:35:15,842 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:15,843 - database - INFO - Redis connection verified
+2025-02-19 13:35:16,000 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:16,000 - database - INFO - Redis connection verified
+2025-02-19 13:35:16,364 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:16,366 - database - INFO - Redis connection verified
+2025-02-19 13:35:16,418 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:16,418 - database - INFO - Redis connection verified
+2025-02-19 13:35:16,418 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:16,418 - database - INFO - Redis connection verified
+2025-02-19 13:35:16,528 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:16,528 - database - INFO - Redis connection verified
+2025-02-19 13:35:17,926 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:17,926 - database - INFO - Redis connection verified
+2025-02-19 13:35:18,263 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:18,263 - database - INFO - Redis connection verified
+2025-02-19 13:35:18,293 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:18,294 - database - INFO - Redis connection verified
+2025-02-19 13:35:35,341 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:35,341 - database - INFO - Redis connection verified
+2025-02-19 13:35:36,952 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:36,952 - database - INFO - Redis connection verified
+2025-02-19 13:35:36,974 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:36,975 - database - INFO - Redis connection verified
+2025-02-19 13:35:37,622 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:35:37,622 - database - INFO - Redis connection verified
+2025-02-19 13:36:54,765 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:36:54,765 - database - INFO - Redis connection verified
+2025-02-19 13:36:54,938 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:36:54,940 - database - INFO - Redis connection verified
+2025-02-19 13:36:55,361 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:36:55,362 - database - INFO - Redis connection verified
+2025-02-19 13:36:55,369 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:36:55,370 - database - INFO - Redis connection verified
+2025-02-19 13:36:55,375 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:36:55,376 - database - INFO - Redis connection verified
+2025-02-19 13:36:55,490 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:36:55,492 - database - INFO - Redis connection verified
+2025-02-19 13:36:56,922 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:36:56,922 - database - INFO - Redis connection verified
+2025-02-19 13:36:57,283 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:36:57,284 - database - INFO - Redis connection verified
+2025-02-19 13:36:57,289 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:36:57,290 - database - INFO - Redis connection verified
+2025-02-19 13:37:14,937 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:37:14,937 - database - INFO - Redis connection verified
+2025-02-19 13:37:16,607 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:37:16,609 - database - INFO - Redis connection verified
+2025-02-19 13:37:16,622 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:37:16,622 - database - INFO - Redis connection verified
+2025-02-19 13:37:17,273 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:37:17,275 - database - INFO - Redis connection verified
+2025-02-19 13:38:16,205 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:16,211 - database - INFO - Redis connection verified
+2025-02-19 13:38:16,530 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:16,532 - database - INFO - Redis connection verified
+2025-02-19 13:38:17,267 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:17,268 - database - INFO - Redis connection verified
+2025-02-19 13:38:17,280 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:17,280 - database - INFO - Redis connection verified
+2025-02-19 13:38:17,292 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:17,295 - database - INFO - Redis connection verified
+2025-02-19 13:38:17,488 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:17,490 - database - INFO - Redis connection verified
+2025-02-19 13:38:19,979 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:19,981 - database - INFO - Redis connection verified
+2025-02-19 13:38:20,634 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:20,635 - database - INFO - Redis connection verified
+2025-02-19 13:38:20,646 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:20,649 - database - INFO - Redis connection verified
+2025-02-19 13:38:48,256 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:48,260 - database - INFO - Redis connection verified
+2025-02-19 13:38:49,783 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:49,785 - database - INFO - Redis connection verified
+2025-02-19 13:38:49,819 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:38:49,819 - database - INFO - Redis connection verified
+2025-02-19 13:39:02,167 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:39:02,170 - database - INFO - Redis connection verified
+2025-02-19 13:39:32,754 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:39:32,765 - database - INFO - Redis connection verified
+2025-02-19 13:40:08,575 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:40:08,579 - database - INFO - Redis connection verified
+2025-02-19 13:40:17,500 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:40:17,504 - database - INFO - Redis connection verified
+2025-02-19 13:40:41,099 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:40:41,103 - database - INFO - Redis connection verified
+2025-02-19 13:43:11,356 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:11,360 - database - INFO - Redis connection verified
+2025-02-19 13:43:11,749 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:11,750 - database - INFO - Redis connection verified
+2025-02-19 13:43:12,630 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:12,631 - database - INFO - Redis connection verified
+2025-02-19 13:43:14,077 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:14,078 - database - INFO - Redis connection verified
+2025-02-19 13:43:14,825 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:14,826 - database - INFO - Redis connection verified
+2025-02-19 13:43:42,573 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:42,590 - database - INFO - Redis connection verified
+2025-02-19 13:43:42,600 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:42,605 - database - INFO - Redis connection verified
+2025-02-19 13:43:43,477 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:43,478 - database - INFO - Redis connection verified
+2025-02-19 13:43:44,872 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:44,872 - database - INFO - Redis connection verified
+2025-02-19 13:43:45,625 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:45,627 - database - INFO - Redis connection verified
+2025-02-19 13:43:46,354 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:46,355 - database - INFO - Redis connection verified
+2025-02-19 13:43:48,105 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:43:48,105 - database - INFO - Redis connection verified
+2025-02-19 13:44:29,617 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:44:29,622 - database - INFO - Redis connection verified
+2025-02-19 13:44:29,638 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:44:29,639 - database - INFO - Redis connection verified
+2025-02-19 13:44:30,563 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:44:30,564 - database - INFO - Redis connection verified
+2025-02-19 13:44:31,961 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:44:31,961 - database - INFO - Redis connection verified
+2025-02-19 13:44:32,692 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:44:32,693 - database - INFO - Redis connection verified
+2025-02-19 13:44:33,389 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:44:33,389 - database - INFO - Redis connection verified
+2025-02-19 13:44:35,103 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:44:35,104 - database - INFO - Redis connection verified
+2025-02-19 13:47:03,085 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:03,090 - database - INFO - Redis connection verified
+2025-02-19 13:47:03,092 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:03,093 - database - INFO - Redis connection verified
+2025-02-19 13:47:03,966 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:03,966 - database - INFO - Redis connection verified
+2025-02-19 13:47:03,979 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:03,980 - database - INFO - Redis connection verified
+2025-02-19 13:47:03,986 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:03,987 - database - INFO - Redis connection verified
+2025-02-19 13:47:04,087 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:04,087 - database - INFO - Redis connection verified
+2025-02-19 13:47:05,475 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:05,476 - database - INFO - Redis connection verified
+2025-02-19 13:47:05,832 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:05,832 - database - INFO - Redis connection verified
+2025-02-19 13:47:05,832 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:05,836 - database - INFO - Redis connection verified
+2025-02-19 13:47:23,616 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:23,620 - database - INFO - Redis connection verified
+2025-02-19 13:47:24,876 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:24,960 - database - INFO - Redis connection verified
+2025-02-19 13:47:24,982 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:24,983 - database - INFO - Redis connection verified
+2025-02-19 13:47:24,988 - database - ERROR - Invalid price relationships found
+2025-02-19 13:47:25,001 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:25,002 - database - INFO - Redis connection verified
+2025-02-19 13:47:25,004 - database - ERROR - Invalid price relationships found
+2025-02-19 13:47:25,004 - database - ERROR - Data consistency check failed
+2025-02-19 13:47:25,017 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:25,018 - database - INFO - Redis connection verified
+2025-02-19 13:47:25,020 - database - INFO - Data saved to database for KRW-BTC:minute1
+2025-02-19 13:47:25,023 - database - INFO - Data loaded from database for KRW-BTC:minute1
+2025-02-19 13:47:25,027 - database - INFO - Data loaded from database for KRW-BTC:minute1
+2025-02-19 13:47:25,031 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:25,032 - database - INFO - Redis connection verified
+2025-02-19 13:47:25,034 - database - INFO - Data saved to database for KRW-BTC:minute1
+2025-02-19 13:47:25,036 - database - INFO - Cache invalidated: KRW-BTC:minute1
+2025-02-19 13:47:25,036 - database - INFO - No data found for KRW-BTC:minute1
+2025-02-19 13:47:25,040 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:25,041 - database - INFO - Redis connection verified
+2025-02-19 13:47:25,042 - database - ERROR - Missing required columns
+2025-02-19 13:47:25,042 - database - INFO - No data found for INVALID-MARKET
+2025-02-19 13:47:25,043 - database - ERROR - Missing required columns
+2025-02-19 13:47:25,047 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:25,048 - database - INFO - Redis connection verified
+2025-02-19 13:47:25,053 - database - INFO - Data saved to database for KRW-BTC-0:minute1
+2025-02-19 13:47:25,054 - database - INFO - Data saved to database for KRW-BTC-2:minute1
+2025-02-19 13:47:25,055 - database - INFO - Data saved to database for KRW-BTC-1:minute1
+2025-02-19 13:47:25,056 - database - INFO - Data saved to database for KRW-BTC-3:minute1
+2025-02-19 13:47:25,056 - database - INFO - Data saved to database for KRW-BTC-4:minute1
+2025-02-19 13:47:25,061 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:25,062 - database - INFO - Redis connection verified
+2025-02-19 13:47:25,079 - database - INFO - Data saved to database for KRW-BTC:minute1
+2025-02-19 13:47:25,103 - database - INFO - Data loaded from database for KRW-BTC:minute1
+2025-02-19 13:47:25,129 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:25,131 - database - INFO - Redis connection verified
+2025-02-19 13:47:25,137 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:25,141 - database - INFO - Redis connection verified
+2025-02-19 13:47:25,840 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:25,841 - database - INFO - Redis connection verified
+2025-02-19 13:47:27,236 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:27,236 - database - INFO - Redis connection verified
+2025-02-19 13:47:27,954 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:27,955 - database - INFO - Redis connection verified
+2025-02-19 13:47:28,647 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:28,647 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,382 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:47:30,384 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,393 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,393 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,399 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,399 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,401 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,402 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,404 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,404 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,408 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,408 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,412 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,412 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,412 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,412 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,412 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,412 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,423 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,424 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,431 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,431 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,433 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,433 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,635 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,635 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,642 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,643 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,650 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,650 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,659 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,659 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,680 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,681 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,691 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,692 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,698 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,699 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,735 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,736 - database - INFO - Redis connection verified
+2025-02-19 13:47:30,741 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:47:30,741 - database - INFO - Redis connection verified
+2025-02-19 13:48:42,159 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:48:42,165 - database - INFO - Redis connection verified
+2025-02-19 13:48:42,170 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:48:42,172 - database - INFO - Redis connection verified
+2025-02-19 13:48:43,552 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:48:43,554 - database - INFO - Redis connection verified
+2025-02-19 13:48:43,600 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:48:43,604 - database - INFO - Redis connection verified
+2025-02-19 13:48:43,615 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:48:43,617 - database - INFO - Redis connection verified
+2025-02-19 13:48:43,806 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:48:43,808 - database - INFO - Redis connection verified
+2025-02-19 13:48:46,107 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:48:46,108 - database - INFO - Redis connection verified
+2025-02-19 13:48:46,459 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:48:46,460 - database - INFO - Redis connection verified
+2025-02-19 13:48:46,464 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:48:46,465 - database - INFO - Redis connection verified
+2025-02-19 13:49:05,541 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:05,542 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,775 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,775 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,782 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,784 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,785 - database - ERROR - Invalid price relationships found
+2025-02-19 13:49:06,797 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,797 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,797 - database - ERROR - Invalid price relationships found
+2025-02-19 13:49:06,797 - database - ERROR - Data consistency check failed
+2025-02-19 13:49:06,813 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,814 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,817 - database - INFO - Data saved to database for KRW-BTC:minute1
+2025-02-19 13:49:06,819 - database - INFO - Data loaded from database for KRW-BTC:minute1
+2025-02-19 13:49:06,822 - database - INFO - Data loaded from database for KRW-BTC:minute1
+2025-02-19 13:49:06,827 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,832 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,832 - database - INFO - Data saved to database for KRW-BTC:minute1
+2025-02-19 13:49:06,837 - database - INFO - Cache invalidated: KRW-BTC:minute1
+2025-02-19 13:49:06,837 - database - INFO - No data found for KRW-BTC:minute1
+2025-02-19 13:49:06,841 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,842 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,843 - database - ERROR - Missing required columns
+2025-02-19 13:49:06,843 - database - INFO - No data found for INVALID-MARKET
+2025-02-19 13:49:06,843 - database - ERROR - Missing required columns
+2025-02-19 13:49:06,849 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,851 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,854 - database - INFO - Data saved to database for KRW-BTC-0:minute1
+2025-02-19 13:49:06,854 - database - INFO - Data saved to database for KRW-BTC-1:minute1
+2025-02-19 13:49:06,854 - database - INFO - Data saved to database for KRW-BTC-2:minute1
+2025-02-19 13:49:06,854 - database - INFO - Data saved to database for KRW-BTC-3:minute1
+2025-02-19 13:49:06,854 - database - INFO - Data saved to database for KRW-BTC-4:minute1
+2025-02-19 13:49:06,863 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,864 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,876 - database - INFO - Data saved to database for KRW-BTC:minute1
+2025-02-19 13:49:06,903 - database - INFO - Data loaded from database for KRW-BTC:minute1
+2025-02-19 13:49:06,932 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,935 - database - INFO - Redis connection verified
+2025-02-19 13:49:06,947 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:06,948 - database - INFO - Redis connection verified
+2025-02-19 13:49:07,659 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:07,659 - database - INFO - Redis connection verified
+2025-02-19 13:49:09,048 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:09,048 - database - INFO - Redis connection verified
+2025-02-19 13:49:09,782 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:09,782 - database - INFO - Redis connection verified
+2025-02-19 13:49:10,496 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:10,497 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,228 - database - INFO - Redis connection established: localhost:6379
+2025-02-19 13:49:12,228 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,239 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,239 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,251 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,251 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,267 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,267 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,295 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,295 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,315 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,316 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,330 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,330 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,339 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,339 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,389 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,389 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,402 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,402 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,418 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,418 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,434 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,434 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,449 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,449 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,462 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,462 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,480 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,480 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,517 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,517 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,533 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,533 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,548 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,548 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,563 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,563 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,577 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,578 - database - INFO - Redis connection verified
+2025-02-19 13:49:12,589 - database - INFO - Redis connection established: mock-redis:6379
+2025-02-19 13:49:12,589 - database - INFO - Redis connection verified
+2025-02-19 14:02:29,456 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,456 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,457 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,578 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,578 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,578 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,580 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,581 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,581 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,583 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,583 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,584 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,588 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,590 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,590 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,596 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,596 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,597 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,600 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,600 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,600 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,602 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,602 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,604 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,606 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,607 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,607 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,610 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,610 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,610 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,612 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,613 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,613 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,816 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,817 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,817 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,823 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,824 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,824 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:29,831 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:29,832 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:29,832 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:30,140 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:30,140 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:30,140 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:30,163 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:30,163 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:30,163 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:30,272 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:30,272 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:30,273 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:31,282 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:31,282 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:31,282 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:31,329 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:31,330 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:31,330 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:02:31,336 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:02:31,336 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:02:31,336 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:09,874 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:09,875 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:09,875 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,000 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,000 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,001 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,016 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,017 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,017 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,034 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,034 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,034 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,048 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,048 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,049 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,063 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,063 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,064 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,078 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,078 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,078 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,107 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,107 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,107 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,125 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,126 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,126 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,148 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,148 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,148 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,164 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,164 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,165 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,181 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,181 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,181 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,200 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,200 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,200 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,234 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,234 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,235 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,248 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,248 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,248 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,264 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,264 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,264 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,280 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,280 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,280 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,295 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,296 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,296 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,311 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,311 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,311 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:10,327 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:10,327 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:10,328 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:39,931 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:39,931 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:39,932 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:39,934 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:39,934 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:39,934 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:39,937 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:39,937 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:39,937 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:39,940 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:39,940 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:39,941 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:39,948 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:39,948 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:39,948 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,065 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,065 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,065 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,066 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,066 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,066 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,071 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,071 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,071 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,074 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,074 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,074 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,078 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,078 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,078 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,080 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,080 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,080 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,283 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,283 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,284 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,291 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,291 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,291 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,299 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,299 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,299 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,609 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,609 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,609 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,634 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,634 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,634 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:40,745 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:40,745 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:40,745 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:41,753 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:41,753 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:41,754 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:41,794 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:41,794 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:41,795 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:04:41,801 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:04:41,801 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:04:41,801 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,286 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,287 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,287 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,290 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,290 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,290 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,293 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,293 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,294 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,296 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,297 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,297 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,302 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,303 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,303 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,437 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,437 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,438 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,441 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,441 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,441 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,444 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,444 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,444 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,447 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,448 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,448 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,452 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,452 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,452 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,455 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,456 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,456 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,659 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,659 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,659 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,669 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,669 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,669 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,681 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,681 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,682 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:41,991 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:41,991 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:41,991 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:42,015 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:42,015 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:42,015 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:42,124 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:42,125 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:42,125 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:43,134 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:43,134 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:43,134 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:43,178 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:43,178 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:43,178 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:05:43,188 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:05:43,188 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:05:43,188 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:43,464 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:43,483 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:43,483 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:43,496 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:43,496 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:43,497 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:43,501 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:43,502 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:43,502 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:43,515 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:43,515 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:43,516 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:43,544 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:43,544 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:43,544 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:43,548 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:43,549 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:43,549 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:43,552 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:43,552 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:43,553 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:43,557 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:43,557 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:43,557 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:43,579 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:43,579 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:43,580 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:44,105 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:44,105 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:44,106 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:44,109 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:44,109 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:44,110 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:44,315 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:44,316 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:44,316 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:44,334 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:44,335 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:44,335 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:44,348 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:44,349 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:44,349 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:45,063 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:45,063 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:45,064 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:45,109 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:45,110 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:45,110 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:45,125 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:45,125 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:45,125 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:46,138 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:46,139 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:46,140 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:46,226 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:46,226 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:46,227 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:07:46,236 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:07:46,236 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:07:46,236 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,033 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,033 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,033 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,039 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,039 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,039 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,042 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,043 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,043 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,044 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,044 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,044 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,052 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,052 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,052 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,056 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,056 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,056 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,058 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,058 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,059 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,061 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,062 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,062 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,243 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,243 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,243 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,321 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,321 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,321 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,323 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,324 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,324 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,526 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,526 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,526 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,540 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,541 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,541 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:08,555 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:08,555 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:08,556 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:09,265 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:09,265 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:09,265 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:09,360 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:09,360 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:09,360 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:09,373 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:09,373 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:09,373 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:10,381 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:10,382 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:10,382 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:11,302 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:11,303 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:11,303 - src.db.database - INFO - Redis 서버 연결 성공
+2025-02-19 14:20:11,310 - src.db.database - INFO - SQLite 데이터베이스 연결 성공: :memory:
+2025-02-19 14:20:11,310 - src.db.database - INFO - 테이블 생성 완료
+2025-02-19 14:20:11,310 - src.db.database - INFO - Redis 서버 연결 성공
