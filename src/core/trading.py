@@ -2,23 +2,36 @@
 Core trading functionality
 """
 
-from typing import Dict, Optional, List
+from typing import Dict, Optional, List, Union
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
+from src.api.base import ExchangeAPI
 from src.api.upbit import UpbitTradingSystem
+from src.api.bithumb import BithumbAPI
 from src.core.strategy import Strategy
 from src.utils.logger import get_logger, DEBUG, INFO
 
 class TradingManager:
-    def __init__(self, api: UpbitTradingSystem = None, verbose: bool = False):
+    def __init__(self, api: ExchangeAPI = None, exchange: str = 'upbit', verbose: bool = False):
         """거래 관리자 초기화
         
         Args:
-            api (UpbitTradingSystem, optional): 거래 시스템. Defaults to None.
+            api (ExchangeAPI, optional): 거래소 API. Defaults to None.
+            exchange (str, optional): 거래소 이름 ('upbit' 또는 'bithumb'). Defaults to 'upbit'.
             verbose (bool, optional): 상세 로깅 여부. Defaults to False.
         """
-        self.api = api or UpbitTradingSystem()
+        self.exchange_name = exchange.lower()
+        
+        # API 초기화
+        if api:
+            self.api = api
+        else:
+            if self.exchange_name == 'bithumb':
+                self.api = BithumbAPI(verbose=verbose)
+            else:
+                self.api = UpbitTradingSystem(verbose=verbose)
+                
         self.logger = get_logger('trading')
         self.strategy = Strategy()
         
@@ -37,7 +50,7 @@ class TradingManager:
             {'market': 'KRW-ADA', 'korean_name': '에이다', 'english_name': 'Cardano'}
         ]
         
-        self.logger.info("거래 관리자가 초기화되었습니다.")
+        self.logger.info(f"{self.api.get_exchange_name()} 거래 관리자가 초기화되었습니다.")
         
     def get_markets(self) -> List[Dict]:
         """사용 가능한 마켓 목록 조회
@@ -292,4 +305,34 @@ class TradingManager:
                     'signal': pd.Series(),
                     'histogram': pd.Series()
                 }
-            } 
+            }
+    
+    def switch_exchange(self, exchange: str, verbose: bool = None) -> bool:
+        """거래소 전환
+        
+        Args:
+            exchange (str): 거래소 이름 ('upbit' 또는 'bithumb')
+            verbose (bool, optional): 상세 로깅 여부
+            
+        Returns:
+            bool: 전환 성공 여부
+        """
+        try:
+            self.exchange_name = exchange.lower()
+            verbose = verbose if verbose is not None else (self.logger.level == DEBUG)
+            
+            if self.exchange_name == 'bithumb':
+                self.api = BithumbAPI(verbose=verbose)
+            else:
+                self.api = UpbitTradingSystem(verbose=verbose)
+            
+            self.logger.info(f"{self.api.get_exchange_name()}로 전환되었습니다.")
+            return True
+            
+        except Exception as e:
+            self.logger.error(f"거래소 전환 중 오류 발생: {str(e)}")
+            return False
+    
+    def get_current_exchange(self) -> str:
+        """현재 선택된 거래소 이름 반환"""
+        return self.api.get_exchange_name() 

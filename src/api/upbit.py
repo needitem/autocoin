@@ -27,12 +27,13 @@ import urllib.parse
 import traceback
 from src.db.database import DatabaseManager
 from src.utils.logger import get_logger, DEBUG, INFO
+from src.api.base import ExchangeAPI
 import json
 
 # .env 파일 로드
 load_dotenv()
 
-class UpbitTradingSystem:
+class UpbitTradingSystem(ExchangeAPI):
     def __init__(self, access_key: str = None, secret_key: str = None, 
                  db_path: str = 'market_data.db', verbose: bool = False):
         """업비트 트레이딩 시스템 초기화
@@ -43,6 +44,9 @@ class UpbitTradingSystem:
             db_path (str): 데이터베이스 파일 경로
             verbose (bool): 상세 로깅 여부
         """
+        super().__init__(access_key, secret_key)
+        
+        self.exchange_name = "Upbit"
         self.verbose = verbose
         self.logger = get_logger('upbit_trading')
         
@@ -53,10 +57,7 @@ class UpbitTradingSystem:
             self.logger.setLevel(INFO)
         
         # API 키 설정
-        if access_key and secret_key:
-            self.access_key = access_key
-            self.secret_key = secret_key
-        else:
+        if not access_key or not secret_key:
             self._load_api_keys()
             
         # 데이터베이스 매니저 초기화
@@ -1063,4 +1064,35 @@ class UpbitTradingSystem:
                 
         except Exception as e:
             self._log_error(f"현재가 조회 중 오류 발생: {str(e)}")
-            return None 
+            return None
+    
+    def cancel_order(self, order_id: str) -> bool:
+        """주문 취소 (ExchangeAPI 인터페이스 구현)"""
+        try:
+            if not self.access_key or not self.secret_key:
+                self.logger.warning("API 키가 없어 주문을 취소할 수 없습니다")
+                return False
+                
+            params = {'uuid': order_id}
+            query_string = self._dict_to_query_string(params)
+            query_hash = self._create_query_hash(params)
+            
+            headers = {
+                'Authorization': f'Bearer {self._create_jwt_token(query_hash)}'
+            }
+            
+            response = requests.delete(
+                f"{self.server_url}/order",
+                params=params,
+                headers=headers
+            )
+            
+            if response.status_code == 200:
+                return True
+            else:
+                self.logger.error(f"주문 취소 실패: {response.text}")
+                return False
+                
+        except Exception as e:
+            self.logger.error(f"주문 취소 중 오류 발생: {str(e)}")
+            return False 

@@ -22,7 +22,28 @@ class AutoCoinApp:
             page_icon="📈",
             layout="wide"
         )
-        st.title("AutoCoin Trading")
+        
+        # 헤더 레이아웃
+        col1, col2, col3 = st.columns([2, 1, 1])
+        with col1:
+            st.title("AutoCoin Trading")
+        with col2:
+            current_exchange = self.trading_manager.get_current_exchange()
+            st.metric("현재 거래소", current_exchange)
+        with col3:
+            # 거래소 선택 드롭다운
+            exchange_options = ["Upbit", "Bithumb"]
+            selected_exchange = st.selectbox(
+                "거래소 선택",
+                exchange_options,
+                index=exchange_options.index(current_exchange)
+            )
+            
+            # 거래소 변경
+            if selected_exchange != current_exchange:
+                if self.trading_manager.switch_exchange(selected_exchange):
+                    st.success(f"{selected_exchange}로 전환되었습니다.")
+                    st.rerun()
 
     def render_market_selector(self):
         """마켓 선택 UI"""
