@@ -8,6 +8,7 @@ from datetime import datetime, timedelta
 from src.api.upbit import UpbitTradingSystem
 from src.core.trading import TradingManager
 import numpy as np
+import plotly.graph_objects as go
 
 class AutoCoinApp:
     def __init__(self, trading_manager: TradingManager = None):
@@ -24,7 +25,7 @@ class AutoCoinApp:
         )
         
         # 헤더 레이아웃
-        col1, col2, col3 = st.columns([2, 1, 1])
+        col1, col2, col3, col4 = st.columns([2, 1, 1, 1])
         with col1:
             st.title("AutoCoin Trading")
         with col2:
@@ -44,6 +45,38 @@ class AutoCoinApp:
                 if self.trading_manager.switch_exchange(selected_exchange):
                     st.success(f"{selected_exchange}로 전환되었습니다.")
                     st.rerun()
+        with col4:
+            # 종료 버튼
+            if st.button("🛑 종료", type="secondary", use_container_width=True):
+                st.error("앱을 종료합니다...")
+                st.balloons()
+                import time
+                import os
+                import signal
+                import subprocess
+                
+                # 메시지 표시
+                with st.spinner("프로그램을 종료하는 중..."):
+                    time.sleep(2)
+                
+                # 브라우저 닫기 (Windows)
+                try:
+                    subprocess.run(["taskkill", "/f", "/im", "chrome.exe"], 
+                                 capture_output=True, text=True)
+                    subprocess.run(["taskkill", "/f", "/im", "msedge.exe"], 
+                                 capture_output=True, text=True)
+                    subprocess.run(["taskkill", "/f", "/im", "firefox.exe"], 
+                                 capture_output=True, text=True)
+                except:
+                    pass
+                
+                # Streamlit 프로세스 종료
+                try:
+                    # 현재 프로세스 종료
+                    os.kill(os.getpid(), signal.SIGTERM)
+                except:
+                    # 강제 종료
+                    os._exit(0)
 
     def render_market_selector(self):
         """마켓 선택 UI"""
@@ -91,6 +124,10 @@ class AutoCoinApp:
                     f"{data['high_price']:,} / {data['low_price']:,}"
                 )
 
+            # 뉴스 섹션 추가
+            from src.ui.components.news import render_news_section
+            render_news_section(market, data['signed_change_rate']*100)
+
         except Exception as e:
             st.error(f"시장 데이터 표시 중 오류가 발생했습니다: {str(e)}")
             return
@@ -127,7 +164,7 @@ class AutoCoinApp:
 
     def render_technical_analysis(self, market: str):
         """기술적 분석 차트"""
-        ohlcv = self.trading_manager.get_ohlcv(market)
+        ohlcv = self.trading_manager.get_ohlcv(market, count=200)
         if ohlcv is None or ohlcv.empty:
             st.warning("차트 데이터를 불러올 수 없습니다")
             return
@@ -135,17 +172,77 @@ class AutoCoinApp:
         # 기술적 지표 계산
         indicators = self.trading_manager.calculate_indicators(ohlcv)
         
-        # 차트 표시
-        st.line_chart(ohlcv[['close']])
+        # 캔들스틱 차트 생성
+        fig = go.Figure()
         
-        # 주요 지표 표시
-        col1, col2 = st.columns(2)
-        with col1:
-            if 'ma' in indicators:
-                st.line_chart(indicators['ma'])
-        with col2:
-            if 'rsi' in indicators:
-                st.line_chart(indicators['rsi'])
+        # 캔들스틱 추가
+        fig.add_trace(go.Candlestick(
+            x=ohlcv.index,
+            open=ohlcv['open'],
+            high=ohlcv['high'],
+            low=ohlcv['low'],
+            close=ohlcv['close'],
+            name='가격',
+            increasing_line_color='red',
+            decreasing_line_color='blue'
+        ))
+        
+        # 이동평균선 추가
+        if indicators and 'MA5' in indicators:
+            fig.add_trace(go.Scatter(
+                x=ohlcv.index,
+                y=indicators['MA5'],
+                mode='lines',
+                name='MA5',
+                line=dict(color='orange', width=1)
+            ))
+        
+        if indicators and 'MA20' in indicators:
+            fig.add_trace(go.Scatter(
+                x=ohlcv.index,
+                y=indicators['MA20'],
+                mode='lines',
+                name='MA20',
+                line=dict(color='green', width=1)
+            ))
+        
+        # 레이아웃 설정
+        fig.update_layout(
+            title=f'{market} 가격 차트',
+            yaxis_title='가격 (KRW)',
+            xaxis_title='시간',
+            height=600,
+            xaxis_rangeslider_visible=False,
+            template='plotly_white'
+        )
+        
+        # 차트 표시
+        st.plotly_chart(fig, use_container_width=True)
+        
+        # RSI 차트
+        if indicators and 'rsi' in indicators:
+            rsi_fig = go.Figure()
+            rsi_fig.add_trace(go.Scatter(
+                x=ohlcv.index,
+                y=indicators['rsi'],
+                mode='lines',
+                name='RSI',
+                line=dict(color='purple', width=2)
+            ))
+            
+            # RSI 기준선
+            rsi_fig.add_hline(y=70, line_dash="dash", line_color="red", annotation_text="과매수")
+            rsi_fig.add_hline(y=30, line_dash="dash", line_color="green", annotation_text="과매도")
+            
+            rsi_fig.update_layout(
+                title='RSI',
+                yaxis_title='RSI',
+                xaxis_title='시간',
+                height=300,
+                template='plotly_white'
+            )
+            
+            st.plotly_chart(rsi_fig, use_container_width=True)
 
     def _render_technical_analysis(self, indicators: dict):
         """기술적 분석 차트 내부 렌더링"""
@@ -204,6 +301,10 @@ class AutoCoinApp:
         
         # 차트 및 기술적 분석
         self.render_technical_analysis(selected_market)
+        
+        # 차트 패턴 분석 추가
+        from src.ui.components.chart_analysis import render_chart_analysis_section
+        render_chart_analysis_section(self.trading_manager, selected_market)
         
         # 거래 인터페이스
         self.render_trading_interface(selected_market)

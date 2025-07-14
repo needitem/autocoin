@@ -1,0 +1,785 @@
+2025-07-14 19:43:09,679 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:43:09,681 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:43:09,681 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:43:09,681 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:43:09,778 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/market/all?isDetails=true
+2025-07-14 19:43:09,925 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/market/all?isDetails=true
+2025-07-14 19:43:10,184 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/market/all?isDetails=true
+2025-07-14 19:43:10,634 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/market/all?isDetails=true
+2025-07-14 19:43:10,634 - upbit_trading - ERROR - Max retries (3) exceeded
+2025-07-14 19:43:10,635 - upbit_trading - WARNING - 마켓 정보를 가져오지 못했습니다
+2025-07-14 19:43:10,635 - trading - WARNING - 마켓 목록을 가져올 수 없어 기본값을 사용합니다
+2025-07-14 19:43:10,692 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/ticker?markets=KRW-BTC
+2025-07-14 19:43:10,854 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/ticker?markets=KRW-BTC
+2025-07-14 19:43:11,116 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/ticker?markets=KRW-BTC
+2025-07-14 19:43:11,577 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/ticker?markets=KRW-BTC
+2025-07-14 19:43:11,577 - upbit_trading - ERROR - Max retries (3) exceeded
+2025-07-14 19:43:11,578 - upbit_trading - WARNING - 현재가 데이터를 가져오지 못했습니다: KRW-BTC
+2025-07-14 19:43:11,578 - trading - ERROR - 현재가 정보를 가져올 수 없습니다: KRW-BTC
+2025-07-14 19:43:11,639 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/candles/minutes/1?market=KRW-BTC&count=100
+2025-07-14 19:43:11,791 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/candles/minutes/1?market=KRW-BTC&count=100
+2025-07-14 19:43:12,038 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/candles/minutes/1?market=KRW-BTC&count=100
+2025-07-14 19:43:12,504 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/candles/minutes/1?market=KRW-BTC&count=100
+2025-07-14 19:43:12,504 - upbit_trading - ERROR - Max retries (3) exceeded
+2025-07-14 19:43:12,504 - upbit_trading - WARNING - No data available for KRW-BTC
+2025-07-14 19:43:12,507 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:43:12,507 - bithumb_api - INFO - 빗썸 API 클라이언트 초기화 완료
+2025-07-14 19:43:12,508 - trading - INFO - Bithumb로 전환되었습니다.
+2025-07-14 19:43:12,508 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:43:12,508 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:43:12,508 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:43:12,508 - trading - INFO - Upbit로 전환되었습니다.
+2025-07-14 19:44:39,734 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:44:39,737 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:44:39,737 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:44:39,738 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:44:39,852 - upbit_trading - INFO - 181개의 KRW 마켓을 가져왔습니다
+2025-07-14 19:44:39,854 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:44:40,362 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:44:40,362 - bithumb_api - INFO - 빗썸 API 클라이언트 초기화 완료
+2025-07-14 19:44:40,363 - trading - INFO - Bithumb로 전환되었습니다.
+2025-07-14 19:44:40,363 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:44:40,364 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:44:40,365 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:44:40,365 - trading - INFO - Upbit로 전환되었습니다.
+2025-07-14 19:45:07,779 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:45:07,781 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:45:07,781 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:45:07,782 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:45:07,786 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:45:08,177 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:45:08,177 - bithumb_api - INFO - 빗썸 API 클라이언트 초기화 완료
+2025-07-14 19:45:08,178 - trading - INFO - Bithumb로 전환되었습니다.
+2025-07-14 19:45:08,178 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:45:08,179 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:45:08,179 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:45:08,180 - trading - INFO - Upbit로 전환되었습니다.
+2025-07-14 19:47:22,780 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:47:22,783 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:47:22,783 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:47:22,784 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:47:22,790 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:47:40,507 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:47:40,507 - bithumb_api - INFO - 빗썸 API 클라이언트 초기화 완료
+2025-07-14 19:47:40,507 - trading - INFO - Bithumb로 전환되었습니다.
+2025-07-14 19:47:40,666 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:48:53,006 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:48:53,008 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:48:53,009 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:48:53,009 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:48:53,013 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:48:57,280 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:48:57,280 - bithumb_api - INFO - 빗썸 API 클라이언트 초기화 완료
+2025-07-14 19:48:57,281 - trading - INFO - Bithumb로 전환되었습니다.
+2025-07-14 19:48:57,420 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:53:14,202 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:53:14,204 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:53:14,204 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:53:14,205 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:53:14,210 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:53:56,764 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:53:56,765 - bithumb_api - INFO - 빗썸 API 클라이언트 초기화 완료
+2025-07-14 19:53:56,765 - trading - INFO - Bithumb로 전환되었습니다.
+2025-07-14 19:53:56,917 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:54:29,698 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:54:29,700 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:54:29,701 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:54:29,702 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:54:29,707 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:55:15,942 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:55:15,945 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:55:15,945 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:55:15,945 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:55:15,949 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:55:26,570 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:55:26,574 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:55:26,574 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:55:26,575 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:55:26,584 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 19:58:49,249 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:58:49,258 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 19:58:49,259 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:58:49,259 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 19:58:49,270 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 20:00:26,189 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:00:26,193 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 20:00:26,193 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:00:26,194 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 20:00:26,198 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 20:01:43,462 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:01:43,465 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 20:01:43,465 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:01:43,465 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 20:01:43,469 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 20:04:03,482 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:04:03,484 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 20:04:03,484 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:04:03,485 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 20:04:03,491 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 20:04:04,100 - src.api.news - WARNING - NewsAPI 요청 실패: 401
+2025-07-14 20:04:05,016 - src.api.news - WARNING - CryptoPanic API 요청 실패: 403
+2025-07-14 20:05:40,423 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 20:05:41,552 - src.api.news - WARNING - NewsAPI 요청 실패: 401
+2025-07-14 20:05:42,480 - src.api.news - WARNING - CryptoPanic API 요청 실패: 403
+2025-07-14 20:10:13,752 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:10:13,754 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 20:10:13,754 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:10:13,755 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 20:10:13,760 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 20:10:14,278 - src.api.news - WARNING - NewsAPI 요청 실패: 401
+2025-07-14 20:10:15,183 - src.api.news - WARNING - CryptoPanic API 요청 실패: 403
+2025-07-14 20:10:16,398 - src.api.news - WARNING - NewsAPI 요청 실패: 401
+2025-07-14 20:10:16,702 - src.api.news - WARNING - CryptoPanic API 요청 실패: 403
+2025-07-14 20:10:17,518 - src.api.news - WARNING - NewsAPI 요청 실패: 401
+2025-07-14 20:10:17,827 - src.api.news - WARNING - CryptoPanic API 요청 실패: 403
+2025-07-14 20:10:18,909 - src.api.news - WARNING - NewsAPI 요청 실패: 401
+2025-07-14 20:10:19,210 - src.api.news - WARNING - CryptoPanic API 요청 실패: 403
+2025-07-14 20:10:19,877 - src.api.news - WARNING - NewsAPI 요청 실패: 401
+2025-07-14 20:10:20,185 - src.api.news - WARNING - CryptoPanic API 요청 실패: 403
+2025-07-14 20:52:15,725 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:52:15,729 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 20:52:15,729 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:52:15,730 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 20:52:15,824 - upbit_trading - INFO - 181개의 KRW 마켓을 가져왔습니다
+2025-07-14 20:52:15,825 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 20:52:16,097 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 20:52:16,990 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:17,099 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:18,430 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:18,431 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 20:52:18,966 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:19,010 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:19,912 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:20,543 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 20:52:21,073 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:21,135 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:21,954 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:21,954 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 20:52:22,403 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:22,461 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:23,763 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:24,424 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 20:52:24,934 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:24,981 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:25,792 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:25,793 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 20:52:26,276 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:26,329 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:27,124 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 20:52:27,854 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 20:52:28,308 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 20:52:28,353 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 20:52:29,357 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 20:52:29,357 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 20:52:29,893 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 20:52:29,945 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 20:52:30,782 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 20:52:30,787 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 20:52:31,325 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:31,377 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:33,058 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:33,058 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 20:52:33,556 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:33,602 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:34,459 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 20:52:35,326 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 20:52:35,373 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 20:52:35,529 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 20:52:35,678 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 20:52:35,722 - src.ui.components.chart_analysis - ERROR - Real-time analysis error: There are multiple `checkbox` elements with the same auto-generated ID. When this element is created, it is assigned an internal ID based on the element type and provided parameters. Multiple elements with the same type and parameters will cause this error.
+
+To fix this error, please pass a unique `key` argument to the `checkbox` element.
+2025-07-14 21:23:15,742 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 21:23:15,745 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 21:23:15,745 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 21:23:15,746 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 21:23:15,750 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 21:23:16,012 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 21:23:16,943 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:17,040 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:18,434 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:18,435 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 21:23:18,867 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:18,921 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:19,910 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:20,391 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 21:23:20,837 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:20,882 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:21,707 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:21,707 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 21:23:22,188 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:22,231 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:23,313 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:23,969 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 21:23:24,406 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:24,442 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:25,275 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:25,275 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 21:23:25,749 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:25,779 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:26,577 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 21:23:27,491 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 21:23:27,925 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 21:23:27,967 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 21:23:28,993 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 21:23:28,993 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 21:23:29,518 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 21:23:29,549 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 21:23:30,890 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 21:23:30,896 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 21:23:31,415 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:31,450 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:33,705 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:33,706 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 21:23:34,163 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:34,216 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:35,098 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 21:23:36,035 - src.core.performance_optimizer - INFO - 차트 분석 성능 최적화 완료
+2025-07-14 21:23:36,246 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 21:23:36,298 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 21:23:36,670 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:16:36,807 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:16:36,810 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 23:16:36,811 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:16:36,811 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 23:16:36,896 - upbit_trading - INFO - 181개의 KRW 마켓을 가져왔습니다
+2025-07-14 23:16:36,897 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:16:37,131 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:16:38,028 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:38,114 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:39,395 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:39,396 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:16:39,864 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:39,931 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:40,535 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 23:16:40,536 - bithumb_api - INFO - 빗썸 API 클라이언트 초기화 완료
+2025-07-14 23:16:40,536 - trading - INFO - Bithumb로 전환되었습니다.
+2025-07-14 23:16:40,679 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:16:40,839 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:40,891 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:16:41,703 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:41,801 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:43,152 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:43,153 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:16:43,679 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:43,730 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:44,589 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:45,294 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:16:45,734 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:45,777 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:46,736 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:46,736 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:16:47,072 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:47,138 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:48,286 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:48,875 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:16:49,400 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:49,455 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:50,976 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:50,976 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:16:51,355 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:51,397 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:53,045 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:16:53,774 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:16:54,228 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:16:54,266 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:16:55,496 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:16:55,496 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:16:55,952 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:16:56,008 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:16:57,363 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:16:57,367 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:16:57,806 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:58,214 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:59,289 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:59,290 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:16:59,828 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:16:59,879 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:17:01,789 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:17:02,585 - src.core.performance_optimizer - INFO - 차트 분석 성능 최적화 완료
+2025-07-14 23:17:02,751 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:17:02,958 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:17:03,263 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:21:30,241 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:21:30,484 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:21:31,250 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:32,321 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:34,015 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:34,016 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:21:34,553 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:34,624 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:36,111 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:39,058 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:21:39,516 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:39,574 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:40,620 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:40,620 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:21:41,067 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:41,111 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:42,141 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:42,685 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:21:43,215 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:43,263 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:44,233 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:44,234 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:21:44,670 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:44,723 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:45,575 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:21:46,055 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:21:46,515 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:21:46,770 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:21:47,941 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:21:47,941 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:21:48,456 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:21:48,519 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:21:50,124 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:21:50,132 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:21:50,631 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:50,675 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:51,907 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:51,907 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:21:52,376 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:52,430 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:53,520 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:21:54,111 - src.core.performance_optimizer - INFO - 차트 분석 성능 최적화 완료
+2025-07-14 23:21:54,261 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:21:54,443 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:21:54,719 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:23:43,131 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:23:43,434 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:23:44,141 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:23:44,901 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:23:46,209 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:23:46,210 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:23:46,659 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:23:46,694 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:23:47,566 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:23:48,087 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:23:48,123 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:23:48,602 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:48,634 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:49,582 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:49,582 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:23:50,054 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:50,088 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:50,987 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:51,472 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:23:51,512 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:23:51,932 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:51,966 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:53,836 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:53,837 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:23:54,272 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:54,346 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:55,267 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:23:55,720 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:23:55,750 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:23:56,189 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:23:56,230 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:23:57,282 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:23:57,283 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:23:57,803 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:23:57,841 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:24:00,041 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:24:00,042 - src.api.news - INFO - 시간 필터링 결과: 30 → 10개 뉴스 (24시간 이내)
+2025-07-14 23:24:00,047 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:24:00,570 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:24:00,616 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:24:05,223 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:24:05,223 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:24:05,701 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:24:05,744 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:24:12,836 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:24:13,241 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:24:13,374 - src.core.performance_optimizer - INFO - 차트 분석 성능 최적화 완료
+2025-07-14 23:24:13,485 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:24:13,802 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:24:14,099 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:26:20,844 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:26:21,088 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:26:21,820 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:21,913 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:24,416 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:24,416 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:26:24,886 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:24,936 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:25,898 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:26,344 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:26:26,366 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:26:26,795 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:26,923 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:28,217 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:28,218 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:26:28,630 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:28,667 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:29,818 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:30,228 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:26:30,274 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:26:30,713 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:30,767 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:31,776 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:31,777 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:26:32,200 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:32,267 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:33,173 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:26:33,632 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:26:33,662 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:26:34,084 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:26:34,127 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:26:35,344 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:26:35,344 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:26:35,757 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:26:35,817 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:26:36,811 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:26:36,814 - src.api.news - INFO - 시간 필터링 결과: 30 → 10개 뉴스 (24시간 이내)
+2025-07-14 23:26:36,824 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:26:37,224 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:37,290 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:38,116 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:38,116 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:26:38,577 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:38,661 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:39,889 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:26:40,403 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:26:40,763 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:26:41,110 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:26:41,402 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:30:28,256 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:30:28,473 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:30:29,242 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:29,333 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:31,845 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:31,845 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:30:32,283 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:32,319 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:39,129 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:39,587 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:30:39,824 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:30:40,077 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:30:40,797 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:40,888 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:45,982 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:45,983 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:30:46,415 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:46,462 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:46,831 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:30:47,054 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:30:47,757 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:47,832 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:49,947 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:50,437 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:30:51,401 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:51,401 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:30:51,847 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:51,906 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:54,625 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:30:55,059 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:30:55,113 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:30:55,554 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:30:55,587 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:00,606 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:00,606 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:31:01,048 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:01,101 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:03,259 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:03,705 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:31:03,752 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:31:04,184 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:04,223 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:10,177 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:10,177 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:31:10,623 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:10,677 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:12,606 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:13,093 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:31:13,126 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:31:13,578 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:13,612 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:14,535 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:14,535 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:31:15,003 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:15,053 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:16,042 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:16,042 - src.api.news - INFO - 시간 필터링 결과: 30 → 10개 뉴스 (24시간 이내)
+2025-07-14 23:31:16,047 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:31:16,564 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:16,984 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:17,855 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:17,856 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:31:18,368 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:18,407 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:19,443 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:19,894 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:31:20,033 - src.core.performance_optimizer - INFO - 차트 분석 성능 최적화 완료
+2025-07-14 23:31:20,189 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:31:20,484 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:31:20,787 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:31:41,768 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:31:41,985 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:31:42,761 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:42,841 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:44,331 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:44,331 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:31:44,771 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:44,804 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:46,033 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:46,526 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:31:46,551 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:31:46,977 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:47,012 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:48,338 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:48,339 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:31:48,782 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:48,814 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:49,711 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:50,143 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:31:50,180 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:31:50,645 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:50,675 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:52,145 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:52,146 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:31:52,595 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:52,647 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:54,577 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:31:55,040 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:31:55,071 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:31:55,553 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:55,583 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:56,627 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:56,627 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:31:57,063 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:57,103 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:57,946 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:31:57,946 - src.api.news - INFO - 시간 필터링 결과: 30 → 10개 뉴스 (24시간 이내)
+2025-07-14 23:31:57,951 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:31:58,415 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:31:58,456 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:32:00,117 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:32:00,118 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:32:00,528 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:32:00,567 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:32:01,785 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:32:02,211 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:32:02,463 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:32:02,753 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:32:03,033 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:33:02,990 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:33:03,227 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:33:04,023 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:04,113 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:14,759 - src.api.news - ERROR - Bitcoin Magazine RSS RSS 오류: HTTPConnectionPool(host='bitcoinmagazine.com', port=80): Read timed out. (read timeout=10)
+2025-07-14 23:33:14,759 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:33:15,283 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:15,321 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:25,687 - src.api.news - ERROR - Bitcoin Magazine RSS RSS 오류: HTTPConnectionPool(host='bitcoinmagazine.com', port=80): Read timed out. (read timeout=10)
+2025-07-14 23:33:26,121 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:33:26,141 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:33:26,142 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 23:33:26,142 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:33:26,218 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:33:26,730 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:27,461 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:29,812 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:29,812 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:33:30,279 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:30,317 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:32,300 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:32,750 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:33:32,791 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:33:33,248 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:33,305 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:39,151 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:39,151 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:33:39,611 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:39,703 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:42,755 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:33:43,228 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:33:43,256 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:33:43,691 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:33:43,725 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:33:45,665 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:33:45,665 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:33:46,100 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:33:46,140 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:33:46,987 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:33:46,988 - src.api.news - INFO - 시간 필터링 결과: 30 → 10개 뉴스 (24시간 이내)
+2025-07-14 23:33:46,995 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:33:47,441 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:47,490 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:48,307 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:48,308 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:33:48,760 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:48,795 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:49,616 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:33:49,956 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:33:50,160 - src.core.performance_optimizer - INFO - 차트 분석 성능 최적화 완료
+2025-07-14 23:33:50,307 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:33:50,556 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:33:50,858 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:34:23,088 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:34:23,316 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:34:23,914 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:24,021 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:25,283 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:25,283 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:34:25,746 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:25,791 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:26,566 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:27,054 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:34:27,070 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:34:27,072 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 23:34:27,073 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:34:27,291 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:34:27,736 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:28,360 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:29,238 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:29,238 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:34:29,696 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:29,746 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:30,571 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:31,023 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:34:31,066 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:34:31,532 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:31,566 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:32,761 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:32,762 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:34:33,211 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:33,246 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:36,111 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:34:36,552 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:34:36,593 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:34:36,992 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:34:37,033 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:34:38,075 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:34:38,076 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:34:38,565 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:34:38,610 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:34:39,529 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:34:39,531 - src.api.news - INFO - 시간 필터링 결과: 30 → 10개 뉴스 (24시간 이내)
+2025-07-14 23:34:39,538 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:34:39,980 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:40,026 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:41,598 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:41,598 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:34:42,028 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:42,078 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:43,851 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:34:44,281 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:34:44,462 - src.core.performance_optimizer - INFO - 차트 분석 성능 최적화 완료
+2025-07-14 23:34:44,580 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:34:44,809 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:34:45,150 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:42:18,068 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:42:18,070 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 23:42:18,071 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:42:18,071 - trading - INFO - Upbit 거래 관리자가 초기화되었습니다.
+2025-07-14 23:42:18,075 - trading - INFO - 총 181개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:42:18,314 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:42:19,166 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:19,317 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:20,661 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:20,661 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:42:21,161 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:21,223 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:22,244 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:22,674 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:42:22,748 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:42:22,750 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 23:42:22,751 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:42:22,965 - src.core.price_analyzer - INFO - 패턴 분석 완료: 2개 패턴 감지
+2025-07-14 23:42:23,080 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:42:23,554 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:23,596 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:25,989 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:25,989 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:42:26,474 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:27,197 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:28,354 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:28,844 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:42:29,057 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:42:29,547 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:29,623 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:31,123 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:31,124 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:42:31,408 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:31,475 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:32,407 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:42:32,888 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:42:33,156 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:42:33,655 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:42:33,728 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:42:35,374 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:42:35,375 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:42:35,865 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:42:35,914 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:42:37,666 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:42:37,668 - src.api.news - INFO - 시간 필터링 결과: 30 → 10개 뉴스 (24시간 이내)
+2025-07-14 23:42:37,681 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:42:38,107 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:38,174 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:39,182 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:39,182 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:42:39,616 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:39,657 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:40,997 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:42:41,457 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:42:41,860 - src.core.performance_optimizer - INFO - 차트 분석 성능 최적화 완료
+2025-07-14 23:42:42,000 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:42:42,120 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:42:42,460 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:44:12,983 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 23:44:12,983 - bithumb_api - INFO - 빗썸 API 클라이언트 초기화 완료
+2025-07-14 23:44:12,984 - trading - INFO - Bithumb로 전환되었습니다.
+2025-07-14 23:44:13,163 - trading - INFO - 총 397개의 KRW 마켓을 불러왔습니다
+2025-07-14 23:44:13,409 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:44:14,159 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:14,281 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:15,601 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:15,602 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:44:16,025 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:16,066 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:17,294 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:17,725 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:44:17,739 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:44:17,740 - database - INFO - 데이터베이스 초기화 완료
+2025-07-14 23:44:17,741 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:44:17,970 - src.core.price_analyzer - INFO - 패턴 분석 완료: 6개 패턴 감지
+2025-07-14 23:44:17,994 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:44:18,534 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:18,580 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:19,776 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:19,776 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:44:20,220 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:20,292 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:21,860 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:22,361 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:44:22,400 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:44:22,818 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:22,890 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:27,664 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:27,664 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:44:28,124 - src.api.news - INFO - CoinDesk RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:28,177 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:29,088 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 8개 뉴스
+2025-07-14 23:44:29,605 - src.api.news - INFO - 시간 필터링 결과: 50 → 16개 뉴스 (24시간 이내)
+2025-07-14 23:44:29,643 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:44:30,083 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:44:30,120 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:44:30,969 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:44:30,970 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:44:31,430 - src.api.news - INFO - CoinDesk RSS RSS 성공: 5개 뉴스
+2025-07-14 23:44:31,485 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 5개 뉴스
+2025-07-14 23:44:32,579 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 5개 뉴스
+2025-07-14 23:44:32,579 - src.api.news - INFO - 시간 필터링 결과: 30 → 10개 뉴스 (24시간 이내)
+2025-07-14 23:44:32,585 - src.api.news - WARNING - 사용 가능한 NewsAPI 키가 없습니다.
+2025-07-14 23:44:33,024 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:33,231 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:34,056 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:34,056 - src.api.news - WARNING - 사용 가능한 CryptoPanic 키가 없습니다.
+2025-07-14 23:44:34,482 - src.api.news - INFO - CoinDesk RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:34,531 - src.api.news - INFO - CoinTelegraph RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:35,549 - src.api.news - INFO - Bitcoin Magazine RSS RSS 성공: 3개 뉴스
+2025-07-14 23:44:36,021 - src.api.news - INFO - 시간 필터링 결과: 20 → 6개 뉴스 (24시간 이내)
+2025-07-14 23:44:36,348 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'
+2025-07-14 23:44:36,439 - src.ui.components.chart_analysis - ERROR - Pattern chart error: name 'market' is not defined
+2025-07-14 23:44:36,753 - src.core.chart_analysis - ERROR - 모멘텀 분석 오류: 'dict' object has no attribute 'iloc'

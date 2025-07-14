@@ -140,10 +140,8 @@ class TradingManager:
 
             # 이동평균선
             ma_periods = [5, 10, 20, 60, 120]
-            ma_data = pd.DataFrame()
             for period in ma_periods:
-                ma_data[f'MA{period}'] = ohlcv['close'].rolling(window=period).mean()
-            result['ma'] = ma_data
+                result[f'MA{period}'] = ohlcv['close'].rolling(window=period).mean()
 
             # RSI
             delta = ohlcv['close'].diff()

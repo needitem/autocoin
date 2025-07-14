@@ -8,7 +8,11 @@
 
 import numpy as np
 import pandas as pd
-import talib
+try:
+    import talib
+    TALIB_AVAILABLE = True
+except ImportError:
+    TALIB_AVAILABLE = False
 
 class TechnicalAnalysis:
     @staticmethod

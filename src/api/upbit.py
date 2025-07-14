@@ -17,7 +17,11 @@ import uuid
 import hashlib
 import requests
 import numpy as np
-import talib
+try:
+    import talib
+    TALIB_AVAILABLE = True
+except ImportError:
+    TALIB_AVAILABLE = False
 import sqlite3
 import time
 from datetime import datetime, timedelta
@@ -68,7 +72,7 @@ class UpbitTradingSystem(ExchangeAPI):
         
         self.logger.info("API keys loaded successfully")
         
-        self.server_url = "https://api.upbit.com"
+        self.server_url = "https://api.upbit.com/v1"
         self.last_request_time = 0
         self.min_request_interval = 0.1  # 100ms
         self.max_retries = 3  # 최대 재시도 횟수 추가

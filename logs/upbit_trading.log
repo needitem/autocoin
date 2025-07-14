@@ -4502,3 +4502,93 @@
 2025-02-19 15:53:04,435 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/ticker?markets=KRW-BTC
 2025-02-19 15:53:04,435 - upbit_trading - ERROR - Max retries (3) exceeded
 2025-02-19 15:53:04,438 - upbit_trading - WARNING - 현재가 데이터를 가져오지 못했습니다: KRW-BTC
+2025-07-14 19:43:09,679 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:43:09,681 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:43:09,681 - upbit_trading - DEBUG - 마켓 코드 조회 중...
+2025-07-14 19:43:09,778 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/market/all?isDetails=true
+2025-07-14 19:43:09,925 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/market/all?isDetails=true
+2025-07-14 19:43:10,184 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/market/all?isDetails=true
+2025-07-14 19:43:10,634 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/market/all?isDetails=true
+2025-07-14 19:43:10,634 - upbit_trading - ERROR - Max retries (3) exceeded
+2025-07-14 19:43:10,635 - upbit_trading - WARNING - 마켓 정보를 가져오지 못했습니다
+2025-07-14 19:43:10,635 - upbit_trading - DEBUG - 현재가 조회 중: KRW-BTC
+2025-07-14 19:43:10,692 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/ticker?markets=KRW-BTC
+2025-07-14 19:43:10,854 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/ticker?markets=KRW-BTC
+2025-07-14 19:43:11,116 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/ticker?markets=KRW-BTC
+2025-07-14 19:43:11,577 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/ticker?markets=KRW-BTC
+2025-07-14 19:43:11,577 - upbit_trading - ERROR - Max retries (3) exceeded
+2025-07-14 19:43:11,578 - upbit_trading - WARNING - 현재가 데이터를 가져오지 못했습니다: KRW-BTC
+2025-07-14 19:43:11,578 - upbit_trading - DEBUG - Fetching OHLCV data for KRW-BTC
+2025-07-14 19:43:11,639 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/candles/minutes/1?market=KRW-BTC&count=100
+2025-07-14 19:43:11,791 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/candles/minutes/1?market=KRW-BTC&count=100
+2025-07-14 19:43:12,038 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/candles/minutes/1?market=KRW-BTC&count=100
+2025-07-14 19:43:12,504 - upbit_trading - ERROR - API error occurred: 404 Client Error: Not Found for url: https://api.upbit.com/candles/minutes/1?market=KRW-BTC&count=100
+2025-07-14 19:43:12,504 - upbit_trading - ERROR - Max retries (3) exceeded
+2025-07-14 19:43:12,504 - upbit_trading - WARNING - No data available for KRW-BTC
+2025-07-14 19:43:12,508 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:43:12,508 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:44:39,734 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:44:39,737 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:44:39,738 - upbit_trading - DEBUG - 마켓 코드 조회 중...
+2025-07-14 19:44:39,852 - upbit_trading - INFO - 181개의 KRW 마켓을 가져왔습니다
+2025-07-14 19:44:39,855 - upbit_trading - DEBUG - 현재가 조회 중: KRW-BTC
+2025-07-14 19:44:39,934 - upbit_trading - DEBUG - Fetching OHLCV data for KRW-BTC
+2025-07-14 19:44:40,000 - upbit_trading - DEBUG - Received response: [{'market': 'KRW-BTC', 'candle_date_time_utc': '2025-07-14T10:44:00', 'candle_date_time_kst': '2025-07-14T19:44:00', 'opening_price': 165700000.0, 'high_price': 165702000.0, 'low_price': 165700000.0, 'trade_price': 165701000.0, 'timestamp': 1752489880015, 'candle_acc_trade_price': 125665444.85918, 'candle_acc_trade_volume': 0.75838679, 'unit': 1}, {'market': 'KRW-BTC', 'candle_date_time_utc': '2025-07-14T10:43:00', 'candle_date_time_kst': '2025-07-14T19:43:00', 'opening_price': 165703000.0, 'high_price': 165703000.0, 'low_price': 165678000.0, 'trade_price': 165700000.0, 'timestamp': 1752489839868, 'candle_acc_trade_price': 279763764.58758, 'candle_acc_trade_volume': 1.68842432, 'unit': 1}]
+2025-07-14 19:44:40,196 - upbit_trading - DEBUG - Created DataFrame with 200 rows
+2025-07-14 19:44:40,196 - upbit_trading - DEBUG - Fetching OHLCV data for KRW-BTC
+2025-07-14 19:44:40,254 - upbit_trading - DEBUG - Received response: [{'market': 'KRW-BTC', 'candle_date_time_utc': '2025-07-14T10:44:00', 'candle_date_time_kst': '2025-07-14T19:44:00', 'opening_price': 165700000.0, 'high_price': 165702000.0, 'low_price': 165700000.0, 'trade_price': 165701000.0, 'timestamp': 1752489881057, 'candle_acc_trade_price': 129719364.56345, 'candle_acc_trade_volume': 0.78285206, 'unit': 1}, {'market': 'KRW-BTC', 'candle_date_time_utc': '2025-07-14T10:43:00', 'candle_date_time_kst': '2025-07-14T19:43:00', 'opening_price': 165703000.0, 'high_price': 165703000.0, 'low_price': 165678000.0, 'trade_price': 165700000.0, 'timestamp': 1752489839868, 'candle_acc_trade_price': 279763764.58758, 'candle_acc_trade_volume': 1.68842432, 'unit': 1}]
+2025-07-14 19:44:40,310 - upbit_trading - DEBUG - Created DataFrame with 100 rows
+2025-07-14 19:44:40,363 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:44:40,365 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:45:07,779 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:45:07,781 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:45:07,782 - upbit_trading - DEBUG - 마켓 코드 조회 중...
+2025-07-14 19:45:07,787 - upbit_trading - DEBUG - 현재가 조회 중: KRW-BTC
+2025-07-14 19:45:07,885 - upbit_trading - DEBUG - Fetching OHLCV data for KRW-BTC
+2025-07-14 19:45:07,951 - upbit_trading - DEBUG - Received response: [{'market': 'KRW-BTC', 'candle_date_time_utc': '2025-07-14T10:45:00', 'candle_date_time_kst': '2025-07-14T19:45:00', 'opening_price': 165703000.0, 'high_price': 165706000.0, 'low_price': 165701000.0, 'trade_price': 165706000.0, 'timestamp': 1752489908239, 'candle_acc_trade_price': 27082785.28645, 'candle_acc_trade_volume': 0.16344178, 'unit': 1}, {'market': 'KRW-BTC', 'candle_date_time_utc': '2025-07-14T10:44:00', 'candle_date_time_kst': '2025-07-14T19:44:00', 'opening_price': 165700000.0, 'high_price': 165703000.0, 'low_price': 165700000.0, 'trade_price': 165703000.0, 'timestamp': 1752489899699, 'candle_acc_trade_price': 164507971.36317, 'candle_acc_trade_volume': 0.99279914, 'unit': 1}]
+2025-07-14 19:45:08,057 - upbit_trading - DEBUG - Created DataFrame with 200 rows
+2025-07-14 19:45:08,058 - upbit_trading - DEBUG - Fetching OHLCV data for KRW-BTC
+2025-07-14 19:45:08,131 - upbit_trading - DEBUG - Received response: [{'market': 'KRW-BTC', 'candle_date_time_utc': '2025-07-14T10:45:00', 'candle_date_time_kst': '2025-07-14T19:45:00', 'opening_price': 165703000.0, 'high_price': 165706000.0, 'low_price': 165701000.0, 'trade_price': 165702000.0, 'timestamp': 1752489909303, 'candle_acc_trade_price': 34773164.73229, 'candle_acc_trade_volume': 0.20985175, 'unit': 1}, {'market': 'KRW-BTC', 'candle_date_time_utc': '2025-07-14T10:44:00', 'candle_date_time_kst': '2025-07-14T19:44:00', 'opening_price': 165700000.0, 'high_price': 165703000.0, 'low_price': 165700000.0, 'trade_price': 165703000.0, 'timestamp': 1752489899699, 'candle_acc_trade_price': 164507971.36317, 'candle_acc_trade_volume': 0.99279914, 'unit': 1}]
+2025-07-14 19:45:08,167 - upbit_trading - DEBUG - Created DataFrame with 100 rows
+2025-07-14 19:45:08,178 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:45:08,179 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:47:22,780 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:47:22,783 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:48:53,006 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:48:53,009 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:53:14,202 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:53:14,204 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:54:29,698 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:54:29,701 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:55:15,942 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:55:15,945 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:55:26,570 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:55:26,574 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 19:58:49,249 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 19:58:49,259 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:00:26,189 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:00:26,193 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:01:43,462 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:01:43,465 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:04:03,482 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:04:03,484 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:10:13,752 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:10:13,754 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:52:15,725 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 20:52:15,729 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 20:52:15,824 - upbit_trading - INFO - 181개의 KRW 마켓을 가져왔습니다
+2025-07-14 21:23:15,742 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 21:23:15,745 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:16:36,807 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:16:36,811 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:16:36,896 - upbit_trading - INFO - 181개의 KRW 마켓을 가져왔습니다
+2025-07-14 23:33:26,141 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:33:26,142 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:34:27,070 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:34:27,073 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:42:18,068 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:42:18,071 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:42:22,748 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:42:22,751 - upbit_trading - INFO - API keys loaded successfully
+2025-07-14 23:44:17,739 - upbit_trading - INFO - API 키 로드 성공
+2025-07-14 23:44:17,741 - upbit_trading - INFO - API keys loaded successfully
