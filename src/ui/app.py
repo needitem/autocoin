@@ -293,6 +293,35 @@ class AutoCoinApp:
 
     def run(self):
         """앱 실행"""
+        # 사이드바에 메뉴 추가
+        with st.sidebar:
+            st.title("📊 메뉴")
+            page = st.radio(
+                "페이지 선택:",
+                ["📈 기본 트레이딩", "🤖 AI 포트폴리오", "📰 뉴스 분석", "📊 차트 분석"],
+                index=0
+            )
+        
+        # 세션 상태에 API 객체 저장 (포트폴리오에서 사용)
+        if 'upbit_api' not in st.session_state:
+            st.session_state.upbit_api = self.trading_manager.api
+        
+        if 'news_api' not in st.session_state:
+            from src.api.news import CryptoNewsAPI
+            st.session_state.news_api = CryptoNewsAPI()
+        
+        if page == "📈 기본 트레이딩":
+            self.render_basic_trading()
+        elif page == "🤖 AI 포트폴리오":
+            from src.ui.components.portfolio_dashboard import create_portfolio_dashboard
+            create_portfolio_dashboard()
+        elif page == "📰 뉴스 분석":
+            self.render_news_analysis()
+        elif page == "📊 차트 분석":
+            self.render_chart_analysis()
+    
+    def render_basic_trading(self):
+        """기본 트레이딩 페이지"""
         # 마켓 선택
         selected_market = self.render_market_selector()
         
@@ -302,12 +331,35 @@ class AutoCoinApp:
         # 차트 및 기술적 분석
         self.render_technical_analysis(selected_market)
         
-        # 차트 패턴 분석 추가
-        from src.ui.components.chart_analysis import render_chart_analysis_section
-        render_chart_analysis_section(self.trading_manager, selected_market)
-        
         # 거래 인터페이스
         self.render_trading_interface(selected_market)
+    
+    def render_news_analysis(self):
+        """뉴스 분석 페이지"""
+        from src.ui.components.news import render_news_section
+        
+        st.title("📰 뉴스 분석")
+        
+        # 마켓 선택
+        selected_market = self.render_market_selector()
+        
+        # 현재 시장 데이터 가져오기
+        market_data = self.trading_manager.get_market_data(selected_market)
+        change_rate = market_data.get('signed_change_rate', 0) * 100 if market_data else 0
+        
+        # 뉴스 섹션 렌더링
+        render_news_section(selected_market, change_rate)
+    
+    def render_chart_analysis(self):
+        """차트 분석 페이지"""
+        st.title("📊 차트 패턴 분석")
+        
+        # 마켓 선택
+        selected_market = self.render_market_selector()
+        
+        # 차트 패턴 분석
+        from src.ui.components.chart_analysis import render_chart_analysis_section
+        render_chart_analysis_section(self.trading_manager, selected_market)
 
 if __name__ == "__main__":
     app = AutoCoinApp()
