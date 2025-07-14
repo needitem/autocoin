@@ -127,21 +127,34 @@ class CryptoNewsAPI:
         return filtered_items
     
     def get_crypto_news(self, query: str = "bitcoin ethereum cryptocurrency", limit: int = 100, page: int = 1, hours_filter: int = 24) -> List[Dict]:
-        """크립토 뉴스 조회 - 실제 뉴스 API 사용 (페이지네이션 지원)"""
+        """크립토 뉴스 조회 - 캐싱으로 최적화"""
+        from src.utils.performance_cache import cached
+        
+        # 캐시 키 생성 (쿼리별로 10분간 캐시)
+        cache_key = f"crypto_news_{query}_{limit}_{page}_{hours_filter}"
+        
+        # 캐시 확인
+        from src.utils.performance_cache import _global_cache
+        cached_result = _global_cache.get(cache_key)
+        if cached_result is not None:
+            logger.info(f"뉴스 캐시 히트: {len(cached_result)}개 뉴스")
+            return cached_result
+        
         news_items = []
         
-        # NewsAPI 사용 (페이지 당 더 많은 뉴스)
-        newsapi_items = self._get_newsapi_crypto(query, limit//2, page)
-        news_items.extend(newsapi_items)
-        
-        # CryptoPanic API 사용 (페이지 당 더 많은 뉴스)
-        cryptopanic_items = self._get_cryptopanic_news(limit//2, page)
-        news_items.extend(cryptopanic_items)
-        
-        # RSS 피드 백업 (페이지 1만)
-        if page == 1 and len(news_items) < limit:
-            rss_items = self._get_rss_news(limit - len(news_items))
+        # RSS 피드만 사용 (가장 빠름)
+        if page == 1:
+            rss_items = self._get_rss_news_fast(limit)
             news_items.extend(rss_items)
+        
+        # API 호출은 캐시가 없을 때만 최소한으로
+        if len(news_items) < limit // 2:
+            try:
+                # NewsAPI 사용 (제한적)
+                newsapi_items = self._get_newsapi_crypto(query, min(20, limit//3), page)
+                news_items.extend(newsapi_items)
+            except Exception as e:
+                logger.warning(f"NewsAPI 호출 실패: {str(e)}")
         
         # 시간 필터링 적용
         if hours_filter > 0:
@@ -150,7 +163,13 @@ class CryptoNewsAPI:
         # 시간 순으로 정렬
         news_items.sort(key=lambda x: x.get('published_at', ''), reverse=True)
         
-        return news_items[:limit]
+        result = news_items[:limit]
+        
+        # 결과 캐싱 (10분)
+        _global_cache.set(cache_key, result)
+        logger.info(f"뉴스 수집 완료: {len(result)}개 (캐시됨)")
+        
+        return result
     
     def _get_next_newsapi_key(self) -> Optional[str]:
         """다음 NewsAPI 키 가져오기"""
@@ -384,48 +403,65 @@ class CryptoNewsAPI:
             logger.error(f"대체 뉴스 소스 오류: {str(e)}")
             return self._get_default_news()[:limit]
     
+    def _get_rss_news_fast(self, limit: int = 20) -> List[Dict]:
+        """빠른 RSS 피드 조회 (타임아웃 단축)"""
+        try:
+            # 가장 빠른 RSS 소스만 사용
+            rss_sources = [
+                {
+                    'url': 'https://feeds.feedburner.com/CoinDesk',
+                    'source': 'CoinDesk',
+                    'timeout': 3  # 3초 타임아웃
+                }
+            ]
+            
+            news_items = []
+            
+            for rss_source in rss_sources:
+                try:
+                    response = self.session.get(rss_source['url'], timeout=rss_source['timeout'])
+                    if response.status_code == 200:
+                        import xml.etree.ElementTree as ET
+                        root = ET.fromstring(response.text)
+                        
+                        items = root.findall('.//item')[:limit]
+                        
+                        for item in items:
+                            title = item.find('title')
+                            link = item.find('link')
+                            description = item.find('description')
+                            pub_date = item.find('pubDate')
+                            
+                            if title is not None and link is not None:
+                                news_items.append({
+                                    'title': self._clean_html_text(title.text),
+                                    'summary': self._clean_html_text(description.text[:200] if description is not None else ''),
+                                    'link': link.text,
+                                    'published_at': pub_date.text if pub_date is not None else datetime.now().isoformat(),
+                                    'source': rss_source['source']
+                                })
+                        
+                        logger.info(f"{rss_source['source']} RSS: {len(items)}개 뉴스 (빠른 조회)")
+                        break  # 첫 번째 성공시 중단
+                        
+                except Exception as e:
+                    logger.warning(f"{rss_source['source']} RSS 빠른 조회 실패: {str(e)}")
+                    continue
+            
+            # RSS 실패시 기본 뉴스 사용
+            if not news_items:
+                news_items = self._get_default_news()[:limit]
+                logger.info("기본 뉴스 사용 (RSS 실패)")
+            
+            return news_items
+            
+        except Exception as e:
+            logger.error(f"빠른 RSS 조회 오류: {str(e)}")
+            return self._get_default_news()[:limit]
+
     def _get_rss_news(self, limit: int = 5) -> List[Dict]:
         """RSS 피드를 사용한 백업 뉴스 조회"""
-        try:
-            # CoinDesk RSS 피드
-            rss_url = "https://feeds.feedburner.com/CoinDesk"
-            
-            response = self.session.get(rss_url, timeout=10)
-            if response.status_code == 200:
-                # RSS 파싱 시도
-                try:
-                    import xml.etree.ElementTree as ET
-                    root = ET.fromstring(response.text)
-                    
-                    news_items = []
-                    items = root.findall('.//item')[:limit]
-                    
-                    for item in items:
-                        title = item.find('title')
-                        link = item.find('link')
-                        description = item.find('description')
-                        pub_date = item.find('pubDate')
-                        
-                        if title is not None and link is not None:
-                            news_items.append({
-                                'title': self._clean_html_text(title.text),
-                                'summary': self._clean_html_text(description.text if description is not None else ''),
-                                'link': link.text,
-                                'published_at': pub_date.text if pub_date is not None else datetime.now().isoformat(),
-                                'source': 'CoinDesk RSS'
-                            })
-                    
-                    return news_items
-                    
-                except Exception as parse_error:
-                    logger.error(f"RSS 파싱 오류: {str(parse_error)}")
-                    return self._get_default_news()[:limit]
-            else:
-                return self._get_default_news()[:limit]
-                
-        except Exception as e:
-            logger.error(f"RSS 피드 오류: {str(e)}")
-            return self._get_default_news()[:limit]
+        return self._get_rss_news_fast(limit)
     
     def _get_coindesk_news(self, limit: int = 5) -> List[Dict]:
         """CoinDesk RSS 피드에서 뉴스 가져오기"""
@@ -568,18 +604,77 @@ class CryptoNewsAPI:
             }
         ]
     
-    def get_market_sentiment(self, market: str) -> Dict:
-        """시장 감정 분석"""
-        # 간단한 감정 분석 (실제로는 뉴스 내용을 분석)
-        return {
-            'sentiment': 'neutral',
-            'score': 0.5,
-            'reasons': [
-                '시장 변동성 증가',
-                '거래량 증가',
-                '기관 투자 증가'
+    def get_market_sentiment(self, market: str, price_data: Dict = None, 
+                           historical_data: any = None) -> Dict:
+        """향상된 시장 감정 분석 (캐싱 최적화)"""
+        try:
+            # 캐시 키 생성 (5분간 캐시)
+            import hashlib
+            price_hash = hashlib.md5(str(sorted((price_data or {}).items())).encode()).hexdigest()[:8]
+            cache_key = f"sentiment_{market}_{price_hash}"
+            
+            from src.utils.performance_cache import _global_cache
+            cached_result = _global_cache.get(cache_key)
+            if cached_result is not None:
+                logger.info(f"감정 분석 캐시 히트: {market}")
+                return cached_result
+            
+            from src.core.enhanced_sentiment_analyzer import EnhancedSentimentAnalyzer
+            
+            # 뉴스 데이터 수집 (캐시된 것 사용)
+            news_items = self.get_crypto_news(query=market.split('-')[0], limit=30, hours_filter=24)
+            
+            # 향상된 감정 분석기 사용
+            analyzer = EnhancedSentimentAnalyzer()
+            
+            # 동기 함수 호출
+            sentiment = analyzer.analyze_comprehensive_sentiment(
+                market=market,
+                price_data=price_data or {},
+                historical_data=historical_data,
+                news_items=news_items
+            )
+            
+            # API 응답 형식으로 변환
+            sentiment_value = 'bullish' if sentiment.overall_score > 0.3 else \
+                            'bearish' if sentiment.overall_score < -0.3 else 'neutral'
+            
+            reasons = sentiment.signals[:3] if sentiment.signals else [
+                '시장 데이터 분석 중',
+                '뉴스 감정 분석 중',
+                '기술적 지표 확인 중'
             ]
-        }
+            
+            result = {
+                'sentiment': sentiment_value,
+                'score': (sentiment.overall_score + 1) / 2,  # 0-1 범위로 정규화
+                'reasons': reasons,
+                'confidence': sentiment.confidence,
+                'components': sentiment.components,
+                'fear_greed_index': sentiment.market_indicators.get('fear_greed_index', 50),
+                'social_metrics': sentiment.social_metrics,
+                'timestamp': sentiment.timestamp.isoformat()
+            }
+            
+            # 결과 캐싱 (5분)
+            _global_cache.set(cache_key, result)
+            logger.info(f"감정 분석 완료 및 캐싱: {market}")
+            
+            return result
+            
+        except Exception as e:
+            logger.error(f"향상된 시장 감정 분석 오류: {str(e)}")
+            # 폴백: 기존 간단한 분석
+            return {
+                'sentiment': 'neutral',
+                'score': 0.5,
+                'reasons': [
+                    '시장 변동성 증가',
+                    '거래량 증가',
+                    '기관 투자 증가'
+                ],
+                'confidence': 0.3
+            }
     
     def analyze_price_movement(self, market: str, price_change: float) -> List[str]:
         """가격 변동 원인 분석"""

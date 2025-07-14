@@ -30,12 +30,24 @@ class DatabaseManager:
         self._initialize_db()
 
     def _initialize_db(self):
-        """데이터베이스 초기화"""
+        """데이터베이스 초기화 (성능 최적화)"""
         try:
-            self.db_conn = sqlite3.connect(self.db_path)
-            cursor = self.db_conn.cursor()
+            # WAL 모드와 성능 최적화 설정
+            self.db_conn = sqlite3.connect(
+                self.db_path, 
+                check_same_thread=False,
+                timeout=30.0
+            )
             
-            # market_data 테이블 생성
+            # 성능 최적화 설정
+            cursor = self.db_conn.cursor()
+            cursor.execute("PRAGMA journal_mode=WAL")  # Write-Ahead Logging
+            cursor.execute("PRAGMA synchronous=NORMAL")  # 빠른 쓰기
+            cursor.execute("PRAGMA cache_size=10000")  # 캐시 크기 증가
+            cursor.execute("PRAGMA temp_store=MEMORY")  # 메모리 임시 저장
+            cursor.execute("PRAGMA mmap_size=268435456")  # 256MB 메모리 맵
+            
+            # market_data 테이블 생성 (인덱스 포함)
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS market_data (
                     timestamp DATETIME,
@@ -49,17 +61,34 @@ class DatabaseManager:
                 )
             """)
             
-            # cache 테이블 생성
+            # 성능 최적화 인덱스 생성
+            cursor.execute("""
+                CREATE INDEX IF NOT EXISTS idx_market_timestamp 
+                ON market_data(market, timestamp DESC)
+            """)
+            
+            cursor.execute("""
+                CREATE INDEX IF NOT EXISTS idx_timestamp 
+                ON market_data(timestamp DESC)
+            """)
+            
+            # cache 테이블 생성 (인덱스 포함)
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS cache (
                     key TEXT PRIMARY KEY,
                     value TEXT,
-                    expires_at DATETIME
+                    expires_at REAL
                 )
             """)
             
+            # 캐시 만료 시간 인덱스
+            cursor.execute("""
+                CREATE INDEX IF NOT EXISTS idx_cache_expires 
+                ON cache(expires_at)
+            """)
+            
             self.db_conn.commit()
-            self.logger.info("데이터베이스 초기화 완료")
+            self.logger.info("데이터베이스 초기화 완료 (최적화 적용)")
             
         except Exception as e:
             self.logger.error(f"데이터베이스 초기화 중 오류 발생: {str(e)}")
@@ -134,33 +163,73 @@ class DatabaseManager:
             return False
 
     def save_market_data(self, market: str, data: pd.DataFrame) -> bool:
-        """시장 데이터 저장"""
+        """시장 데이터 저장 (성능 최적화)"""
         try:
             if not self.check_data_consistency(data):
                 return False
 
             with sqlite3.connect(self.db_path) as conn:
+                # 성능 최적화 설정
+                conn.execute("PRAGMA journal_mode=WAL")
+                conn.execute("PRAGMA synchronous=NORMAL")
+                
                 # timestamp를 인덱스에서 컬럼으로 이동
                 df_to_save = data.reset_index()
                 
                 # market 컬럼 추가
                 df_to_save['market'] = market
                 
-                # 데이터 저장
-                df_to_save.to_sql('market_data', conn, if_exists='append', index=False)
+                # 배치 삽입으로 성능 향상
+                cursor = conn.cursor()
                 
-                self.logger.info(f"{len(data)}개의 데이터 포인트를 저장했습니다")
+                # 기존 데이터 중복 체크 (최근 1시간만)
+                cursor.execute("""
+                    DELETE FROM market_data 
+                    WHERE market = ? AND timestamp >= datetime('now', '-1 hour')
+                """, (market,))
+                
+                # 배치 삽입
+                insert_data = []
+                for _, row in df_to_save.iterrows():
+                    insert_data.append((
+                        row['timestamp'], market, 
+                        row['open'], row['high'], row['low'], 
+                        row['close'], row['volume']
+                    ))
+                
+                cursor.executemany("""
+                    INSERT OR REPLACE INTO market_data 
+                    (timestamp, market, open, high, low, close, volume) 
+                    VALUES (?, ?, ?, ?, ?, ?, ?)
+                """, insert_data)
+                
+                conn.commit()
+                self.logger.info(f"{len(data)}개의 데이터 포인트를 저장했습니다 (최적화)")
                 return True
                 
         except Exception as e:
             self.logger.error(f"데이터 저장 중 오류 발생: {str(e)}")
             return False
 
-    def load_market_data(self, market: str, start_time: str = None, end_time: str = None) -> pd.DataFrame:
-        """시장 데이터 로드"""
+    def load_market_data(self, market: str, start_time: str = None, end_time: str = None, limit: int = None) -> pd.DataFrame:
+        """시장 데이터 로드 (성능 최적화)"""
         try:
-            # 쿼리 생성
-            query = "SELECT * FROM market_data WHERE market = ?"
+            # 캐시 키 생성
+            cache_key = f"market_data_{market}_{start_time}_{end_time}_{limit}"
+            
+            # 메모리 캐시 확인 (1분 캐시)
+            from src.utils.performance_cache import _global_cache
+            cached_df = _global_cache.get(cache_key)
+            if cached_df is not None:
+                self.logger.debug(f"캐시에서 데이터 로드: {market}")
+                return cached_df
+            
+            # 최적화된 쿼리 생성
+            query = """
+                SELECT timestamp, open, high, low, close, volume 
+                FROM market_data 
+                WHERE market = ?
+            """
             params = [market]
             
             if start_time:
@@ -170,29 +239,37 @@ class DatabaseManager:
                 query += " AND timestamp <= ?"
                 params.append(end_time)
                 
-            query += " ORDER BY timestamp"
+            query += " ORDER BY timestamp DESC"
+            
+            if limit:
+                query += f" LIMIT {limit}"
                 
             with sqlite3.connect(self.db_path) as conn:
+                # 성능 최적화 설정
+                conn.execute("PRAGMA temp_store=MEMORY")
+                conn.execute("PRAGMA cache_size=10000")
+                
                 # 데이터 로드
                 df = pd.read_sql_query(query, conn, params=params)
                 
                 if df.empty:
-                    self.logger.warning(f"데이터가 없습니다: {market}")
-                    return pd.DataFrame(columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+                    self.logger.debug(f"데이터가 없습니다: {market}")
+                    empty_df = pd.DataFrame(columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+                    return empty_df
                 
-                # timestamp를 datetime으로 변환
+                # 효율적인 데이터 처리
                 df['timestamp'] = pd.to_datetime(df['timestamp'])
                 df.set_index('timestamp', inplace=True)
                 
-                # market 컬럼 제거
-                if 'market' in df.columns:
-                    df = df.drop('market', axis=1)
-                
-                # 데이터 타입 변환
+                # 데이터 타입 최적화
                 numeric_columns = ['open', 'high', 'low', 'close', 'volume']
-                df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric)
+                for col in numeric_columns:
+                    df[col] = pd.to_numeric(df[col], downcast='float')
                 
-                self.logger.info(f"{len(df)}개의 데이터 포인트를 로드했습니다")
+                # 결과 캐싱 (1분)
+                _global_cache.set(cache_key, df)
+                
+                self.logger.debug(f"{len(df)}개의 데이터 포인트를 로드했습니다 (최적화)")
                 return df
                 
         except Exception as e:
