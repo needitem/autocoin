@@ -252,7 +252,7 @@ class MultiTimeFrameAnalyzer:
             self.logger.error(f"{timeframe.value} 분석 오류: {str(e)}")
             return self._create_fallback_timeframe_analysis(timeframe)
     
-    @lru_cache(maxsize=128)
+    @lru_cache(maxsize=32)
     def _analyze_trend_cached(self, data_hash: str, timeframe_value: str) -> Tuple[str, float]:
         """캐시된 트렌드 분석"""
         return self._analyze_trend_internal(data_hash, timeframe_value)
@@ -326,7 +326,7 @@ class MultiTimeFrameAnalyzer:
             self.logger.error(f"트렌드 분석 내부 로직 오류: {str(e)}")
             return "불분명", 0.0
     
-    @lru_cache(maxsize=64)
+    @lru_cache(maxsize=16)
     def _analyze_volume_cached(self, data_hash: str, timeframe_value: str) -> Dict:
         """캐시된 거래량 분석"""
         return self._analyze_volume_internal(data_hash, timeframe_value)

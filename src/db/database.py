@@ -72,6 +72,12 @@ class DatabaseManager:
                 ON market_data(timestamp DESC)
             """)
             
+            # 복합 인덱스 추가 (covering index)
+            cursor.execute("""
+                CREATE INDEX IF NOT EXISTS idx_market_timestamp_covering 
+                ON market_data(market, timestamp DESC, open, high, low, close, volume)
+            """)
+            
             # cache 테이블 생성 (인덱스 포함)
             cursor.execute("""
                 CREATE TABLE IF NOT EXISTS cache (
@@ -197,11 +203,15 @@ class DatabaseManager:
                         row['close'], row['volume']
                     ))
                 
-                cursor.executemany("""
-                    INSERT OR REPLACE INTO market_data 
-                    (timestamp, market, open, high, low, close, volume) 
-                    VALUES (?, ?, ?, ?, ?, ?, ?)
-                """, insert_data)
+                # 배치 크기 제한으로 메모리 최적화
+                batch_size = 1000
+                for i in range(0, len(insert_data), batch_size):
+                    batch = insert_data[i:i+batch_size]
+                    cursor.executemany("""
+                        INSERT OR REPLACE INTO market_data 
+                        (timestamp, market, open, high, low, close, volume) 
+                        VALUES (?, ?, ?, ?, ?, ?, ?)
+                    """, batch)
                 
                 conn.commit()
                 self.logger.info(f"{len(data)}개의 데이터 포인트를 저장했습니다 (최적화)")

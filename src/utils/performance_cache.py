@@ -98,7 +98,7 @@ class PerformanceCache:
             }
 
 # 전역 캐시 인스턴스 (캐시 크기와 TTL 증가)
-_global_cache = PerformanceCache(max_size=1000, ttl=300)  # 5분 TTL, 1000개 항목
+_global_cache = PerformanceCache(max_size=500, ttl=180)  # 3분 TTL, 500개 항목
 
 def cached(ttl: int = 180, cache_instance: Optional[PerformanceCache] = None):
     """캐싱 데코레이터"""
